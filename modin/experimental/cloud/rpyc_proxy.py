@@ -24,10 +24,11 @@ from . import get_connection
 from .meta_magic import _LOCAL_ATTRS, RemoteMeta, _KNOWN_DUALS
 from modin.config import DoTraceRpyc
 
-from .rpyc_patches import apply_pathes
+from .rpyc_patches import patches_netref_factory_class, apply_pathes
 
 
 apply_pathes()
+patches_netref_factory_class()
 
 
 def _batch_loads(items):

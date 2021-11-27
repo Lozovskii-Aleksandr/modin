@@ -1,0 +1,1066 @@
+{
+    "report": {
+        "environment": {
+            "Python": "3.8.11",
+            "Platform": "Windows-10-10.0.19042-SP0"
+        },
+        "tests": [
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[None-None-5-int_data]",
+                "duration": 6.007640600000001,
+                "run_index": 0,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.03134349999999975,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 5.943995000000001,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009586000000005868,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[None-None-5-float_nan_data]",
+                "duration": 2.9496119000000007,
+                "run_index": 1,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009080000000007971,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 2.9470861,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007097999999992055,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[None-None-100-int_data]",
+                "duration": 3.866866899999998,
+                "run_index": 2,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008831999999987517,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 3.8642697000000013,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008307999999992433,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[None-None-100-float_nan_data]",
+                "duration": 1.2570201,
+                "run_index": 3,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009893000000005259,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 1.2542308000000002,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008106999999988318,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[None-5-5-int_data]",
+                "duration": 5.750157999999999,
+                "run_index": 4,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008280999999996652,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 5.747808499999998,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006933000000017842,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[None-5-5-float_nan_data]",
+                "duration": 3.1327406999999994,
+                "run_index": 5,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008926000000002432,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 3.1300288999999992,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009265999999996666,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[None-5-100-int_data]",
+                "duration": 5.935986200000002,
+                "run_index": 6,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009253999999998541,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 5.933327200000001,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000808200000001591,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[None-5-100-float_nan_data]",
+                "duration": 6.0486319,
+                "run_index": 7,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008590999999995574,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 6.046161600000001,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007520999999997002,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[triang-None-5-int_data]",
+                "duration": 1.2521803000000062,
+                "run_index": 8,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008659000000008632,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 1.2496016999999995,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008468000000050324,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[triang-None-5-float_nan_data]",
+                "duration": 0.1427937000000128,
+                "run_index": 9,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008995000000027176,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.1402558000000056,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007389000000017631,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[triang-None-100-int_data]",
+                "duration": 0.1372619000000057,
+                "run_index": 10,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008549000000002138,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.13477190000000405,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007802000000012299,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[triang-None-100-float_nan_data]",
+                "duration": 0.1438084000000046,
+                "run_index": 11,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008800000000022123,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.14126579999999933,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007826000000008548,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[triang-5-5-int_data]",
+                "duration": 0.1308192000000119,
+                "run_index": 12,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009069000000039296,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.1281365999999977,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008688000000063312,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[triang-5-5-float_nan_data]",
+                "duration": 0.1364268000000024,
+                "run_index": 13,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010542999999998415,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.1335419999999985,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007762000000042235,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[triang-5-100-int_data]",
+                "duration": 0.1402476999999962,
+                "run_index": 14,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009159999999965862,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.13761889999999966,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007968000000033726,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[triang-5-100-float_nan_data]",
+                "duration": 0.14924429999999944,
+                "run_index": 15,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009073000000014986,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.14657129999999796,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008583999999984826,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3-both-None-0]",
+                "duration": 0.10601580000000865,
+                "run_index": 16,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009015000000047735,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.10341190000000466,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008008999999944422,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3-both-None-columns]",
+                "duration": 0.6923247000000075,
+                "run_index": 17,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00088050000000095,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.6896817000000013,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008820000000042683,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3-both-DateCol-0]",
+                "duration": 0.11536200000000463,
+                "run_index": 18,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010070000000013124,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.11248619999999931,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008618000000026882,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3-both-DateCol-columns]",
+                "duration": 0.6349240999999921,
+                "run_index": 19,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011303999999938696,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.6319545000000062,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007087999999981776,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3-right-None-0]",
+                "duration": 0.11965219999999732,
+                "run_index": 20,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011786999999969794,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.11636270000000337,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009320999999999913,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3-right-None-columns]",
+                "duration": 0.5999552999999906,
+                "run_index": 21,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010156999999964,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.5966030000000018,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0013208999999960724,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3-right-DateCol-0]",
+                "duration": 0.10307810000001183,
+                "run_index": 22,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0012686000000030617,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.09975470000000541,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007862000000002922,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3-right-DateCol-columns]",
+                "duration": 0.6254335000000069,
+                "run_index": 23,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008443000000042389,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.6229932999999974,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007516000000009626,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3s-both-None-0]",
+                "duration": 0.03513499999999681,
+                "run_index": 24,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009172999999975673,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03257680000000107,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007236000000006015,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3s-both-None-columns]",
+                "duration": 0.07257620000000031,
+                "run_index": 25,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009228999999990606,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06998389999999688,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007465000000053124,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3s-both-DateCol-0]",
+                "duration": 0.05468869999999981,
+                "run_index": 26,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008842999999956191,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05210810000000521,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008120000000033656,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3s-both-DateCol-columns]",
+                "duration": 0.07386099999999374,
+                "run_index": 27,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009131999999993923,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07058899999999824,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0014455999999967162,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3s-right-None-0]",
+                "duration": 0.03612559999999121,
+                "run_index": 28,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0012709999999955812,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.032786000000001536,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007975999999985106,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3s-right-None-columns]",
+                "duration": 0.07668719999999496,
+                "run_index": 29,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010276000000004615,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07388009999999667,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000751899999997363,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3s-right-DateCol-0]",
+                "duration": 0.05098189999999647,
+                "run_index": 30,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008891000000019744,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04843719999999507,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007664999999974498,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3s-right-DateCol-columns]",
+                "duration": 0.07352490000000245,
+                "run_index": 31,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00102770000000163,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07066899999999521,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008005000000039786,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[None-None-5-int_data]",
+                "duration": 0.24134750000000338,
+                "run_index": 32,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001004700000002856,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.23842369999999846,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009143999999992047,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[None-None-5-float_nan_data]",
+                "duration": 0.24275759999999735,
+                "run_index": 33,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009100999999986925,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.24016269999999906,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007747000000009052,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[None-None-100-int_data]",
+                "duration": 0.2079835999999986,
+                "run_index": 34,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009121000000007484,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.20530409999999932,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008552999999977828,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[None-None-100-float_nan_data]",
+                "duration": 0.17167149999998088,
+                "run_index": 35,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009486999999950285,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.16901509999999575,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007589999999950692,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[None-5-5-int_data]",
+                "duration": 0.23887630000000115,
+                "run_index": 36,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008701000000002068,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.23624769999999984,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008884000000008996,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[None-5-5-float_nan_data]",
+                "duration": 0.2231307000000129,
+                "run_index": 37,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0015014000000022065,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.21933530000000445,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000792600000004029,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[None-5-100-int_data]",
+                "duration": 0.23908140000000344,
+                "run_index": 38,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009078000000002362,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.23661969999999855,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006461000000044237,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[None-5-100-float_nan_data]",
+                "duration": 0.24918019999999075,
+                "run_index": 39,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009213999999957423,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.24660989999999572,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007275000000035448,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[triang-None-5-int_data]",
+                "duration": 0.03605969999999559,
+                "run_index": 40,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010685999999964224,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.033224900000000446,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006976000000022964,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[triang-None-5-float_nan_data]",
+                "duration": 0.0762342000000018,
+                "run_index": 41,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008975000000006617,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07351620000000025,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009230000000002292,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[triang-None-100-int_data]",
+                "duration": 0.03770820000000441,
+                "run_index": 42,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009012000000012677,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.035219400000002565,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006863999999993098,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[triang-None-100-float_nan_data]",
+                "duration": 0.038752299999991635,
+                "run_index": 43,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009332999999998037,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03590589999999594,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009797999999960894,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[triang-5-5-int_data]",
+                "duration": 0.035201299999997104,
+                "run_index": 44,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010124999999945317,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.032458900000001734,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007174000000063074,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[triang-5-5-float_nan_data]",
+                "duration": 0.03594770000000125,
+                "run_index": 45,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009826000000003887,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03306740000000019,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009151000000002796,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[triang-5-100-int_data]",
+                "duration": 0.035798700000007955,
+                "run_index": 46,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008704000000037126,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03356780000000015,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004901000000003819,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[triang-5-100-float_nan_data]",
+                "duration": 0.036850299999990455,
+                "run_index": 47,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0016778999999971234,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03274719999999576,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007473000000004504,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series_dt_index[both]",
+                "duration": 0.023842300000005423,
+                "run_index": 48,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006479000000041424,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.02213259999999906,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004138999999980797,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series_dt_index[right]",
+                "duration": 0.027401899999993873,
+                "run_index": 49,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007323999999968578,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.02162410000000392,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0043129999999962365,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            }
+        ],
+        "summary": {
+            "passed": 50,
+            "num_tests": 50,
+            "duration": 45.856146812438965
+        },
+        "created_at": "2021-08-27 13:12:58.556567"
+    }
+}

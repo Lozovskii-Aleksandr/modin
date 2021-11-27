@@ -1,0 +1,4712 @@
+{
+    "report": {
+        "environment": {
+            "Python": "3.8.11",
+            "Platform": "Windows-10-10.0.19042-SP0"
+        },
+        "tests": [
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[add-rows-scalar]",
+                "duration": 0.11304840000000027,
+                "run_index": 0,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.044371700000000125,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.02337580000000017,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009291999999998524,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[add-rows-series_or_list]",
+                "duration": 0.0836560000000004,
+                "run_index": 1,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008044000000002605,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.08136909999999986,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006781000000000148,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[add-columns-scalar]",
+                "duration": 0.018836299999999806,
+                "run_index": 2,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008022999999997005,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01672640000000003,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005053000000003749,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[add-columns-series_or_list]",
+                "duration": 0.06161749999999966,
+                "run_index": 3,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0015692000000000483,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05768279999999981,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00079629999999975,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[radd-rows-scalar]",
+                "duration": 0.018781400000000392,
+                "run_index": 4,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00077550000000004,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01675580000000032,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004745999999999917,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[radd-rows-series_or_list]",
+                "duration": 0.06960209999999956,
+                "run_index": 5,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009128999999998832,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06697389999999981,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008023999999999809,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[radd-columns-scalar]",
+                "duration": 0.022156600000000193,
+                "run_index": 6,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007801000000000613,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.019990500000000022,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006059000000000481,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[radd-columns-series_or_list]",
+                "duration": 0.11302869999999965,
+                "run_index": 7,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.009651499999999924,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.09290659999999962,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008191000000001836,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[sub-rows-scalar]",
+                "duration": 0.039737600000000484,
+                "run_index": 8,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0017643999999998883,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03518860000000057,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0010202000000001377,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[sub-rows-series_or_list]",
+                "duration": 0.07165410000000172,
+                "run_index": 9,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000932000000000599,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06907979999999991,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007103000000006077,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[sub-columns-scalar]",
+                "duration": 0.01941619999999933,
+                "run_index": 10,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008145999999999987,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.017318399999999734,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004685999999995971,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[sub-columns-series_or_list]",
+                "duration": 0.06742960000000053,
+                "run_index": 11,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001269399999999976,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06418350000000039,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007073000000001883,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rsub-rows-scalar]",
+                "duration": 0.020919700000002095,
+                "run_index": 12,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007999000000005196,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.018859800000000426,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00046010000000062945,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rsub-rows-series_or_list]",
+                "duration": 0.06972680000000064,
+                "run_index": 13,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0012383000000006916,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06643609999999978,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008140999999994847,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rsub-columns-scalar]",
+                "duration": 0.020567000000000668,
+                "run_index": 14,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007804000000000144,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01821250000000063,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007937000000000083,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rsub-columns-series_or_list]",
+                "duration": 0.06068790000000046,
+                "run_index": 15,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000844800000000312,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05804000000000009,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009582999999997455,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[mod-rows-scalar]",
+                "duration": 0.018951499999999122,
+                "run_index": 16,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007843999999996853,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.016901299999999786,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004813999999999652,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[mod-rows-series_or_list]",
+                "duration": 0.07504019999999922,
+                "run_index": 17,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007706999999994579,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07269419999999993,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008046000000003772,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[mod-columns-scalar]",
+                "duration": 0.01806520000000056,
+                "run_index": 18,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000794400000000195,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.014868600000000676,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.001607799999999493,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[mod-columns-series_or_list]",
+                "duration": 0.06867520000000127,
+                "run_index": 19,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009914000000001977,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06591420000000081,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007782000000000622,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rmod-rows-scalar]",
+                "duration": 0.0037127999999988504,
+                "run_index": 20,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010215999999996228,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0008799000000001556,
+                    "outcome": "xfailed",
+                    "xfail_reason": "reason: different behaviour",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_binary.py:59: in test_math_functions\n    pytest.xfail(reason=\"different behaviour\")\nE   _pytest.outcomes.XFailed: different behaviour"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007896999999994492,
+                    "outcome": "passed"
+                },
+                "outcome": "xfailed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rmod-rows-series_or_list]",
+                "duration": 0.0034074999999997857,
+                "run_index": 21,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010772000000001114,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0005389999999998452,
+                    "outcome": "xfailed",
+                    "xfail_reason": "reason: different behaviour",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_binary.py:59: in test_math_functions\n    pytest.xfail(reason=\"different behaviour\")\nE   _pytest.outcomes.XFailed: different behaviour"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007140999999997177,
+                    "outcome": "passed"
+                },
+                "outcome": "xfailed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rmod-columns-scalar]",
+                "duration": 0.024239499999999303,
+                "run_index": 22,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00140589999999996,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.018459099999999395,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.002968599999999988,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rmod-columns-series_or_list]",
+                "duration": 0.0618394000000011,
+                "run_index": 23,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009924000000003375,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05910870000000035,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007459000000000771,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[pow-rows-scalar]",
+                "duration": 0.021230700000001157,
+                "run_index": 24,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008020000000001914,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.019055600000000616,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005711000000001576,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[pow-rows-series_or_list]",
+                "duration": 0.06819060000000032,
+                "run_index": 25,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007573000000000718,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06596679999999999,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007092000000001875,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[pow-columns-scalar]",
+                "duration": 0.022198599999999402,
+                "run_index": 26,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011451999999998463,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.018961799999999585,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009464000000001249,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[pow-columns-series_or_list]",
+                "duration": 0.07295730000000056,
+                "run_index": 27,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009673000000001153,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07027289999999997,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007498000000003557,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rpow-rows-scalar]",
+                "duration": 0.016216699999999307,
+                "run_index": 28,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000792299999999635,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.014177000000000106,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00045509999999993056,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rpow-rows-series_or_list]",
+                "duration": 0.08034259999999893,
+                "run_index": 29,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007462999999994224,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0780403000000005,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008096999999995802,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rpow-columns-scalar]",
+                "duration": 0.020567800000000247,
+                "run_index": 30,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008334000000003172,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.018307799999999652,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005931999999999604,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rpow-columns-series_or_list]",
+                "duration": 0.07747659999999978,
+                "run_index": 31,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.004852500000000148,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06698669999999929,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007849000000001993,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[truediv-rows-scalar]",
+                "duration": 0.020529800000000265,
+                "run_index": 32,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007535000000000736,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01834129999999945,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006815000000006677,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[truediv-rows-series_or_list]",
+                "duration": 0.06922319999999971,
+                "run_index": 33,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008511999999996078,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0668274000000002,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006934000000002882,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[truediv-columns-scalar]",
+                "duration": 0.019340900000001326,
+                "run_index": 34,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007369999999999877,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01728360000000073,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005833000000006194,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[truediv-columns-series_or_list]",
+                "duration": 0.060960199999999354,
+                "run_index": 35,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010193000000002783,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.057957799999999615,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000963799999999182,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rtruediv-rows-scalar]",
+                "duration": 0.02740980000000004,
+                "run_index": 36,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008656000000000219,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.024540100000000287,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0011384999999997092,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rtruediv-rows-series_or_list]",
+                "duration": 0.06768820000000009,
+                "run_index": 37,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007932000000003825,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06535409999999953,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007476999999997958,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rtruediv-columns-scalar]",
+                "duration": 0.02289410000000114,
+                "run_index": 38,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010503000000001705,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.017593900000000495,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.003199600000000302,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rtruediv-columns-series_or_list]",
+                "duration": 0.06767160000000061,
+                "run_index": 39,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.003703000000000678,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05946879999999943,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007967999999998199,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[mul-rows-scalar]",
+                "duration": 0.020774999999999544,
+                "run_index": 40,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010959999999995418,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.018116400000000255,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00046660000000020574,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[mul-rows-series_or_list]",
+                "duration": 0.0697561999999996,
+                "run_index": 41,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000784599999999358,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06741810000000026,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007689000000006274,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[mul-columns-scalar]",
+                "duration": 0.020678200000000757,
+                "run_index": 42,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007999999999999119,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01805830000000075,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0010199000000001845,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[mul-columns-series_or_list]",
+                "duration": 0.06592450000000127,
+                "run_index": 43,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009481000000004514,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06320499999999996,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008233000000004154,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rmul-rows-scalar]",
+                "duration": 0.02157560000000025,
+                "run_index": 44,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0012685000000001168,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01857880000000023,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00045979999999978816,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rmul-rows-series_or_list]",
+                "duration": 0.07476709999999898,
+                "run_index": 45,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007796999999998278,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07240719999999978,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008004999999995377,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rmul-columns-scalar]",
+                "duration": 0.019755700000001042,
+                "run_index": 46,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008110000000005613,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.017655500000000046,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00047819999999987317,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rmul-columns-series_or_list]",
+                "duration": 0.05958469999999938,
+                "run_index": 47,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0015884999999995486,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05563949999999984,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007682000000004408,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[floordiv-rows-scalar]",
+                "duration": 0.005846199999998802,
+                "run_index": 48,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010782999999996434,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.001626700000000092,
+                    "outcome": "xfailed",
+                    "xfail_reason": "reason: different behaviour",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_binary.py:55: in test_math_functions\n    pytest.xfail(reason=\"different behaviour\")\nE   _pytest.outcomes.XFailed: different behaviour"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0020628999999994235,
+                    "outcome": "passed"
+                },
+                "outcome": "xfailed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[floordiv-rows-series_or_list]",
+                "duration": 0.002547800000000322,
+                "run_index": 49,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008420999999998457,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0004059000000005142,
+                    "outcome": "xfailed",
+                    "xfail_reason": "reason: different behaviour",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_binary.py:55: in test_math_functions\n    pytest.xfail(reason=\"different behaviour\")\nE   _pytest.outcomes.XFailed: different behaviour"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00045770000000011635,
+                    "outcome": "passed"
+                },
+                "outcome": "xfailed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[floordiv-columns-scalar]",
+                "duration": 0.026964999999999684,
+                "run_index": 50,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001431799999999761,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.021354500000000165,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0027468999999999966,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[floordiv-columns-series_or_list]",
+                "duration": 0.07419140000000013,
+                "run_index": 51,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010740000000000194,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07120420000000038,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008391999999997068,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rfloordiv-rows-scalar]",
+                "duration": 0.002899600000000113,
+                "run_index": 52,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008753999999999706,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0006041000000003294,
+                    "outcome": "xfailed",
+                    "xfail_reason": "reason: different behaviour",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_binary.py:55: in test_math_functions\n    pytest.xfail(reason=\"different behaviour\")\nE   _pytest.outcomes.XFailed: different behaviour"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005446999999998425,
+                    "outcome": "passed"
+                },
+                "outcome": "xfailed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rfloordiv-rows-series_or_list]",
+                "duration": 0.00319850000000077,
+                "run_index": 53,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007950000000001012,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.00043600000000054706,
+                    "outcome": "xfailed",
+                    "xfail_reason": "reason: different behaviour",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_binary.py:55: in test_math_functions\n    pytest.xfail(reason=\"different behaviour\")\nE   _pytest.outcomes.XFailed: different behaviour"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0011725000000000207,
+                    "outcome": "passed"
+                },
+                "outcome": "xfailed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rfloordiv-columns-scalar]",
+                "duration": 0.020464199999999266,
+                "run_index": 54,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008168999999993432,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.018029300000000248,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008011000000003321,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions[rfloordiv-columns-series_or_list]",
+                "duration": 0.06769030000000065,
+                "run_index": 55,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008033000000002843,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06527249999999984,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000811200000000234,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[add-None-check_missing_value]",
+                "duration": 0.06884230000000002,
+                "run_index": 56,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008315999999997103,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06635900000000028,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008201000000003233,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[add-None-check_different_index]",
+                "duration": 0.059117600000000436,
+                "run_index": 57,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00078400000000034,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05693799999999971,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006116000000000454,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[add-3.0-check_missing_value]",
+                "duration": 0.05875899999999845,
+                "run_index": 58,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009280999999994322,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.055634799999999984,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0012679999999996028,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[add-3.0-check_different_index]",
+                "duration": 0.023402199999999596,
+                "run_index": 59,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00113659999999971,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.02065759999999983,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00047140000000034377,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[radd-None-check_missing_value]",
+                "duration": 0.0673476000000015,
+                "run_index": 60,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0012979000000008512,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06391439999999982,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008373999999999882,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[radd-None-check_different_index]",
+                "duration": 0.05838340000000031,
+                "run_index": 61,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001091500000000245,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.055449999999999555,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000750400000000262,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[radd-3.0-check_missing_value]",
+                "duration": 0.05991030000000119,
+                "run_index": 62,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008142000000006533,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05662499999999948,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0016569000000004053,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[radd-3.0-check_different_index]",
+                "duration": 0.025001800000000074,
+                "run_index": 63,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008594000000003987,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.022621199999999675,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006617999999996016,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[sub-None-check_missing_value]",
+                "duration": 0.06553279999999972,
+                "run_index": 64,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008132999999999058,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06327529999999992,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006308999999999898,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[sub-None-check_different_index]",
+                "duration": 0.05814550000000018,
+                "run_index": 65,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000867500000000021,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05572239999999962,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006881000000005244,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[sub-3.0-check_missing_value]",
+                "duration": 0.061744700000001984,
+                "run_index": 66,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001099500000000475,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.058825200000000244,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00072050000000079,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[sub-3.0-check_different_index]",
+                "duration": 0.013110499999999803,
+                "run_index": 67,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008075999999999084,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.010995999999999562,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004993000000004244,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rsub-None-check_missing_value]",
+                "duration": 0.06160090000000107,
+                "run_index": 68,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011906000000001526,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.058485500000000634,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007342000000001292,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rsub-None-check_different_index]",
+                "duration": 0.05871809999999922,
+                "run_index": 69,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008565999999996521,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.056175600000000436,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008292999999994777,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rsub-3.0-check_missing_value]",
+                "duration": 0.061225900000000166,
+                "run_index": 70,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007355000000002221,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05858149999999984,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00117339999999988,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rsub-3.0-check_different_index]",
+                "duration": 0.013804800000001727,
+                "run_index": 71,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008877000000007129,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01152350000000002,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005059000000002811,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[mod-None-check_missing_value]",
+                "duration": 0.06370050000000127,
+                "run_index": 72,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009748000000007195,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.061036799999999225,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007141000000006059,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[mod-None-check_different_index]",
+                "duration": 0.06556569999999873,
+                "run_index": 73,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008223999999996678,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06310989999999972,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008109999999996731,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[mod-3.0-check_missing_value]",
+                "duration": 0.06374560000000074,
+                "run_index": 74,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007609000000003974,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0614637999999994,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000760000000000538,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[mod-3.0-check_different_index]",
+                "duration": 0.019030400000000114,
+                "run_index": 75,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009259000000003681,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.016689599999999416,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004889999999999617,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rmod-None-check_missing_value]",
+                "duration": 0.0637194999999986,
+                "run_index": 76,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007982999999995855,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06094709999999992,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.001175799999999505,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rmod-None-check_different_index]",
+                "duration": 0.059064100000001396,
+                "run_index": 77,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000732800000000644,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05679609999999968,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000802400000000425,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rmod-3.0-check_missing_value]",
+                "duration": 0.06257280000000076,
+                "run_index": 78,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001054400000000122,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.059838700000000244,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006253000000002729,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rmod-3.0-check_different_index]",
+                "duration": 0.013637900000000869,
+                "run_index": 79,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007906000000001967,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01140030000000003,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006564000000004455,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[pow-None-check_missing_value]",
+                "duration": 0.0628699000000017,
+                "run_index": 80,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011021000000006609,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0599653,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007004000000003785,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[pow-None-check_different_index]",
+                "duration": 0.06725239999999921,
+                "run_index": 81,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008337999999996626,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06487019999999966,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007146000000002317,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[pow-3.0-check_missing_value]",
+                "duration": 0.055367399999998845,
+                "run_index": 82,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001104599999999678,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.052469399999999666,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006887999999998229,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[pow-3.0-check_different_index]",
+                "duration": 0.03727429999999998,
+                "run_index": 83,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008933000000004299,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03478539999999963,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007022999999994894,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rpow-None-check_missing_value]",
+                "duration": 0.09413179999999954,
+                "run_index": 84,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008252999999998067,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.09181840000000019,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006627999999997414,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rpow-None-check_different_index]",
+                "duration": 0.06580890000000128,
+                "run_index": 85,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008033000000002843,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06352120000000028,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006811000000004341,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rpow-3.0-check_missing_value]",
+                "duration": 0.0627260999999999,
+                "run_index": 86,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010690000000002087,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05990359999999928,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006845000000001988,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rpow-3.0-check_different_index]",
+                "duration": 0.03262800000000077,
+                "run_index": 87,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010919000000004786,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.029502000000000805,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009421999999990049,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[truediv-None-check_missing_value]",
+                "duration": 0.06602900000000211,
+                "run_index": 88,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0014379000000008801,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.062484599999999446,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006686000000009074,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[truediv-None-check_different_index]",
+                "duration": 0.05860640000000039,
+                "run_index": 89,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008032000000000039,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.056220200000000276,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007798000000001082,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[truediv-3.0-check_missing_value]",
+                "duration": 0.061927399999996524,
+                "run_index": 90,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008249999999989654,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05963969999999996,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000637699999998631,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[truediv-3.0-check_different_index]",
+                "duration": 0.013915100000003733,
+                "run_index": 91,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00082290000000107,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01173830000000109,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005310000000005033,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rtruediv-None-check_missing_value]",
+                "duration": 0.0636000999999986,
+                "run_index": 92,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007738999999986618,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06141030000000036,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006420000000009196,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rtruediv-None-check_different_index]",
+                "duration": 0.05862889999999865,
+                "run_index": 93,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008295999999994308,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.056373999999999924,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005956999999998658,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rtruediv-3.0-check_missing_value]",
+                "duration": 0.06193599999999755,
+                "run_index": 94,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008444999999994707,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05943989999999921,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008070999999993944,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rtruediv-3.0-check_different_index]",
+                "duration": 0.013970600000000388,
+                "run_index": 95,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011721999999991795,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.011173300000001163,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004529000000008665,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[mul-None-check_missing_value]",
+                "duration": 0.06279359999999734,
+                "run_index": 96,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007451999999990022,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0604692,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008339999999993353,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[mul-None-check_different_index]",
+                "duration": 0.0695528999999997,
+                "run_index": 97,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008286000000001792,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06705810000000056,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008375999999987727,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[mul-3.0-check_missing_value]",
+                "duration": 0.06792510000000007,
+                "run_index": 98,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000928299999999993,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06536550000000041,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007029999999996761,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[mul-3.0-check_different_index]",
+                "duration": 0.0208832000000001,
+                "run_index": 99,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0016277000000002317,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01708980000000082,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005379999999988172,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rmul-None-check_missing_value]",
+                "duration": 0.0655014999999981,
+                "run_index": 100,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0014977999999992164,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06169509999999967,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008108000000000004,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rmul-None-check_different_index]",
+                "duration": 0.062230400000000685,
+                "run_index": 101,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000833899999999943,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05990650000000031,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006561000000004924,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rmul-3.0-check_missing_value]",
+                "duration": 0.06246019999999852,
+                "run_index": 102,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010419999999999874,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05934679999999837,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0010294000000001802,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rmul-3.0-check_different_index]",
+                "duration": 0.014009600000003175,
+                "run_index": 103,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008150000000011204,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.011880599999999575,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004990000000013595,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[floordiv-None-check_missing_value]",
+                "duration": 0.06306740000000133,
+                "run_index": 104,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010038000000012204,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06028699999999887,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007728000000000179,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[floordiv-None-check_different_index]",
+                "duration": 0.06227159999999721,
+                "run_index": 105,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010850999999991728,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.059398599999999746,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007027999999991152,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[floordiv-3.0-check_missing_value]",
+                "duration": 0.07096500000000283,
+                "run_index": 106,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011140000000011696,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06808879999999995,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006482000000005428,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[floordiv-3.0-check_different_index]",
+                "duration": 0.017829200000001322,
+                "run_index": 107,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007666000000003947,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.015837899999999294,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00045810000000123807,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rfloordiv-None-check_missing_value]",
+                "duration": 0.05737099999999806,
+                "run_index": 108,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0012601999999990454,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05420480000000083,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006457999999991415,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rfloordiv-None-check_different_index]",
+                "duration": 0.06087309999999846,
+                "run_index": 109,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001060599999998857,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05807940000000045,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006725000000002979,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rfloordiv-3.0-check_missing_value]",
+                "duration": 0.05608830000000253,
+                "run_index": 110,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007999000000005196,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05368710000000121,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008014000000002852,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_fill_value[rfloordiv-3.0-check_different_index]",
+                "duration": 0.017971700000002144,
+                "run_index": 111,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007667000000015634,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01598239999999862,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00045590000000039765,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_level[add]",
+                "duration": 0.056016699999997144,
+                "run_index": 112,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005789999999983308,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05406319999999987,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007955000000006152,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_level[radd]",
+                "duration": 0.05148520000000012,
+                "run_index": 113,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005711999999995498,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04965780000000031,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006850000000007128,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_level[sub]",
+                "duration": 0.0506454999999999,
+                "run_index": 114,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007160999999999973,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04846590000000006,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007473999999998426,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_level[rsub]",
+                "duration": 0.050979599999998015,
+                "run_index": 115,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005966999999991174,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04904580000000003,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007403999999997524,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_level[mod]",
+                "duration": 0.04910040000000038,
+                "run_index": 116,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006228000000003675,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04697260000000014,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008821999999995,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_level[rmod]",
+                "duration": 0.0529585000000008,
+                "run_index": 117,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006374999999998465,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.050942199999999715,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007413000000013881,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_level[pow]",
+                "duration": 0.04488629999999816,
+                "run_index": 118,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008731999999991302,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04245459999999923,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006853000000006659,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_level[rpow]",
+                "duration": 0.051568400000000736,
+                "run_index": 119,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006448999999992822,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.049553300000001244,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000725300000000928,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_level[truediv]",
+                "duration": 0.048048100000000815,
+                "run_index": 120,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006199000000002286,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04606360000000009,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007447000000002646,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_level[rtruediv]",
+                "duration": 0.05291569999999801,
+                "run_index": 121,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006036999999992076,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.050959100000000035,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007491999999995613,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_level[mul]",
+                "duration": 0.0516159000000016,
+                "run_index": 122,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006044000000002825,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04965080000000022,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007563000000008202,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_level[rmul]",
+                "duration": 0.053041100000001506,
+                "run_index": 123,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005997000000004249,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.051126000000000005,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007157000000006519,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_level[floordiv]",
+                "duration": 0.05253629999999987,
+                "run_index": 124,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006664999999994592,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05048280000000105,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007204999999999018,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_functions_level[rfloordiv]",
+                "duration": 0.05135920000000205,
+                "run_index": 125,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006853000000006659,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.049218400000000884,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007701999999998321,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[truediv-divide]",
+                "duration": 0.0023589000000008298,
+                "run_index": 126,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007727000000006257,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.00037839999999889073,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004351000000006877,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[truediv-div]",
+                "duration": 0.00212009999999907,
+                "run_index": 127,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006667999999994123,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0003792000000011342,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00040729999999911115,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[rtruediv-rdiv]",
+                "duration": 0.002084599999999881,
+                "run_index": 128,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006558999999999315,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0003726000000003893,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00040019999999962863,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[mul-multiply]",
+                "duration": 0.0020565000000001277,
+                "run_index": 129,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006421000000003119,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0003753999999993596,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00039690000000014436,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[sub-subtract]",
+                "duration": 0.002142400000002098,
+                "run_index": 130,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006471000000001226,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.00041220000000130597,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00043600000000054706,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[add-__add__]",
+                "duration": 0.003452000000001121,
+                "run_index": 131,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006973000000005669,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0003428999999997018,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0017145000000002852,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[radd-__radd__]",
+                "duration": 0.0040026999999991375,
+                "run_index": 132,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009746999999986627,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0009278000000012554,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0011255000000005566,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[truediv-__truediv__]",
+                "duration": 0.0026166000000031886,
+                "run_index": 133,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008840000000009951,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.000414900000000884,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004337000000003144,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[rtruediv-__rtruediv__]",
+                "duration": 0.002191200000000393,
+                "run_index": 134,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006854000000000582,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.00039729999999948973,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00042310000000078674,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[floordiv-__floordiv__]",
+                "duration": 0.012088199999995553,
+                "run_index": 135,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.005172199999998739,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.001010199999999628,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007335999999984466,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[rfloordiv-__rfloordiv__]",
+                "duration": 0.004501400000000544,
+                "run_index": 136,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001789900000000344,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.00047789999999992006,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004436999999999358,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[mod-__mod__]",
+                "duration": 0.003265900000000599,
+                "run_index": 137,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006991000000002856,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0003685000000004379,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0014991999999995897,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[rmod-__rmod__]",
+                "duration": 0.00627260000000085,
+                "run_index": 138,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0014485999999998,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0005801000000005274,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.002795300000000722,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[mul-__mul__]",
+                "duration": 0.0029098000000011837,
+                "run_index": 139,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009519000000004496,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0004489000000003074,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005570999999999771,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[rmul-__rmul__]",
+                "duration": 0.006772799999996693,
+                "run_index": 140,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0013562999999994219,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0034631999999987784,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005969999999990705,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[pow-__pow__]",
+                "duration": 0.006641399999999464,
+                "run_index": 141,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0028293000000001456,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0005063999999990187,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004764000000001545,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[rpow-__rpow__]",
+                "duration": 0.003103299999999365,
+                "run_index": 142,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009943999999997288,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0005196999999999008,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005948000000000064,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[sub-__sub__]",
+                "duration": 0.008067300000000444,
+                "run_index": 143,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0024318999999994872,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0005562000000001177,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0026473000000013513,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_math_alias[rsub-__rsub__]",
+                "duration": 0.0028503000000004164,
+                "run_index": 144,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008604000000005385,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0006492999999991866,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004802000000001527,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-eq-as_left]",
+                "duration": 0.059667799999999716,
+                "run_index": 145,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011521999999999366,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05661040000000028,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007529999999995596,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-eq-4]",
+                "duration": 0.04790919999999943,
+                "run_index": 146,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007684999999995057,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04559919999999984,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007730000000005788,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-eq-4.0]",
+                "duration": 0.04933340000000008,
+                "run_index": 147,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011723999999997403,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04597580000000079,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0010127999999998138,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-eq-a]",
+                "duration": 0.04998120000000128,
+                "run_index": 148,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000803499999999957,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.047578300000001406,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007958999999999605,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-ge-as_left]",
+                "duration": 0.05473680000000236,
+                "run_index": 149,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008615000000009587,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05222619999999978,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007876000000006655,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-ge-4]",
+                "duration": 0.04887130000000006,
+                "run_index": 150,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001120000000000232,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04583159999999964,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007996999999999588,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-ge-4.0]",
+                "duration": 0.0463775999999978,
+                "run_index": 151,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001416899999998833,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04273839999999929,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008054000000008443,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-ge-a]",
+                "duration": 0.01779110000000017,
+                "run_index": 152,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009937999999998226,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.012143600000001697,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.003659899999998828,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-gt-as_left]",
+                "duration": 0.05174680000000009,
+                "run_index": 153,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0017630000000004031,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.047466800000000475,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007539999999988112,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-gt-4]",
+                "duration": 0.05000839999999762,
+                "run_index": 154,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007969999999986044,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04764630000000025,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007681000000001603,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-gt-4.0]",
+                "duration": 0.05160400000000109,
+                "run_index": 155,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001068800000000536,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04886899999999983,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005974000000001922,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-gt-a]",
+                "duration": 0.012716900000002695,
+                "run_index": 156,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008212000000007436,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.010545099999999863,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005294000000013455,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-le-as_left]",
+                "duration": 0.05118359999999811,
+                "run_index": 157,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000896599999999026,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.048614199999999386,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007762000000006708,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-le-4]",
+                "duration": 0.04499040000000143,
+                "run_index": 158,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008101000000007019,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.042344800000000404,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.001025399999999621,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-le-4.0]",
+                "duration": 0.05304530000000085,
+                "run_index": 159,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0020690000000005426,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.048228699999999236,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006786000000005288,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-le-a]",
+                "duration": 0.015268799999999416,
+                "run_index": 160,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009210999999993419,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.012538900000000908,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008876999999998247,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-lt-as_left]",
+                "duration": 0.05779270000000203,
+                "run_index": 161,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001084800000000996,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0549078999999999,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000715200000000138,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-lt-4]",
+                "duration": 0.054034299999999647,
+                "run_index": 162,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008393000000008755,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05125949999999868,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0010961999999992145,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-lt-4.0]",
+                "duration": 0.052782599999996904,
+                "run_index": 163,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001030199999998871,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04996069999999975,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007614999999994154,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-lt-a]",
+                "duration": 0.01403930000000031,
+                "run_index": 164,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008841000000003874,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.011644999999999683,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006260999999998518,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-ne-as_left]",
+                "duration": 0.05417800000000206,
+                "run_index": 165,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009740000000011406,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05161099999999941,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006190000000003693,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-ne-4]",
+                "duration": 0.047654700000000716,
+                "run_index": 166,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008148000000005595,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0451984999999997,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008265999999998996,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-ne-4.0]",
+                "duration": 0.047978500000001034,
+                "run_index": 167,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007596000000003045,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.045699100000000215,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007602000000002107,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[int_data-ne-a]",
+                "duration": 0.050287400000000204,
+                "run_index": 168,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007812999999998738,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.048045000000000115,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006798000000003412,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-eq-as_left]",
+                "duration": 0.059746499999995706,
+                "run_index": 169,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008138999999989238,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05733809999999906,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007805999999987989,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-eq-4]",
+                "duration": 0.06499559999999782,
+                "run_index": 170,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008056999999990211,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06257789999999908,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008063000000007037,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-eq-4.0]",
+                "duration": 0.0598709000000035,
+                "run_index": 171,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0013468000000003144,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05652020000000135,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006571000000015204,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-eq-a]",
+                "duration": 0.05637120000000273,
+                "run_index": 172,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008636000000006305,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05389390000000027,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000750100000001197,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-ge-as_left]",
+                "duration": 0.06146479999999954,
+                "run_index": 173,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001119499999999718,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.058587900000000914,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006378999999991919,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-ge-4]",
+                "duration": 0.055744199999999466,
+                "run_index": 174,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0012869000000002018,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05251159999999899,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006588000000000704,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-ge-4.0]",
+                "duration": 0.056296299999997856,
+                "run_index": 175,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007760000000001099,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05398999999999887,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007542999999987643,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-ge-a]",
+                "duration": 0.02064850000000007,
+                "run_index": 176,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009630999999998835,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.018000100000000074,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007222000000002282,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-gt-as_left]",
+                "duration": 0.061941400000002034,
+                "run_index": 177,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001281600000000438,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.058736000000001454,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006421999999997041,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-gt-4]",
+                "duration": 0.05433910000000175,
+                "run_index": 178,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010721000000000203,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05144020000000005,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007547000000016624,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-gt-4.0]",
+                "duration": 0.0560179999999999,
+                "run_index": 179,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007687000000000666,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.053716200000000214,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007643999999995543,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-gt-a]",
+                "duration": 0.020526500000002557,
+                "run_index": 180,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007884000000011326,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.018494900000000314,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00045479999999997744,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-le-as_left]",
+                "duration": 0.0678743000000015,
+                "run_index": 181,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.003766500000001116,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.059552399999999395,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007888999999998703,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-le-4]",
+                "duration": 0.055050700000000674,
+                "run_index": 182,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001384800000000297,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05153100000000066,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007500999999994207,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-le-4.0]",
+                "duration": 0.05044530000000158,
+                "run_index": 183,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007771000000005301,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.048162400000000716,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007286999999998045,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-le-a]",
+                "duration": 0.02065170000000016,
+                "run_index": 184,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007794000000007628,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01862159999999946,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00047129999999917516,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-lt-as_left]",
+                "duration": 0.06566479999999686,
+                "run_index": 185,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007905999999984203,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06334020000000073,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007433999999992835,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-lt-4]",
+                "duration": 0.057925499999997854,
+                "run_index": 186,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000820599999999061,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05566119999999941,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006231000000003206,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-lt-4.0]",
+                "duration": 0.05327549999999981,
+                "run_index": 187,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009727000000001595,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.050574900000000866,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007551999999986236,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-lt-a]",
+                "duration": 0.021658900000002035,
+                "run_index": 188,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008916000000009916,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.019420699999999513,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004550000000005383,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-ne-as_left]",
+                "duration": 0.061533000000000726,
+                "run_index": 189,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007601000000008185,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.059215699999999316,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000797099999999773,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-ne-4]",
+                "duration": 0.05559849999999855,
+                "run_index": 190,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008254999999994794,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05342450000000021,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005229999999993851,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-ne-4.0]",
+                "duration": 0.05633860000000013,
+                "run_index": 191,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009703999999999269,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05366040000000005,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007374000000002212,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_comparison[float_nan_data-ne-a]",
+                "duration": 0.05431199999999947,
+                "run_index": 192,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008099000000001411,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.051967399999998776,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000724800000000414,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_multi_level_comparison[int_data-eq]",
+                "duration": 0.05196149999999733,
+                "run_index": 193,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006831999999992178,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04978849999999824,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008066000000006568,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_multi_level_comparison[int_data-ge]",
+                "duration": 0.0444797000000019,
+                "run_index": 194,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010349000000005049,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04164890000000021,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007610000000006778,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_multi_level_comparison[int_data-gt]",
+                "duration": 0.050868700000000544,
+                "run_index": 195,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000973399999999458,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0481801000000015,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007418000000001257,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_multi_level_comparison[int_data-le]",
+                "duration": 0.05388639999999967,
+                "run_index": 196,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006503000000002146,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.051847399999999766,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007383999999994728,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_multi_level_comparison[int_data-lt]",
+                "duration": 0.05660299999999907,
+                "run_index": 197,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006755999999992213,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05443379999999998,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008180000000006515,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_multi_level_comparison[int_data-ne]",
+                "duration": 0.05189780000000077,
+                "run_index": 198,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006830000000004333,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04977300000000007,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007587999999998374,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_multi_level_comparison[float_nan_data-eq]",
+                "duration": 0.05353440000000198,
+                "run_index": 199,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006656000000013762,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05154309999999995,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006600999999992752,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_multi_level_comparison[float_nan_data-ge]",
+                "duration": 0.04719880000000387,
+                "run_index": 200,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009381000000008299,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04466960000000064,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000653000000001569,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_multi_level_comparison[float_nan_data-gt]",
+                "duration": 0.05062959999999883,
+                "run_index": 201,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001277399999999318,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.047094100000000694,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009806999999995014,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_multi_level_comparison[float_nan_data-le]",
+                "duration": 0.04819339999999883,
+                "run_index": 202,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007967999999998199,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.045797199999999094,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008026000000000977,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_multi_level_comparison[float_nan_data-lt]",
+                "duration": 0.04815430000000198,
+                "run_index": 203,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010556000000008225,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.045369899999998964,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006732000000013727,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_multi_level_comparison[float_nan_data-ne]",
+                "duration": 0.05644149999999826,
+                "run_index": 204,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0013944999999999652,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05285519999999977,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007972999999985575,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_equals",
+                "duration": 0.07236839999999845,
+                "run_index": 205,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005085999999998592,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07074029999999887,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006108999999998588,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_mismatched_row_partitions[idx_aligned-df_ser-True]",
+                "duration": 0.04730999999999952,
+                "run_index": 206,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008088999999991131,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04491100000000081,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007812000000004815,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_mismatched_row_partitions[idx_aligned-df_ser-False]",
+                "duration": 0.042337300000001576,
+                "run_index": 207,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008060000000007506,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03988140000000051,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008438999999995644,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_mismatched_row_partitions[idx_aligned-df_df-True]",
+                "duration": 0.019005899999999798,
+                "run_index": 208,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007959999999993528,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.014867300000000583,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0025466000000005096,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_mismatched_row_partitions[idx_aligned-df_df-False]",
+                "duration": 0.026942099999999414,
+                "run_index": 209,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0015359999999997598,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.023061700000001295,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008083999999985991,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_mismatched_row_partitions[idx_aligned-ser_ser_same_name-True]",
+                "duration": 0.022139399999998588,
+                "run_index": 210,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008071999999987867,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01993120000000026,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005938000000007548,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_mismatched_row_partitions[idx_aligned-ser_ser_same_name-False]",
+                "duration": 0.0357196999999978,
+                "run_index": 211,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0014130999999988347,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03219520000000031,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006982999999998185,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_mismatched_row_partitions[idx_aligned-ser_ser_different_name-True]",
+                "duration": 0.017154300000003175,
+                "run_index": 212,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008126000000014955,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.015036500000000785,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004925999999993991,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_mismatched_row_partitions[idx_aligned-ser_ser_different_name-False]",
+                "duration": 0.03324769999999866,
+                "run_index": 213,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011043999999991172,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.030242199999999997,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007967000000004276,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_mismatched_row_partitions[idx_not_aligned-df_ser-True]",
+                "duration": 0.05580470000000126,
+                "run_index": 214,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0044567999999998165,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.044769400000001625,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.002121700000000004,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_mismatched_row_partitions[idx_not_aligned-df_ser-False]",
+                "duration": 0.04292419999999986,
+                "run_index": 215,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010919999999998709,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03995149999999903,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007887000000010858,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_mismatched_row_partitions[idx_not_aligned-df_df-True]",
+                "duration": 0.032498700000001435,
+                "run_index": 216,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009214000000010714,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.02993760000000023,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007182999999990614,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_mismatched_row_partitions[idx_not_aligned-df_df-False]",
+                "duration": 0.03895199999999832,
+                "run_index": 217,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011136999999994401,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03607599999999955,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006485999999998882,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_mismatched_row_partitions[idx_not_aligned-ser_ser_same_name-True]",
+                "duration": 0.03106999999999971,
+                "run_index": 218,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007979000000002401,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.028475499999998988,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000998700000000241,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_mismatched_row_partitions[idx_not_aligned-ser_ser_same_name-False]",
+                "duration": 0.036373999999998574,
+                "run_index": 219,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0028641999999994283,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03001710000000024,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006284999999994767,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_mismatched_row_partitions[idx_not_aligned-ser_ser_different_name-True]",
+                "duration": 0.036918000000000006,
+                "run_index": 220,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008856000000001529,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03437730000000094,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007694999999987573,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_mismatched_row_partitions[idx_not_aligned-ser_ser_different_name-False]",
+                "duration": 0.03802259999999791,
+                "run_index": 221,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007713999999996446,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.035513899999999765,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009658999999988538,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_binary.py::test_duplicate_indexes",
+                "duration": 0.06204740000000086,
+                "run_index": 222,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.002285900000000396,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03416840000000043,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.02330719999999964,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            }
+        ],
+        "summary": {
+            "passed": 217,
+            "xfailed": 6,
+            "num_tests": 223,
+            "duration": 13.541877508163452
+        },
+        "created_at": "2021-08-27 12:34:44.318787"
+    }
+}

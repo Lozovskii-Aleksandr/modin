@@ -1,0 +1,583 @@
+{
+    "report": {
+        "environment": {
+            "Python": "3.8.11",
+            "Platform": "Windows-10-10.0.19042-SP0"
+        },
+        "tests": [
+            {
+                "name": "modin/pandas/test/test_concat.py::test_df_concat",
+                "duration": 0.07627680000000003,
+                "run_index": 0,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.026139400000000368,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.02284779999999964,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.001150199999999657,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat",
+                "duration": 0.01683119999999949,
+                "run_index": 1,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005995999999997004,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.014935700000000107,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000696299999999983,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_with_series",
+                "duration": 0.03379269999999934,
+                "run_index": 2,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005576999999998833,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03198769999999973,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006895999999998459,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_on_index",
+                "duration": 0.04125259999999997,
+                "run_index": 3,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005304999999999893,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03946549999999993,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007261000000000628,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_on_column",
+                "duration": 0.029379399999999833,
+                "run_index": 4,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005313999999998487,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.027935400000000055,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0003812000000000815,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_invalid_axis_errors",
+                "duration": 0.0053421999999994085,
+                "run_index": 5,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007221999999997841,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0034931000000000267,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00040469999999981354,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_mixed_concat",
+                "duration": 0.020026300000000052,
+                "run_index": 6,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0004724999999998758,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.018717899999999954,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0003634000000003468,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_mixed_inner_concat",
+                "duration": 0.016752500000000392,
+                "run_index": 7,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0004460000000001685,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.015460800000000052,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00039970000000000283,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_mixed_none_concat",
+                "duration": 0.02743899999999977,
+                "run_index": 8,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0004775000000001306,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.025778599999999763,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007053999999997451,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_ignore_index_concat",
+                "duration": 0.017607000000000372,
+                "run_index": 9,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005546000000000717,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01612670000000005,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0003711000000001796,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_non_subscriptable_keys",
+                "duration": 0.09132630000000042,
+                "run_index": 10,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010409000000000113,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.08858220000000028,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006623000000001156,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_series_only",
+                "duration": 0.016542799999999858,
+                "run_index": 11,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005446999999998425,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0150895000000002,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0003638999999999726,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_with_empty_frame",
+                "duration": 0.01944089999999976,
+                "run_index": 12,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000694699999999937,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.017415499999999806,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006360000000000809,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_multiindex[False-0]",
+                "duration": 0.022558000000000966,
+                "run_index": 13,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00079840000000031,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.020539600000000213,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000421600000000133,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_multiindex[False-1]",
+                "duration": 0.019250000000000433,
+                "run_index": 14,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006337000000002924,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.017164799999999758,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008178000000000907,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_multiindex[True-0]",
+                "duration": 0.02370679999999936,
+                "run_index": 15,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006699999999999484,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.021925199999999645,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004415999999998199,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_multiindex[True-1]",
+                "duration": 0.019326699999999697,
+                "run_index": 16,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006664999999999033,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.017552400000000024,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004412999999998668,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_dictionary[0]",
+                "duration": 0.021469599999999645,
+                "run_index": 17,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008756999999999238,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.018986099999999784,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007321000000000133,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_dictionary[1]",
+                "duration": 0.017355700000000418,
+                "run_index": 18,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00062400000000018,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.015709799999999774,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00039790000000028414,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_sort_order[0-inner-False]",
+                "duration": 0.012972800000000007,
+                "run_index": 19,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008176999999998102,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.010896800000000262,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004406000000001242,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_sort_order[0-inner-True]",
+                "duration": 0.012629800000000024,
+                "run_index": 20,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007147000000000681,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.010714799999999691,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000485600000000197,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_sort_order[0-outer-False]",
+                "duration": 0.016845900000000746,
+                "run_index": 21,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007523000000002611,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.014903400000000122,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004379000000001021,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_sort_order[0-outer-True]",
+                "duration": 0.019232000000000138,
+                "run_index": 22,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007120000000000459,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.017298400000000047,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005095999999999989,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_sort_order[1-inner-False]",
+                "duration": 0.013103600000000437,
+                "run_index": 23,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007621000000002098,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.011115500000000278,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004638999999997395,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_sort_order[1-inner-True]",
+                "duration": 0.014082699999999893,
+                "run_index": 24,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011974000000001261,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.011206599999999955,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00048129999999968476,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_sort_order[1-outer-False]",
+                "duration": 0.016549700000000556,
+                "run_index": 25,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007787000000001321,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.014526200000000156,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00046610000000013585,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_sort_order[1-outer-True]",
+                "duration": 0.02000399999999969,
+                "run_index": 26,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007627999999999524,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01602699999999979,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0024513999999999925,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            }
+        ],
+        "summary": {
+            "passed": 27,
+            "num_tests": 27,
+            "duration": 3.467911720275879
+        },
+        "created_at": "2021-08-27 13:13:05.202000"
+    }
+}

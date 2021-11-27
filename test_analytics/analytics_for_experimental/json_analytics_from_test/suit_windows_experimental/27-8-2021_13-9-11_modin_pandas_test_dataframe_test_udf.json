@@ -1,0 +1,4357 @@
+{
+    "report": {
+        "environment": {
+            "Python": "3.8.11",
+            "Platform": "Windows-10-10.0.19042-SP0"
+        },
+        "tests": [
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_dict",
+                "duration": 0.11359549999999974,
+                "run_index": 0,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.028077999999999825,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05655330000000003,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008862000000000592,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[agg-sum-0]",
+                "duration": 0.06207019999999952,
+                "run_index": 1,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000845899999999844,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0595384000000001,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008399999999997299,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[agg-sum-1]",
+                "duration": 0.04750430000000039,
+                "run_index": 2,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009703000000000905,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.044822700000000104,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007410000000001027,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[agg-df sum-0]",
+                "duration": 0.06770720000000097,
+                "run_index": 3,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.002612900000000362,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.061778300000000286,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007030999999999565,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[agg-df sum-1]",
+                "duration": 0.08996160000000009,
+                "run_index": 4,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010517999999999361,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.08719359999999998,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006644000000002315,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[agg-str-0]",
+                "duration": 0.182474899999999,
+                "run_index": 5,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007807999999998039,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.1801206999999998,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007925999999995881,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[agg-str-1]",
+                "duration": 0.6159209000000008,
+                "run_index": 6,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001140000000000363,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.6127894000000005,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008514999999995609,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[agg-sum mean-0]",
+                "duration": 0.178203400000001,
+                "run_index": 7,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010404000000008296,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.17538249999999955,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007400999999997993,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[agg-sum mean-1]",
+                "duration": 0.5645202999999999,
+                "run_index": 8,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000799200000000333,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.5619972999999998,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000924599999999387,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[agg-sum df sum-0]",
+                "duration": 0.21941480000000002,
+                "run_index": 9,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000883200000000528,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.21680549999999954,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008428999999994247,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[agg-sum df sum-1]",
+                "duration": 0.6679881999999999,
+                "run_index": 10,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008223000000002756,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.6655319999999998,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008115999999995793,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[agg-should raise TypeError-0]",
+                "duration": 0.016813700000000154,
+                "run_index": 11,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008150000000002322,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.014446899999999374,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000736800000000315,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[agg-should raise TypeError-1]",
+                "duration": 0.015778599999999976,
+                "run_index": 12,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000824299999999667,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.013687200000000566,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00044280000000007647,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[agg-sum sum-0]",
+                "duration": 0.016493899999999506,
+                "run_index": 13,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007966000000001472,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.014438999999999425,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004616999999997873,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[agg-sum sum-1]",
+                "duration": 0.01699029999999979,
+                "run_index": 14,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000752000000000308,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01499309999999987,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004931999999993053,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[apply-sum-0]",
+                "duration": 0.056384099999999826,
+                "run_index": 15,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008566999999999325,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.053970599999999536,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007001000000004254,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[apply-sum-1]",
+                "duration": 0.043577899999999836,
+                "run_index": 16,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007793999999998746,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04127339999999968,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007457000000004044,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[apply-df sum-0]",
+                "duration": 0.05924869999999949,
+                "run_index": 17,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008461999999997971,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.056688099999999686,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008682000000002077,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[apply-df sum-1]",
+                "duration": 0.08311800000000069,
+                "run_index": 18,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008099000000001411,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.08063920000000024,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008590000000001652,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[apply-str-0]",
+                "duration": 0.17402720000000027,
+                "run_index": 19,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007836000000001064,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.17169100000000004,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007690000000000197,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[apply-str-1]",
+                "duration": 0.5370714999999997,
+                "run_index": 20,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000805100000000003,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.5346713000000003,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007899999999994023,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[apply-sum mean-0]",
+                "duration": 0.15848569999999995,
+                "run_index": 21,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007977999999999597,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.15629259999999956,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005975000000004727,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[apply-sum mean-1]",
+                "duration": 0.5254310000000011,
+                "run_index": 22,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008441000000001253,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.5230536000000008,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006892000000000564,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[apply-sum df sum-0]",
+                "duration": 0.20205560000000133,
+                "run_index": 23,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0014271000000007916,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.1983832999999997,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008181000000000438,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[apply-sum df sum-1]",
+                "duration": 0.6745027000000015,
+                "run_index": 24,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000861600000000351,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.6720064000000008,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000773099999999971,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[apply-should raise TypeError-0]",
+                "duration": 0.015157700000001384,
+                "run_index": 25,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009092000000006095,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.012850600000000156,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004887000000000086,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[apply-should raise TypeError-1]",
+                "duration": 0.016185600000000022,
+                "run_index": 26,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007082000000000477,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.013972900000000621,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007962999999993059,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[apply-sum sum-0]",
+                "duration": 0.01663809999999799,
+                "run_index": 27,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0014219999999998123,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.013341299999998668,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004527999999996979,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply[apply-sum sum-1]",
+                "duration": 0.017010300000002587,
+                "run_index": 28,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0013183000000012157,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.013580299999999212,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007934000000009434,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[agg-sum-rows]",
+                "duration": 0.05285329999999888,
+                "run_index": 29,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008081999999998146,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.050443099999998964,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007938000000002887,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[agg-sum-columns]",
+                "duration": 0.05112039999999851,
+                "run_index": 30,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008538999999991859,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.048643000000000214,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007695999999999259,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[agg-df sum-rows]",
+                "duration": 0.06403870000000111,
+                "run_index": 31,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009641000000009115,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06142909999999979,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006813999999994991,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[agg-df sum-columns]",
+                "duration": 0.06765049999999917,
+                "run_index": 32,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007868000000001985,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06545709999999971,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00061979999999906,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[agg-str-rows]",
+                "duration": 0.14620369999999916,
+                "run_index": 33,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011884999999995927,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.1430857999999997,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007409000000002663,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[agg-str-columns]",
+                "duration": 0.46447910000000014,
+                "run_index": 34,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008447000000000315,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.4619894999999996,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008002000000004728,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[agg-sum mean-rows]",
+                "duration": 0.16213270000000257,
+                "run_index": 35,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008908000000005245,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.15948790000000024,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008632000000012852,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[agg-sum mean-columns]",
+                "duration": 0.5325548000000015,
+                "run_index": 36,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009338000000003177,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.5298666000000001,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008206000000008373,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[agg-sum df sum-rows]",
+                "duration": 0.1638067999999997,
+                "run_index": 37,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008345999999992415,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.1613686000000012,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007690000000000197,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[agg-sum df sum-columns]",
+                "duration": 0.5672388999999995,
+                "run_index": 38,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009972000000004755,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.5645262999999989,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007181999999996691,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[agg-should raise TypeError-rows]",
+                "duration": 0.007845000000001434,
+                "run_index": 39,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009004000000008006,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.005541400000000252,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005027999999995814,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[agg-should raise TypeError-columns]",
+                "duration": 0.012614699999998535,
+                "run_index": 40,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001216599999999346,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.00970919999999964,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004723000000002031,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[agg-sum sum-rows]",
+                "duration": 0.011368799999997847,
+                "run_index": 41,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0013307999999998543,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0076523999999995596,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.001054799999998579,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[agg-sum sum-columns]",
+                "duration": 0.011842899999997769,
+                "run_index": 42,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010808999999998292,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.009057499999999052,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006235999999990582,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[apply-sum-rows]",
+                "duration": 0.06389930000000277,
+                "run_index": 43,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001282100000000952,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06065530000000052,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006798000000003412,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[apply-sum-columns]",
+                "duration": 0.038754799999999534,
+                "run_index": 44,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010539999999998884,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03449540000000084,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0021513999999989153,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[apply-df sum-rows]",
+                "duration": 0.05471029999999999,
+                "run_index": 45,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009662000000005833,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.051707199999999176,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.001070699999999647,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[apply-df sum-columns]",
+                "duration": 0.08306589999999936,
+                "run_index": 46,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011913000000003393,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07995599999999925,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007272999999994312,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[apply-str-rows]",
+                "duration": 0.15775379999999828,
+                "run_index": 47,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0018467999999991491,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.15324030000000022,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008198999999997625,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[apply-str-columns]",
+                "duration": 0.48068510000000053,
+                "run_index": 48,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010101000000002358,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.47797809999999963,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006868000000004315,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[apply-sum mean-rows]",
+                "duration": 0.1583469000000015,
+                "run_index": 49,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008499000000004031,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.15592380000000006,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007233000000006484,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[apply-sum mean-columns]",
+                "duration": 0.5119139999999991,
+                "run_index": 50,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011089999999995825,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.5088916999999995,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008043000000004241,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[apply-sum df sum-rows]",
+                "duration": 0.18853289999999667,
+                "run_index": 51,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007814999999986583,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.18610520000000008,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008646999999992744,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[apply-sum df sum-columns]",
+                "duration": 0.5818404000000026,
+                "run_index": 52,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008226000000011169,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.5794405999999999,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007546000000004938,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[apply-should raise TypeError-rows]",
+                "duration": 0.008214499999999347,
+                "run_index": 53,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008441000000001253,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.00603769999999848,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004886000000006163,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[apply-should raise TypeError-columns]",
+                "duration": 0.009577300000001898,
+                "run_index": 54,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008138000000013079,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.007470199999998428,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00047950000000085424,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[apply-sum sum-rows]",
+                "duration": 0.009950399999997472,
+                "run_index": 55,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008246999999990123,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.007794099999999915,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005068999999995327,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_agg_apply_axis_names[apply-sum sum-columns]",
+                "duration": 0.009744099999998923,
+                "run_index": 56,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0012729999999994135,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0065574000000001575,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006406999999999385,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_aggregate_alias",
+                "duration": 0.0016538999999990978,
+                "run_index": 57,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00047099999999922204,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.00037600000000104217,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0003358999999996115,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_aggregate_error_checking",
+                "duration": 0.028375899999998566,
+                "run_index": 58,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00044540000000026225,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.027004899999999665,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00048019999999837637,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_key_error[sum]",
+                "duration": 0.011870400000001169,
+                "run_index": 59,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000709099999999907,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.009483800000001708,
+                    "outcome": "xfailed",
+                    "xfail_reason": "DataFrame.apply(dict) raises an exception because of a bug in itsimplementation for pandas backend, this prevents us from catching the desiredexception. You can track this bug at:https://github.com/modin-project/modin/issues/3221",
+                    "longrepr": "modin\\pandas\\test\\utils.py:682: in execute_callable\n    pd_result = fn(pandas_df, **pd_kwargs)\nmodin\\pandas\\test\\dataframe\\test_udf.py:125: in <lambda>\n    lambda df: df.apply({\"row\": func}, axis=1),\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py:8736: in apply\n    return op.apply()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:659: in apply\n    return self.apply_multiple()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:518: in apply_multiple\n    return self.obj.aggregate(self.f, self.axis, *self.args, **self.kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py:8546: in aggregate\n    result = op.agg()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:700: in agg\n    result = super().agg()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:161: in agg\n    return self.agg_dict_like()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:427: in agg_dict_like\n    arg = self.normalize_dictlike_arg(\"agg\", selected_obj, arg)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:546: in normalize_dictlike_arg\n    raise KeyError(f\"Column(s) {cols_sorted} do not exist\")\nE   KeyError: \"Column(s) ['row'] do not exist\"\n\nDuring handling of the above exception, another exception occurred:\nmodin\\pandas\\test\\dataframe\\test_udf.py:123: in test_apply_key_error\n    eval_general(\nmodin\\pandas\\test\\utils.py:721: in eval_general\n    values = execute_callable(\nmodin\\pandas\\test\\utils.py:690: in execute_callable\n    assert isinstance(\nE   AssertionError: Got Modin Exception type <class 'TypeError'>, but pandas Exception type <class 'KeyError'> was expected"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009683999999996473,
+                    "outcome": "passed"
+                },
+                "outcome": "xfailed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_key_error[df sum]",
+                "duration": 0.010823699999999548,
+                "run_index": 60,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007859999999997314,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.008658099999999891,
+                    "outcome": "xfailed",
+                    "xfail_reason": "DataFrame.apply(dict) raises an exception because of a bug in itsimplementation for pandas backend, this prevents us from catching the desiredexception. You can track this bug at:https://github.com/modin-project/modin/issues/3221",
+                    "longrepr": "modin\\pandas\\test\\utils.py:682: in execute_callable\n    pd_result = fn(pandas_df, **pd_kwargs)\nmodin\\pandas\\test\\dataframe\\test_udf.py:125: in <lambda>\n    lambda df: df.apply({\"row\": func}, axis=1),\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py:8736: in apply\n    return op.apply()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:659: in apply\n    return self.apply_multiple()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:518: in apply_multiple\n    return self.obj.aggregate(self.f, self.axis, *self.args, **self.kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py:8546: in aggregate\n    result = op.agg()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:700: in agg\n    result = super().agg()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:161: in agg\n    return self.agg_dict_like()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:427: in agg_dict_like\n    arg = self.normalize_dictlike_arg(\"agg\", selected_obj, arg)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:546: in normalize_dictlike_arg\n    raise KeyError(f\"Column(s) {cols_sorted} do not exist\")\nE   KeyError: \"Column(s) ['row'] do not exist\"\n\nDuring handling of the above exception, another exception occurred:\nmodin\\pandas\\test\\dataframe\\test_udf.py:123: in test_apply_key_error\n    eval_general(\nmodin\\pandas\\test\\utils.py:721: in eval_general\n    values = execute_callable(\nmodin\\pandas\\test\\utils.py:690: in execute_callable\n    assert isinstance(\nE   AssertionError: Got Modin Exception type <class 'TypeError'>, but pandas Exception type <class 'KeyError'> was expected"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000593600000000194,
+                    "outcome": "passed"
+                },
+                "outcome": "xfailed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_key_error[str]",
+                "duration": 0.010444099999999068,
+                "run_index": 61,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006755999999992213,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.008552399999999238,
+                    "outcome": "xfailed",
+                    "xfail_reason": "DataFrame.apply(dict) raises an exception because of a bug in itsimplementation for pandas backend, this prevents us from catching the desiredexception. You can track this bug at:https://github.com/modin-project/modin/issues/3221",
+                    "longrepr": "modin\\pandas\\test\\utils.py:682: in execute_callable\n    pd_result = fn(pandas_df, **pd_kwargs)\nmodin\\pandas\\test\\dataframe\\test_udf.py:125: in <lambda>\n    lambda df: df.apply({\"row\": func}, axis=1),\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py:8736: in apply\n    return op.apply()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:659: in apply\n    return self.apply_multiple()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:518: in apply_multiple\n    return self.obj.aggregate(self.f, self.axis, *self.args, **self.kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py:8546: in aggregate\n    result = op.agg()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:700: in agg\n    result = super().agg()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:161: in agg\n    return self.agg_dict_like()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:427: in agg_dict_like\n    arg = self.normalize_dictlike_arg(\"agg\", selected_obj, arg)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:546: in normalize_dictlike_arg\n    raise KeyError(f\"Column(s) {cols_sorted} do not exist\")\nE   KeyError: \"Column(s) ['row'] do not exist\"\n\nDuring handling of the above exception, another exception occurred:\nmodin\\pandas\\test\\dataframe\\test_udf.py:123: in test_apply_key_error\n    eval_general(\nmodin\\pandas\\test\\utils.py:721: in eval_general\n    values = execute_callable(\nmodin\\pandas\\test\\utils.py:690: in execute_callable\n    assert isinstance(\nE   AssertionError: Got Modin Exception type <class 'TypeError'>, but pandas Exception type <class 'KeyError'> was expected"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005405000000013871,
+                    "outcome": "passed"
+                },
+                "outcome": "xfailed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_key_error[sum mean]",
+                "duration": 0.01137360000000065,
+                "run_index": 62,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006730000000008118,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.009485500000000258,
+                    "outcome": "xfailed",
+                    "xfail_reason": "DataFrame.apply(dict) raises an exception because of a bug in itsimplementation for pandas backend, this prevents us from catching the desiredexception. You can track this bug at:https://github.com/modin-project/modin/issues/3221",
+                    "longrepr": "modin\\pandas\\test\\utils.py:682: in execute_callable\n    pd_result = fn(pandas_df, **pd_kwargs)\nmodin\\pandas\\test\\dataframe\\test_udf.py:125: in <lambda>\n    lambda df: df.apply({\"row\": func}, axis=1),\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py:8736: in apply\n    return op.apply()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:659: in apply\n    return self.apply_multiple()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:518: in apply_multiple\n    return self.obj.aggregate(self.f, self.axis, *self.args, **self.kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py:8546: in aggregate\n    result = op.agg()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:700: in agg\n    result = super().agg()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:161: in agg\n    return self.agg_dict_like()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:427: in agg_dict_like\n    arg = self.normalize_dictlike_arg(\"agg\", selected_obj, arg)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:546: in normalize_dictlike_arg\n    raise KeyError(f\"Column(s) {cols_sorted} do not exist\")\nE   KeyError: \"Column(s) ['row'] do not exist\"\n\nDuring handling of the above exception, another exception occurred:\nmodin\\pandas\\test\\dataframe\\test_udf.py:123: in test_apply_key_error\n    eval_general(\nmodin\\pandas\\test\\utils.py:721: in eval_general\n    values = execute_callable(\nmodin\\pandas\\test\\utils.py:690: in execute_callable\n    assert isinstance(\nE   AssertionError: Got Modin Exception type <class 'TypeError'>, but pandas Exception type <class 'KeyError'> was expected"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005420999999987686,
+                    "outcome": "passed"
+                },
+                "outcome": "xfailed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_key_error[sum df sum]",
+                "duration": 0.010042199999997337,
+                "run_index": 63,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000638699999999659,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.008015499999999065,
+                    "outcome": "xfailed",
+                    "xfail_reason": "DataFrame.apply(dict) raises an exception because of a bug in itsimplementation for pandas backend, this prevents us from catching the desiredexception. You can track this bug at:https://github.com/modin-project/modin/issues/3221",
+                    "longrepr": "modin\\pandas\\test\\utils.py:682: in execute_callable\n    pd_result = fn(pandas_df, **pd_kwargs)\nmodin\\pandas\\test\\dataframe\\test_udf.py:125: in <lambda>\n    lambda df: df.apply({\"row\": func}, axis=1),\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py:8736: in apply\n    return op.apply()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:659: in apply\n    return self.apply_multiple()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:518: in apply_multiple\n    return self.obj.aggregate(self.f, self.axis, *self.args, **self.kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py:8546: in aggregate\n    result = op.agg()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:700: in agg\n    result = super().agg()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:161: in agg\n    return self.agg_dict_like()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:427: in agg_dict_like\n    arg = self.normalize_dictlike_arg(\"agg\", selected_obj, arg)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:546: in normalize_dictlike_arg\n    raise KeyError(f\"Column(s) {cols_sorted} do not exist\")\nE   KeyError: \"Column(s) ['row'] do not exist\"\n\nDuring handling of the above exception, another exception occurred:\nmodin\\pandas\\test\\dataframe\\test_udf.py:123: in test_apply_key_error\n    eval_general(\nmodin\\pandas\\test\\utils.py:721: in eval_general\n    values = execute_callable(\nmodin\\pandas\\test\\utils.py:690: in execute_callable\n    assert isinstance(\nE   AssertionError: Got Modin Exception type <class 'TypeError'>, but pandas Exception type <class 'KeyError'> was expected"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007492999999989536,
+                    "outcome": "passed"
+                },
+                "outcome": "xfailed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_key_error[should raise TypeError]",
+                "duration": 0.003093699999990207,
+                "run_index": 64,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008372999999970432,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0009207999999993888,
+                    "outcome": "xfailed",
+                    "xfail_reason": "reason: Because index materialization is expensive Modin firstchecks the validity of the function itself and only then the engine levelchecks the validity of the indices. Pandas order of such checks is reversed,so we get different errors when both (function and index) are invalid.",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_udf.py:117: in test_apply_key_error\n    pytest.xfail(\nE   _pytest.outcomes.XFailed: Because index materialization is expensive Modin firstchecks the validity of the function itself and only then the engine levelchecks the validity of the indices. Pandas order of such checks is reversed,so we get different errors when both (function and index) are invalid."
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004982999999967319,
+                    "outcome": "passed"
+                },
+                "outcome": "xfailed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_key_error[sum sum]",
+                "duration": 0.009619200000003048,
+                "run_index": 65,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000666300000002451,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0077187999999992485,
+                    "outcome": "xfailed",
+                    "xfail_reason": "DataFrame.apply(dict) raises an exception because of a bug in itsimplementation for pandas backend, this prevents us from catching the desiredexception. You can track this bug at:https://github.com/modin-project/modin/issues/3221",
+                    "longrepr": "modin\\pandas\\test\\utils.py:682: in execute_callable\n    pd_result = fn(pandas_df, **pd_kwargs)\nmodin\\pandas\\test\\dataframe\\test_udf.py:125: in <lambda>\n    lambda df: df.apply({\"row\": func}, axis=1),\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py:8736: in apply\n    return op.apply()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:659: in apply\n    return self.apply_multiple()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:518: in apply_multiple\n    return self.obj.aggregate(self.f, self.axis, *self.args, **self.kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py:8546: in aggregate\n    result = op.agg()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:700: in agg\n    result = super().agg()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:161: in agg\n    return self.agg_dict_like()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:427: in agg_dict_like\n    arg = self.normalize_dictlike_arg(\"agg\", selected_obj, arg)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\apply.py:546: in normalize_dictlike_arg\n    raise KeyError(f\"Column(s) {cols_sorted} do not exist\")\nE   KeyError: \"Column(s) ['row'] do not exist\"\n\nDuring handling of the above exception, another exception occurred:\nmodin\\pandas\\test\\dataframe\\test_udf.py:123: in test_apply_key_error\n    eval_general(\nmodin\\pandas\\test\\utils.py:721: in eval_general\n    values = execute_callable(\nmodin\\pandas\\test\\utils.py:690: in execute_callable\n    assert isinstance(\nE   AssertionError: Got Modin Exception type <class 'TypeError'>, but pandas Exception type <class 'KeyError'> was expected"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000567799999998897,
+                    "outcome": "passed"
+                },
+                "outcome": "xfailed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[kurt-int_data-None-0]",
+                "duration": 0.0437794000000018,
+                "run_index": 66,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000888299999999731,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0411949000000007,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008079000000016379,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[kurt-int_data-None-1]",
+                "duration": 0.0331131999999954,
+                "run_index": 67,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008300999999981684,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.030960300000000274,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004926999999987913,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[kurt-int_data--1-0]",
+                "duration": 0.26063600000000164,
+                "run_index": 68,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008762000000004377,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.2582574000000015,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000626199999999244,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[kurt-int_data--1-1]",
+                "duration": 0.30261860000000596,
+                "run_index": 69,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008827000000017904,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.2998976000000013,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009556000000010556,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[kurt-int_data-0-0]",
+                "duration": 0.23953630000000103,
+                "run_index": 70,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008610000000004447,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.23692020000000014,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008941000000000088,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[kurt-int_data-0-1]",
+                "duration": 0.2904721000000059,
+                "run_index": 71,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008630000000025007,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.2878885000000011,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008575999999997919,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[kurt-int_data-1-0]",
+                "duration": 0.26282440000000307,
+                "run_index": 72,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009902000000003852,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.25954240000000084,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0013016000000014571,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[kurt-int_data-1-1]",
+                "duration": 0.012547200000007308,
+                "run_index": 73,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001238800000002982,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.009552700000000414,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005169000000009305,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[kurt-float_nan_data-None-0]",
+                "duration": 0.05429399999999873,
+                "run_index": 74,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009325999999987289,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05163960000000145,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007891999999998234,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[kurt-float_nan_data-None-1]",
+                "duration": 0.04164540000000372,
+                "run_index": 75,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009383000000013908,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.039083800000000224,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006850000000007128,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[kurt-float_nan_data--1-0]",
+                "duration": 0.25334780000000734,
+                "run_index": 76,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009089000000024328,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.2508496000000022,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006804000000002475,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[kurt-float_nan_data--1-1]",
+                "duration": 0.42523619999999696,
+                "run_index": 77,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0012988999999983264,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.42171240000000054,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009259999999997603,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[kurt-float_nan_data-0-0]",
+                "duration": 0.31664239999999566,
+                "run_index": 78,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010857999999984713,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.31373879999999943,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007319999999992888,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[kurt-float_nan_data-0-1]",
+                "duration": 0.33152009999999876,
+                "run_index": 79,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010818999999990808,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.328641300000001,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007149999999995771,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[kurt-float_nan_data-1-0]",
+                "duration": 0.28430390000000116,
+                "run_index": 80,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009019999999999584,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.28181849999999997,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006814000000012754,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[kurt-float_nan_data-1-1]",
+                "duration": 0.018173199999992562,
+                "run_index": 81,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008948999999986995,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.015882599999997637,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005007999999975254,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[count-int_data-None-0]",
+                "duration": 0.05264660000000276,
+                "run_index": 82,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009456000000014342,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05002580000000023,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007295999999996639,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[count-int_data-None-1]",
+                "duration": 0.04911209999999855,
+                "run_index": 83,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008860999999988906,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04451489999999936,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0028250000000014097,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[count-int_data--1-0]",
+                "duration": 0.059382199999998164,
+                "run_index": 84,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011577000000002613,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05634539999999788,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007213999999997611,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[count-int_data--1-1]",
+                "duration": 0.01039769999999507,
+                "run_index": 85,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009103999999986456,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.008066399999997032,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005105000000007465,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[count-int_data-0-0]",
+                "duration": 0.054110199999993114,
+                "run_index": 86,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009288999999981229,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05136939999999868,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008829999999981908,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[count-int_data-0-1]",
+                "duration": 0.012112300000001852,
+                "run_index": 87,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0018953000000010434,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.007826599999997796,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000495100000001969,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[count-int_data-1-0]",
+                "duration": 0.05495469999999614,
+                "run_index": 88,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010295999999989647,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05218109999999854,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007143999999996709,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[count-int_data-1-1]",
+                "duration": 0.010720899999999034,
+                "run_index": 89,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009815999999993608,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.007864800000000116,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008929000000001963,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[count-float_nan_data-None-0]",
+                "duration": 0.057801200000007213,
+                "run_index": 90,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008864000000023964,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0552589999999995,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007694000000029177,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[count-float_nan_data-None-1]",
+                "duration": 0.05252889999999866,
+                "run_index": 91,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010417999999994265,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04973409999999845,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007112000000013552,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[count-float_nan_data--1-0]",
+                "duration": 0.06090090000000359,
+                "run_index": 92,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009045000000007519,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05826419999999999,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008277000000020962,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[count-float_nan_data--1-1]",
+                "duration": 0.017391100000001103,
+                "run_index": 93,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008584999999996512,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.015034700000001067,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006394000000007338,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[count-float_nan_data-0-0]",
+                "duration": 0.06901389999999807,
+                "run_index": 94,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0018560000000000798,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06440179999999884,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009000999999990711,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[count-float_nan_data-0-1]",
+                "duration": 0.01885329999999641,
+                "run_index": 95,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010052999999992096,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01623479999999944,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006078999999985513,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[count-float_nan_data-1-0]",
+                "duration": 0.10592249999999837,
+                "run_index": 96,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00105440000000101,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.10300059999999789,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008130999999984567,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[count-float_nan_data-1-1]",
+                "duration": 0.019143200000005578,
+                "run_index": 97,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011782000000017945,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.016186400000002266,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006003999999997234,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[sum-int_data-None-0]",
+                "duration": 0.061531599999998576,
+                "run_index": 98,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010215000000002306,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.058728599999998465,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007599999999996498,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[sum-int_data-None-1]",
+                "duration": 0.04507200000000111,
+                "run_index": 99,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010381999999999891,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04140270000000257,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.001592899999998565,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[sum-int_data--1-0]",
+                "duration": 0.0871992999999982,
+                "run_index": 100,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010571000000005881,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.08337819999999851,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0017068999999985124,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[sum-int_data--1-1]",
+                "duration": 0.11981900000000323,
+                "run_index": 101,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0013904000000017902,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.11599419999999938,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.001044000000000267,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[sum-int_data-0-0]",
+                "duration": 0.06726869999999963,
+                "run_index": 102,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0012080999999994901,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06405390000000111,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007985999999995386,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[sum-int_data-0-1]",
+                "duration": 0.07144719999999793,
+                "run_index": 103,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010553999999984853,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06877000000000066,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005664000000003,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[sum-int_data-1-0]",
+                "duration": 0.06965799999999689,
+                "run_index": 104,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000916699999997661,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06696799999999925,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008566000000023166,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[sum-int_data-1-1]",
+                "duration": 0.013164300000003237,
+                "run_index": 105,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011833000000009974,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.010261899999999713,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005358000000015295,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[sum-float_nan_data-None-0]",
+                "duration": 0.07439030000000102,
+                "run_index": 106,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009990000000001942,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0717655999999991,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006267000000015344,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[sum-float_nan_data-None-1]",
+                "duration": 0.07470980000000083,
+                "run_index": 107,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009507000000006371,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07101879999999738,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0017896000000021672,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[sum-float_nan_data--1-0]",
+                "duration": 0.09156090000000106,
+                "run_index": 108,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0012690000000006307,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.08825039999999973,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007725000000000648,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[sum-float_nan_data--1-1]",
+                "duration": 0.09899509999999623,
+                "run_index": 109,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009982999999991193,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0955428999999981,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0014555999999998903,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[sum-float_nan_data-0-0]",
+                "duration": 0.09445749999999364,
+                "run_index": 110,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001184899999998379,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.09127819999999787,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008094999999990193,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[sum-float_nan_data-0-1]",
+                "duration": 0.12773109999999832,
+                "run_index": 111,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001655299999999471,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.12372210000000194,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006983999999974344,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[sum-float_nan_data-1-0]",
+                "duration": 0.09929049999999506,
+                "run_index": 112,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001018699999999484,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.09624969999999777,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0010033999999983223,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[sum-float_nan_data-1-1]",
+                "duration": 0.024261500000005043,
+                "run_index": 113,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011846000000019785,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.02090620000000243,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009860999999986575,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[mean-int_data-None-0]",
+                "duration": 0.08638120000000171,
+                "run_index": 114,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0014010000000013179,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.08208409999999944,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0014950999999996384,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[mean-int_data-None-1]",
+                "duration": 0.06410839999999851,
+                "run_index": 115,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0012086999999993964,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06095499999999987,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007359999999998479,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[mean-int_data--1-0]",
+                "duration": 0.055274500000003,
+                "run_index": 116,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009115000000008422,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05278290000000041,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006686000000009074,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[mean-int_data--1-1]",
+                "duration": 0.0721866999999996,
+                "run_index": 117,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011150999999998135,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0693924999999993,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005640000000006751,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[mean-int_data-0-0]",
+                "duration": 0.045909199999996986,
+                "run_index": 118,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000903499999999724,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.043196899999998095,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009052999999994427,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[mean-int_data-0-1]",
+                "duration": 0.061899300000003876,
+                "run_index": 119,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008652000000033411,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05934309999999954,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008257999999976562,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[mean-int_data-1-0]",
+                "duration": 0.043533299999996444,
+                "run_index": 120,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00079849999999837,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04114489999999904,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007914000000006638,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[mean-int_data-1-1]",
+                "duration": 0.02048830000000379,
+                "run_index": 121,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008347999999998024,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0183458000000023,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004729000000018857,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[mean-float_nan_data-None-0]",
+                "duration": 0.07114250000000055,
+                "run_index": 122,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008563999999999794,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0684578000000009,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009718999999996925,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[mean-float_nan_data-None-1]",
+                "duration": 0.06845690000000104,
+                "run_index": 123,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009318000000000382,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0657937000000004,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007996000000005665,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[mean-float_nan_data--1-0]",
+                "duration": 0.07300829999999081,
+                "run_index": 124,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0013975999999971123,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06917559999999767,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0010374999999989143,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[mean-float_nan_data--1-1]",
+                "duration": 0.09533790000000053,
+                "run_index": 125,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001025099999999668,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0917759000000018,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.001511799999999397,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[mean-float_nan_data-0-0]",
+                "duration": 0.061382599999994625,
+                "run_index": 126,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010508999999991886,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.058678199999999237,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006025999999970111,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[mean-float_nan_data-0-1]",
+                "duration": 0.07815899999999942,
+                "run_index": 127,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009596999999992306,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0752574000000017,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000982199999999267,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[mean-float_nan_data-1-0]",
+                "duration": 0.059132499999996924,
+                "run_index": 128,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008866999999987968,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05659089999999978,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007681999999995526,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[mean-float_nan_data-1-1]",
+                "duration": 0.03129579999999166,
+                "run_index": 129,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009984999999979038,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.028483999999998844,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008147999999970068,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[all-int_data-None-0]",
+                "duration": 0.04910080000000505,
+                "run_index": 130,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010876000000017427,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.046384700000000834,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005409000000007325,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[all-int_data-None-1]",
+                "duration": 0.04059050000000042,
+                "run_index": 131,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008976999999994462,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0374282000000008,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0013669000000007259,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[all-int_data--1-0]",
+                "duration": 0.10867999999999611,
+                "run_index": 132,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0013281999999996685,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.10547589999999829,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005476999999984855,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[all-int_data--1-1]",
+                "duration": 0.13913990000000354,
+                "run_index": 133,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009286000000017225,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.13639560000000017,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008870999999999185,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[all-int_data-0-0]",
+                "duration": 0.139053600000004,
+                "run_index": 134,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0029899000000028764,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.13238869999999991,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006850999999983287,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[all-int_data-0-1]",
+                "duration": 0.15555079999999677,
+                "run_index": 135,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009951999999984196,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.15281189999999967,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007485000000002628,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[all-int_data-1-0]",
+                "duration": 0.12924279999999655,
+                "run_index": 136,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011116999999991606,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.1263709999999989,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006483999999993273,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[all-int_data-1-1]",
+                "duration": 0.015466799999995118,
+                "run_index": 137,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001573999999997966,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.011690899999997839,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006279000000013468,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[all-float_nan_data-None-0]",
+                "duration": 0.07267329999999816,
+                "run_index": 138,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011396999999995217,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0696981000000001,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000695799999999025,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[all-float_nan_data-None-1]",
+                "duration": 0.06286530000000212,
+                "run_index": 139,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011206000000001382,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.059971000000000885,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006531000000009612,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[all-float_nan_data--1-0]",
+                "duration": 0.1401624000000048,
+                "run_index": 140,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011395000000007371,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.13713590000000053,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007475000000027876,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[all-float_nan_data--1-1]",
+                "duration": 0.18116559999999993,
+                "run_index": 141,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011012999999984174,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.17758420000000186,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0013788000000012346,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[all-float_nan_data-0-0]",
+                "duration": 0.14392140000000353,
+                "run_index": 142,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0012629000000003998,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.14071750000000094,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006781000000017912,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[all-float_nan_data-0-1]",
+                "duration": 0.15081810000000218,
+                "run_index": 143,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011516000000000304,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.14790119999999973,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006137000000023818,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[all-float_nan_data-1-0]",
+                "duration": 0.12523509999999405,
+                "run_index": 144,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009969999999981383,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.12264989999999898,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005911999999987927,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[all-float_nan_data-1-1]",
+                "duration": 0.018162900000003646,
+                "run_index": 145,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009657000000018456,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.015085200000001464,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0011462999999984902,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[any-int_data-None-0]",
+                "duration": 0.04759779999999836,
+                "run_index": 146,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00158039999999815,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.043648600000000926,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007884000000011326,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[any-int_data-None-1]",
+                "duration": 0.04556840000000406,
+                "run_index": 147,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0013009000000003823,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0422292000000013,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007374000000019976,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[any-int_data--1-0]",
+                "duration": 0.11179670000000641,
+                "run_index": 148,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0015939000000031456,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.10779619999999923,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008127000000008877,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[any-int_data--1-1]",
+                "duration": 0.13689269999999354,
+                "run_index": 149,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009142999999980361,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.13419469999999833,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000869399999999132,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[any-int_data-0-0]",
+                "duration": 0.10110780000000474,
+                "run_index": 150,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009273000000007414,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.09853900000000237,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007142000000008863,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[any-int_data-0-1]",
+                "duration": 0.14338759999999695,
+                "run_index": 151,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001003799999999444,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.13987529999999992,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.001504699999998138,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[any-int_data-1-0]",
+                "duration": 0.12004110000000168,
+                "run_index": 152,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001012599999999253,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.11735670000000198,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006592000000011922,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[any-int_data-1-1]",
+                "duration": 0.010087299999991473,
+                "run_index": 153,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009020999999975743,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.007763299999997031,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000519799999999293,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[any-float_nan_data-None-0]",
+                "duration": 0.05394989999999922,
+                "run_index": 154,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008865000000000123,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.051312599999999264,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000864299999999929,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[any-float_nan_data-None-1]",
+                "duration": 0.045750999999995656,
+                "run_index": 155,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0013138999999995349,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04234989999999783,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007732999999987555,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[any-float_nan_data--1-0]",
+                "duration": 0.11031659999999732,
+                "run_index": 156,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009245999999976107,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.10765340000000023,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008140000000018688,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[any-float_nan_data--1-1]",
+                "duration": 0.1374552000000051,
+                "run_index": 157,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008391000000003146,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.1349657000000022,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008113000000022907,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[any-float_nan_data-0-0]",
+                "duration": 0.10560470000000421,
+                "run_index": 158,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009341000000020472,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.10293629999999965,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008002000000004728,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[any-float_nan_data-0-1]",
+                "duration": 0.14518059999999622,
+                "run_index": 159,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.002056899999999473,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.14033479999999798,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007319999999992888,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[any-float_nan_data-1-0]",
+                "duration": 0.10566220000000115,
+                "run_index": 160,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001046699999999845,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.10274730000000076,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008215000000006967,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_text_func_with_level[any-float_nan_data-1-1]",
+                "duration": 0.018961900000000753,
+                "run_index": 161,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0017735000000023149,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.014678699999997491,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007361999999986324,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_args[args0-rows]",
+                "duration": 0.07021260000000495,
+                "run_index": 162,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007345000000000823,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06813320000000189,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006104000000028975,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_args[args0-columns]",
+                "duration": 0.1723743000000013,
+                "run_index": 163,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007169000000004644,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.17012259999999912,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008179000000012593,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_args[args1-rows]",
+                "duration": 0.25924879999999817,
+                "run_index": 164,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001060599999998857,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.256106299999999,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.001021300000001446,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_args[args1-columns]",
+                "duration": 0.46348800000000523,
+                "run_index": 165,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009967000000017379,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.46001890000000145,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0014757000000003018,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_metadata",
+                "duration": 0.01816289999999654,
+                "run_index": 166,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005892999999979054,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.016581999999999653,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004023000000010768,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_udf[int_data-return self]",
+                "duration": 0.08048390000000083,
+                "run_index": 167,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008157000000004189,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07803570000000093,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008167999999990627,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_udf[int_data-change index]",
+                "duration": 0.1014152000000017,
+                "run_index": 168,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006832000000009941,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.09933939999999808,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007094000000016365,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_udf[int_data-return none]",
+                "duration": 0.04739889999999747,
+                "run_index": 169,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007604000000007716,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0452042999999982,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006737999999977262,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_udf[int_data-return empty]",
+                "duration": 0.07440139999999928,
+                "run_index": 170,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006763999999996884,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07230009999999965,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007485000000002628,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_udf[int_data-access self]",
+                "duration": 0.06679309999999461,
+                "run_index": 171,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010136999999978968,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06401989999999813,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007458000000006848,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_udf[float_nan_data-return self]",
+                "duration": 0.07668779999999842,
+                "run_index": 172,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008148999999981754,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07432239999999979,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007356000000022789,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_udf[float_nan_data-change index]",
+                "duration": 0.11052909999999727,
+                "run_index": 173,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007435999999998444,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.10824549999999888,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007963999999986981,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_udf[float_nan_data-return none]",
+                "duration": 0.06148979999999682,
+                "run_index": 174,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.002144399999998825,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05650370000000038,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006972999999987906,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_udf[float_nan_data-return empty]",
+                "duration": 0.0803708999999948,
+                "run_index": 175,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007563999999966597,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07814570000000032,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007124000000011677,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_apply_udf[float_nan_data-access self]",
+                "duration": 0.07466209999999407,
+                "run_index": 176,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000811299999998738,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0723565999999991,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006828999999974883,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_eval_df_use_case",
+                "duration": 0.05825670000000471,
+                "run_index": 177,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006337000000016246,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05633369999999971,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006556000000017548,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_eval_df_arithmetic_subexpression",
+                "duration": 0.02206770000000091,
+                "run_index": 178,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005196000000005085,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0206116999999999,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00041679999999999495,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_filter[int_data]",
+                "duration": 0.11565600000000487,
+                "run_index": 179,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005769000000022118,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.1139203000000002,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005819000000002461,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_filter[float_nan_data]",
+                "duration": 0.14053699999999836,
+                "run_index": 180,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009645999999996491,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.1368961000000013,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0017116999999977622,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_pipe[int_data]",
+                "duration": 0.35758339999999933,
+                "run_index": 181,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006650999999990859,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.3554542000000005,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007990000000006603,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_pipe[float_nan_data]",
+                "duration": 0.2774597000000014,
+                "run_index": 182,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006345000000003154,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.2756572999999989,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005334000000019046,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_query[col1 < col2-int_data]",
+                "duration": 0.10803220000000024,
+                "run_index": 183,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000703200000000237,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.1058464999999984,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007793000000013706,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_query[col1 < col2-float_nan_data]",
+                "duration": 0.11818830000000347,
+                "run_index": 184,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.002410100000002302,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.1119583999999989,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0014096999999999582,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_query[col3 > col4-int_data]",
+                "duration": 0.10451609999999789,
+                "run_index": 185,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001978900000001005,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.09991729999999777,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006409999999981153,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_query[col3 > col4-float_nan_data]",
+                "duration": 0.10076870000000326,
+                "run_index": 186,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000748800000000216,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.09833650000000205,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009346000000007848,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_query[col1 == col2-int_data]",
+                "duration": 0.09830229999999673,
+                "run_index": 187,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0012450999999984447,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.09481210000000218,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009999999999976694,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_query[col1 == col2-float_nan_data]",
+                "duration": 0.0641463999999985,
+                "run_index": 188,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009796999999984735,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.06140530000000055,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007817000000009955,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_query[(col2 > col1) and (col1 < col3)-int_data]",
+                "duration": 0.09180470000000085,
+                "run_index": 189,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008181000000000438,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.08910190000000284,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0010665999999979192,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_query[(col2 > col1) and (col1 < col3)-float_nan_data]",
+                "duration": 0.1167955000000056,
+                "run_index": 190,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008642000000023131,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.11421560000000142,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008514999999995609,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_query_after_insert",
+                "duration": 0.12225259999999949,
+                "run_index": 191,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005720999999994092,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.12046180000000106,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006465999999996086,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_transform[sum-int_data]",
+                "duration": 0.05713069999999831,
+                "run_index": 192,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008048000000009381,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05468739999999883,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008336999999976058,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_transform[sum-float_nan_data]",
+                "duration": 0.0539969000000049,
+                "run_index": 193,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007830000000019766,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05175580000000224,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006750999999987073,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_transform[df sum-int_data]",
+                "duration": 0.047670599999996455,
+                "run_index": 194,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007719000000001586,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0452598999999978,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008668999999983384,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_transform[df sum-float_nan_data]",
+                "duration": 0.0734619999999957,
+                "run_index": 195,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008370999999982587,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07109469999999973,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006930999999994469,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_transform[str-int_data]",
+                "duration": 0.15490890000000235,
+                "run_index": 196,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008675999999994133,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.1524300000000025,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000743700000001013,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_transform[str-float_nan_data]",
+                "duration": 0.17136239999999603,
+                "run_index": 197,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007126999999975681,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.16914930000000084,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007877000000000578,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_transform[sum mean-int_data]",
+                "duration": 0.07286570000000125,
+                "run_index": 198,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008379000000005021,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07052690000000084,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006629999999994141,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_transform[sum mean-float_nan_data]",
+                "duration": 0.08167569999999458,
+                "run_index": 199,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007293999999973266,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07943309999999926,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007838000000006673,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_transform[sum df sum-int_data]",
+                "duration": 0.09481040000000363,
+                "run_index": 200,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011261000000004628,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.09196939999999998,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005888000000027205,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_transform[sum df sum-float_nan_data]",
+                "duration": 0.10190949999999788,
+                "run_index": 201,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011218999999975665,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.09908620000000212,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005795000000006212,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_transform[should raise TypeError-int_data]",
+                "duration": 0.008826300000002618,
+                "run_index": 202,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007155000000018674,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.006583599999999024,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008116999999998598,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_transform[should raise TypeError-float_nan_data]",
+                "duration": 0.015482700000003291,
+                "run_index": 203,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007556000000015217,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.013527299999999798,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004442000000004498,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_transform[sum sum-int_data]",
+                "duration": 0.009441899999998782,
+                "run_index": 204,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007230000000006953,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.007268499999998568,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007273999999988234,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_udf.py::test_transform[sum sum-float_nan_data]",
+                "duration": 0.03946920000000276,
+                "run_index": 205,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009720000000008611,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.018494400000001576,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.01903079999999946,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            }
+        ],
+        "summary": {
+            "passed": 199,
+            "xfailed": 7,
+            "num_tests": 206,
+            "duration": 30.87596344947815
+        },
+        "created_at": "2021-08-27 13:09:45.177989"
+    }
+}

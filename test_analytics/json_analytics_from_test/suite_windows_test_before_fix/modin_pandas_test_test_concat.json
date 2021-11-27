@@ -1,0 +1,610 @@
+{
+    "report": {
+        "environment": {
+            "Python": "3.8.10",
+            "Platform": "Windows-10-10.0.19042-SP0"
+        },
+        "tests": [
+            {
+                "name": "modin/pandas/test/test_concat.py::test_df_concat",
+                "duration": 9.985530399999998,
+                "run_index": 0,
+                "setup": {
+                    "name": "setup",
+                    "duration": 4.9578016,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0687053999999998,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:35: in test_df_concat\n    df_equals(pd.concat([df, df2]), pandas.concat([df, df2]))\nmodin\\pandas\\general.py:431: in concat\n    list_of_objs = [\nmodin\\pandas\\general.py:436: in <listcomp>\n    else DataFrame(obj)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:430: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Expected list, got type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 174, in __init__\nE       self._query_compiler = from_pandas(pandas_df)._query_compiler\nE     File \"C:\\prog\\modin\\modin\\pandas\\utils.py\", line 67, in from_pandas\nE       return DataFrame(query_compiler=FactoryDispatcher.from_pandas(df))\nE     File \"C:\\prog\\modin\\modin\\data_management\\factories\\dispatcher.py\", line 152, in from_pandas\nE       return cls.__factory._from_pandas(df)\nE     File \"C:\\prog\\modin\\modin\\data_management\\factories\\factories.py\", line 166, in _from_pandas\nE       return cls.io_cls.from_pandas(df)\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\io\\io.py\", line 80, in from_pandas\nE       return cls.query_compiler_cls.from_pandas(df, cls.frame_cls)\nE     File \"C:\\prog\\modin\\modin\\backends\\pandas\\query_compiler.py\", line 259, in from_pandas\nE       return cls(data_cls.from_pandas(df))\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\data.py\", line 2151, in from_pandas\nE       new_index = df.index\nE     File \"pandas\\_libs\\properties.pyx\", line 62, in pandas._libs.properties.AxisProperty.__get__\nE   TypeError: Expected list, got type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0012217999999997176,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat",
+                "duration": 0.5056933999999984,
+                "run_index": 1,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006930000000000547,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.5038852999999985,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:42: in test_concat\n    df_equals(pd.concat([modin_df, modin_df2]), pandas.concat([df, df2]))\nmodin\\pandas\\general.py:474: in concat\n    new_query_compiler = list_of_objs[0].concat(\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:100: in value\n    self.wait()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:47: in wait\n    self._conn.serve(self._ttl)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:392: in serve\n    self._dispatch(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:358: in _dispatch\n    self._dispatch_request(seq, args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:334: in _dispatch_request\n    self._send(consts.MSG_REPLY, seq, self._box(res))\nmodin\\experimental\\cloud\\rpyc_proxy.py:268: in _box\n    return super()._box(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:273: in _box\n    id_pack = get_id_pack(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\lib\\__init__.py:162: in get_id_pack\n    if hasattr(obj, '____id_pack__'):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:5463: in __getattr__\n    if self._info_axis._can_hold_identifiers_and_holds_name(name):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:547: in _info_axis\n    return getattr(self, self._info_axis_name)\npandas\\_libs\\properties.pyx:62: in pandas._libs.properties.AxisProperty.__get__\n    ???\nE   TypeError: Expected list, got type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004220999999997588,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_with_series",
+                "duration": 0.43621890000000185,
+                "run_index": 2,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00046790000000029863,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.4348451999999998,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:51: in test_concat_with_series\n    pd.concat([modin_df, modin_df2, pandas_series], axis=0),\nmodin\\pandas\\general.py:431: in concat\n    list_of_objs = [\nmodin\\pandas\\general.py:435: in <listcomp>\n    if isinstance(obj, (pandas.Series, Series)) and axis == 0\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:430: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: object __array__ method not producing an array\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 171, in __init__\nE       pandas_df = pandas.DataFrame(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 558, in __init__\nE       mgr = init_ndarray(data, index, columns, dtype=dtype, copy=copy)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 192, in init_ndarray\nE       values = _prep_ndarray(values, copy=copy)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 321, in _prep_ndarray\nE       values = np.asarray(values)\nE   ValueError: object __array__ method not producing an array"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00043790000000143436,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_on_index",
+                "duration": 0.5006247999999989,
+                "run_index": 3,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000489899999999821,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.49919709999999995,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:66: in test_concat_on_index\n    pd.concat([modin_df, modin_df2], axis=\"index\"),\nmodin\\pandas\\general.py:474: in concat\n    new_query_compiler = list_of_objs[0].concat(\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:100: in value\n    self.wait()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:47: in wait\n    self._conn.serve(self._ttl)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:392: in serve\n    self._dispatch(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:358: in _dispatch\n    self._dispatch_request(seq, args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:334: in _dispatch_request\n    self._send(consts.MSG_REPLY, seq, self._box(res))\nmodin\\experimental\\cloud\\rpyc_proxy.py:268: in _box\n    return super()._box(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:273: in _box\n    id_pack = get_id_pack(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\lib\\__init__.py:162: in get_id_pack\n    if hasattr(obj, '____id_pack__'):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:5463: in __getattr__\n    if self._info_axis._can_hold_identifiers_and_holds_name(name):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:547: in _info_axis\n    return getattr(self, self._info_axis_name)\npandas\\_libs\\properties.pyx:62: in pandas._libs.properties.AxisProperty.__get__\n    ???\nE   TypeError: Expected list, got type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00044789999999927943,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_on_column",
+                "duration": 0.47952949999999817,
+                "run_index": 4,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0004977999999997706,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.47807029999999884,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:84: in test_concat_on_column\n    df_equals(\nmodin\\pandas\\test\\utils.py:514: in df_equals\n    df1 = to_pandas(df1)\nmodin\\utils.py:245: in to_pandas\n    return modin_obj._to_pandas()\nmodin\\experimental\\cloud\\rpyc_proxy.py:413: in method\n    return remote(_self.__remote_end__, *_args, **_kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: \nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 2791, in _to_pandas\nE       return self._query_compiler.to_pandas()\nE     File \"C:\\prog\\modin\\modin\\backends\\pandas\\query_compiler.py\", line 255, in to_pandas\nE       return self._modin_frame.to_pandas()\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\data.py\", line 2227, in to_pandas\nE       df = self._partition_mgr_cls.to_pandas(self._partitions)\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\partition_manager.py\", line 678, in to_pandas\nE       retrieved_objects = [[obj.to_pandas() for obj in part] for part in partitions]\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\partition_manager.py\", line 678, in <listcomp>\nE       retrieved_objects = [[obj.to_pandas() for obj in part] for part in partitions]\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\partition_manager.py\", line 678, in <listcomp>\nE       retrieved_objects = [[obj.to_pandas() for obj in part] for part in partitions]\nE     File \"C:\\prog\\modin\\modin\\engines\\python\\pandas_on_python\\frame\\partition.py\", line 167, in to_pandas\nE       assert type(dataframe) is pandas.DataFrame or type(dataframe) is pandas.Series\nE   AssertionError"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004635999999997864,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_invalid_axis_errors",
+                "duration": 0.3671381000000036,
+                "run_index": 5,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005373000000012951,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.36546710000000004,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005964000000009406,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_mixed_concat",
+                "duration": 0.4027612999999999,
+                "run_index": 6,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00047260000000015623,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.4013106000000004,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:119: in test_mixed_concat\n    df_equals(pd.concat(mixed_dfs), pandas.concat([df, df2, df3]))\nmodin\\pandas\\general.py:431: in concat\n    list_of_objs = [\nmodin\\pandas\\general.py:436: in <listcomp>\n    else DataFrame(obj)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:430: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Expected list, got type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 174, in __init__\nE       self._query_compiler = from_pandas(pandas_df)._query_compiler\nE     File \"C:\\prog\\modin\\modin\\pandas\\utils.py\", line 67, in from_pandas\nE       return DataFrame(query_compiler=FactoryDispatcher.from_pandas(df))\nE     File \"C:\\prog\\modin\\modin\\data_management\\factories\\dispatcher.py\", line 152, in from_pandas\nE       return cls.__factory._from_pandas(df)\nE     File \"C:\\prog\\modin\\modin\\data_management\\factories\\factories.py\", line 166, in _from_pandas\nE       return cls.io_cls.from_pandas(df)\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\io\\io.py\", line 80, in from_pandas\nE       return cls.query_compiler_cls.from_pandas(df, cls.frame_cls)\nE     File \"C:\\prog\\modin\\modin\\backends\\pandas\\query_compiler.py\", line 259, in from_pandas\nE       return cls(data_cls.from_pandas(df))\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\data.py\", line 2151, in from_pandas\nE       new_index = df.index\nE     File \"pandas\\_libs\\properties.pyx\", line 62, in pandas._libs.properties.AxisProperty.__get__\nE   TypeError: Expected list, got type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005054999999991594,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_mixed_inner_concat",
+                "duration": 0.44891980000000054,
+                "run_index": 7,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000487200000000243,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.44751359999999885,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:129: in test_mixed_inner_concat\n    pd.concat(mixed_dfs, join=\"inner\"), pandas.concat([df, df2, df3], join=\"inner\")\nmodin\\pandas\\general.py:431: in concat\n    list_of_objs = [\nmodin\\pandas\\general.py:436: in <listcomp>\n    else DataFrame(obj)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:430: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Expected list, got type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 174, in __init__\nE       self._query_compiler = from_pandas(pandas_df)._query_compiler\nE     File \"C:\\prog\\modin\\modin\\pandas\\utils.py\", line 67, in from_pandas\nE       return DataFrame(query_compiler=FactoryDispatcher.from_pandas(df))\nE     File \"C:\\prog\\modin\\modin\\data_management\\factories\\dispatcher.py\", line 152, in from_pandas\nE       return cls.__factory._from_pandas(df)\nE     File \"C:\\prog\\modin\\modin\\data_management\\factories\\factories.py\", line 166, in _from_pandas\nE       return cls.io_cls.from_pandas(df)\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\io\\io.py\", line 80, in from_pandas\nE       return cls.query_compiler_cls.from_pandas(df, cls.frame_cls)\nE     File \"C:\\prog\\modin\\modin\\backends\\pandas\\query_compiler.py\", line 259, in from_pandas\nE       return cls(data_cls.from_pandas(df))\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\data.py\", line 2151, in from_pandas\nE       new_index = df.index\nE     File \"pandas\\_libs\\properties.pyx\", line 62, in pandas._libs.properties.AxisProperty.__get__\nE   TypeError: Expected list, got type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00043180000000120344,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_mixed_none_concat",
+                "duration": 0.4007969999999972,
+                "run_index": 8,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0004858999999992619,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.3993822999999992,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:139: in test_mixed_none_concat\n    df_equals(pd.concat(mixed_dfs), pandas.concat([df, df2, df3]))\nmodin\\pandas\\general.py:431: in concat\n    list_of_objs = [\nmodin\\pandas\\general.py:436: in <listcomp>\n    else DataFrame(obj)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:430: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Expected list, got type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 174, in __init__\nE       self._query_compiler = from_pandas(pandas_df)._query_compiler\nE     File \"C:\\prog\\modin\\modin\\pandas\\utils.py\", line 67, in from_pandas\nE       return DataFrame(query_compiler=FactoryDispatcher.from_pandas(df))\nE     File \"C:\\prog\\modin\\modin\\data_management\\factories\\dispatcher.py\", line 152, in from_pandas\nE       return cls.__factory._from_pandas(df)\nE     File \"C:\\prog\\modin\\modin\\data_management\\factories\\factories.py\", line 166, in _from_pandas\nE       return cls.io_cls.from_pandas(df)\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\io\\io.py\", line 80, in from_pandas\nE       return cls.query_compiler_cls.from_pandas(df, cls.frame_cls)\nE     File \"C:\\prog\\modin\\modin\\backends\\pandas\\query_compiler.py\", line 259, in from_pandas\nE       return cls(data_cls.from_pandas(df))\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\data.py\", line 2151, in from_pandas\nE       new_index = df.index\nE     File \"pandas\\_libs\\properties.pyx\", line 62, in pandas._libs.properties.AxisProperty.__get__\nE   TypeError: Expected list, got type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004428999999994687,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_ignore_index_concat",
+                "duration": 0.05012609999999995,
+                "run_index": 9,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0004661999999999722,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.048748299999999745,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:146: in test_ignore_index_concat\n    pd.concat([df, df2], ignore_index=True),\nmodin\\pandas\\general.py:431: in concat\n    list_of_objs = [\nmodin\\pandas\\general.py:436: in <listcomp>\n    else DataFrame(obj)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:430: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Expected list, got type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 174, in __init__\nE       self._query_compiler = from_pandas(pandas_df)._query_compiler\nE     File \"C:\\prog\\modin\\modin\\pandas\\utils.py\", line 67, in from_pandas\nE       return DataFrame(query_compiler=FactoryDispatcher.from_pandas(df))\nE     File \"C:\\prog\\modin\\modin\\data_management\\factories\\dispatcher.py\", line 152, in from_pandas\nE       return cls.__factory._from_pandas(df)\nE     File \"C:\\prog\\modin\\modin\\data_management\\factories\\factories.py\", line 166, in _from_pandas\nE       return cls.io_cls.from_pandas(df)\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\io\\io.py\", line 80, in from_pandas\nE       return cls.query_compiler_cls.from_pandas(df, cls.frame_cls)\nE     File \"C:\\prog\\modin\\modin\\backends\\pandas\\query_compiler.py\", line 259, in from_pandas\nE       return cls(data_cls.from_pandas(df))\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\data.py\", line 2151, in from_pandas\nE       new_index = df.index\nE     File \"pandas\\_libs\\properties.pyx\", line 62, in pandas._libs.properties.AxisProperty.__get__\nE   TypeError: Expected list, got type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00044540000000026225,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_non_subscriptable_keys",
+                "duration": 6.318436299999998,
+                "run_index": 10,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0004919999999994928,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 6.316868700000001,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:153: in test_concat_non_subscriptable_keys\n    df = pd.DataFrame(frame_data).add_prefix(\"col\")\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:430: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 158, in __init__\nE       data = np.array(values, dtype=old_dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005835999999987962,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_series_only",
+                "duration": 0.7745873000000039,
+                "run_index": 11,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00047010000000113905,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.7730017999999994,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:167: in test_concat_series_only\n    df_equals(\nmodin\\pandas\\test\\utils.py:540: in df_equals\n    assert_series_equal(df1, df2, check_dtype=False, check_series_type=False)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\_testing.py:744: in _check_types\n    assert_attr_equal(\"dtype\", left, right, obj=obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\dtypes\\inference.py:68: in is_number\n    return isinstance(obj, (Number, np.number))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\abc.py:98: in __instancecheck__\n    return _abc_instancecheck(cls, instance)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\abc.py:102: in __subclasscheck__\n    return _abc_subclasscheck(cls, subclass)\nE   TypeError: issubclass() arg 1 must be a class"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006453000000021802,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_with_empty_frame",
+                "duration": 0.14989869999999783,
+                "run_index": 12,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00047619999999781726,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.14836010000000144,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:186: in test_concat_with_empty_frame\n    df_equals(\nmodin\\pandas\\test\\utils.py:522: in df_equals\n    assert (\nE   AssertionError: Empty frames have different types: <netref class 'rpyc.core.netref.type'> != <class 'pandas.core.frame.DataFrame'>"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005862000000007583,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_multiindex[False-0]",
+                "duration": 0.41877150000000185,
+                "run_index": 13,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006991999999996779,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.4168327000000005,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:209: in test_concat_multiindex\n    pd.concat([md_df1, md_df2], keys=keys, axis=axis, names=names),\nmodin\\pandas\\general.py:474: in concat\n    new_query_compiler = list_of_objs[0].concat(\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:100: in value\n    self.wait()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:47: in wait\n    self._conn.serve(self._ttl)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:392: in serve\n    self._dispatch(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:358: in _dispatch\n    self._dispatch_request(seq, args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:334: in _dispatch_request\n    self._send(consts.MSG_REPLY, seq, self._box(res))\nmodin\\experimental\\cloud\\rpyc_proxy.py:268: in _box\n    return super()._box(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:273: in _box\n    id_pack = get_id_pack(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\lib\\__init__.py:162: in get_id_pack\n    if hasattr(obj, '____id_pack__'):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:5463: in __getattr__\n    if self._info_axis._can_hold_identifiers_and_holds_name(name):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:547: in _info_axis\n    return getattr(self, self._info_axis_name)\npandas\\_libs\\properties.pyx:62: in pandas._libs.properties.AxisProperty.__get__\n    ???\nE   TypeError: Expected list, got type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005404000000019948,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_multiindex[False-1]",
+                "duration": 0.4606068999999984,
+                "run_index": 14,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006851999999994973,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.4587547999999977,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:209: in test_concat_multiindex\n    pd.concat([md_df1, md_df2], keys=keys, axis=axis, names=names),\nmodin\\pandas\\general.py:492: in concat\n    result_df.columns = new_idx\nmodin\\experimental\\cloud\\rpyc_proxy.py:499: in __setattr__\n    setattr(self.__remote_end__, name, value)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:178: in __setattr__\n    syncreq(self, consts.HANDLE_SETATTR, name, value)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: 'slice' object has no attribute '__array__'\nE   \nE   ========= Remote Traceback (3) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 615, in _handle_setattr\nE       return self._access_attr(obj, name, (value,), \"_rpyc_setattr\", \"allow_setattr\", setattr)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 537, in _access_attr\nE       return accessor(obj, name, *args)\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 2418, in __setattr__\nE       object.__setattr__(self, key, value)\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 262, in _set_columns\nE       self._query_compiler.columns = new_columns\nE     File \"C:\\prog\\modin\\modin\\backends\\pandas\\query_compiler.py\", line 96, in set_axis\nE       self._modin_frame.columns = cols\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\data.py\", line 270, in _set_columns\nE       self.synchronize_labels(axis=1)\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\data.py\", line 399, in synchronize_labels\nE       [\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\data.py\", line 400, in <listcomp>\nE       [\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\data.py\", line 403, in <listcomp>\nE       cols=self.columns[\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 275, in method\nE       return syncreq(_self, consts.HANDLE_CALLATTR, name, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 76, in syncreq\nE       return conn.sync_request(handler, proxy, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 469, in sync_request\nE       return self.async_request(handler, *args, timeout=timeout).value\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py\", line 102, in value\nE       raise self._obj\nE   _get_exception_class.<locals>.Derived: 'slice' object has no attribute '__array__'\nE   \nE   ========= Remote Traceback (2) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 619, in _handle_callattr\nE       return self._handle_call(obj, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 2045, in __getitem__\nE       new_codes = [level_codes[key] for level_codes in self.codes]\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 2045, in <listcomp>\nE       new_codes = [level_codes[key] for level_codes in self.codes]\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 213, in __array__\nE       return pickle.loads(self._remote_pickled_array(this))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 253, in __call__\nE       return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 76, in syncreq\nE       return conn.sync_request(handler, proxy, *args)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 160, in sync_request\nE       return super().sync_request(handler, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 469, in sync_request\nE       return self.async_request(handler, *args, timeout=timeout).value\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py\", line 102, in value\nE       raise self._obj\nE   _get_exception_class.<locals>.Derived: 'slice' object has no attribute '__array__'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 38, in _pickled_array\nE       return pickle.dumps(obj.__array__())\nE   AttributeError: 'slice' object has no attribute '__array__'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00048170000000169466,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_multiindex[True-0]",
+                "duration": 0.6896614999999997,
+                "run_index": 15,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006698000000007198,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.6878507999999997,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:209: in test_concat_multiindex\n    pd.concat([md_df1, md_df2], keys=keys, axis=axis, names=names),\nmodin\\pandas\\general.py:474: in concat\n    new_query_compiler = list_of_objs[0].concat(\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:100: in value\n    self.wait()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:47: in wait\n    self._conn.serve(self._ttl)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:392: in serve\n    self._dispatch(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:358: in _dispatch\n    self._dispatch_request(seq, args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:334: in _dispatch_request\n    self._send(consts.MSG_REPLY, seq, self._box(res))\nmodin\\experimental\\cloud\\rpyc_proxy.py:268: in _box\n    return super()._box(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:273: in _box\n    id_pack = get_id_pack(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\lib\\__init__.py:162: in get_id_pack\n    if hasattr(obj, '____id_pack__'):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:5463: in __getattr__\n    if self._info_axis._can_hold_identifiers_and_holds_name(name):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:547: in _info_axis\n    return getattr(self, self._info_axis_name)\npandas\\_libs\\properties.pyx:62: in pandas._libs.properties.AxisProperty.__get__\n    ???\nE   TypeError: Expected list, got type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004710999999986143,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_multiindex[True-1]",
+                "duration": 0.43998149999999825,
+                "run_index": 16,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006968999999976688,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.4380461000000011,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:209: in test_concat_multiindex\n    pd.concat([md_df1, md_df2], keys=keys, axis=axis, names=names),\nmodin\\pandas\\general.py:492: in concat\n    result_df.columns = new_idx\nmodin\\experimental\\cloud\\rpyc_proxy.py:499: in __setattr__\n    setattr(self.__remote_end__, name, value)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:178: in __setattr__\n    syncreq(self, consts.HANDLE_SETATTR, name, value)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: 'slice' object has no attribute '__array__'\nE   \nE   ========= Remote Traceback (3) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 615, in _handle_setattr\nE       return self._access_attr(obj, name, (value,), \"_rpyc_setattr\", \"allow_setattr\", setattr)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 537, in _access_attr\nE       return accessor(obj, name, *args)\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 2418, in __setattr__\nE       object.__setattr__(self, key, value)\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 262, in _set_columns\nE       self._query_compiler.columns = new_columns\nE     File \"C:\\prog\\modin\\modin\\backends\\pandas\\query_compiler.py\", line 96, in set_axis\nE       self._modin_frame.columns = cols\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\data.py\", line 270, in _set_columns\nE       self.synchronize_labels(axis=1)\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\data.py\", line 399, in synchronize_labels\nE       [\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\data.py\", line 400, in <listcomp>\nE       [\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\data.py\", line 403, in <listcomp>\nE       cols=self.columns[\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 275, in method\nE       return syncreq(_self, consts.HANDLE_CALLATTR, name, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 76, in syncreq\nE       return conn.sync_request(handler, proxy, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 469, in sync_request\nE       return self.async_request(handler, *args, timeout=timeout).value\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py\", line 102, in value\nE       raise self._obj\nE   _get_exception_class.<locals>.Derived: 'slice' object has no attribute '__array__'\nE   \nE   ========= Remote Traceback (2) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 619, in _handle_callattr\nE       return self._handle_call(obj, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 2045, in __getitem__\nE       new_codes = [level_codes[key] for level_codes in self.codes]\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 2045, in <listcomp>\nE       new_codes = [level_codes[key] for level_codes in self.codes]\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 213, in __array__\nE       return pickle.loads(self._remote_pickled_array(this))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 253, in __call__\nE       return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 76, in syncreq\nE       return conn.sync_request(handler, proxy, *args)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 160, in sync_request\nE       return super().sync_request(handler, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 469, in sync_request\nE       return self.async_request(handler, *args, timeout=timeout).value\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py\", line 102, in value\nE       raise self._obj\nE   _get_exception_class.<locals>.Derived: 'slice' object has no attribute '__array__'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 38, in _pickled_array\nE       return pickle.dumps(obj.__array__())\nE   AttributeError: 'slice' object has no attribute '__array__'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005416000000018073,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_dictionary[0]",
+                "duration": 0.424887199999997,
+                "run_index": 17,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000576899999998659,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.4232192000000019,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:220: in test_concat_dictionary\n    pd.concat({\"A\": modin_df, \"B\": modin_df2}, axis=axis),\nmodin\\pandas\\general.py:474: in concat\n    new_query_compiler = list_of_objs[0].concat(\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:100: in value\n    self.wait()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:47: in wait\n    self._conn.serve(self._ttl)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:392: in serve\n    self._dispatch(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:358: in _dispatch\n    self._dispatch_request(seq, args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:334: in _dispatch_request\n    self._send(consts.MSG_REPLY, seq, self._box(res))\nmodin\\experimental\\cloud\\rpyc_proxy.py:268: in _box\n    return super()._box(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:273: in _box\n    id_pack = get_id_pack(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\lib\\__init__.py:162: in get_id_pack\n    if hasattr(obj, '____id_pack__'):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:5463: in __getattr__\n    if self._info_axis._can_hold_identifiers_and_holds_name(name):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:547: in _info_axis\n    return getattr(self, self._info_axis_name)\npandas\\_libs\\properties.pyx:62: in pandas._libs.properties.AxisProperty.__get__\n    ???\nE   TypeError: Expected list, got type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005141999999977998,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_concat_dictionary[1]",
+                "duration": 0.40489699999999473,
+                "run_index": 18,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006449999999986744,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.4031698999999982,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:220: in test_concat_dictionary\n    pd.concat({\"A\": modin_df, \"B\": modin_df2}, axis=axis),\nmodin\\pandas\\general.py:492: in concat\n    result_df.columns = new_idx\nmodin\\experimental\\cloud\\rpyc_proxy.py:499: in __setattr__\n    setattr(self.__remote_end__, name, value)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:178: in __setattr__\n    syncreq(self, consts.HANDLE_SETATTR, name, value)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: 'slice' object has no attribute '__array__'\nE   \nE   ========= Remote Traceback (3) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 615, in _handle_setattr\nE       return self._access_attr(obj, name, (value,), \"_rpyc_setattr\", \"allow_setattr\", setattr)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 537, in _access_attr\nE       return accessor(obj, name, *args)\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 2418, in __setattr__\nE       object.__setattr__(self, key, value)\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 262, in _set_columns\nE       self._query_compiler.columns = new_columns\nE     File \"C:\\prog\\modin\\modin\\backends\\pandas\\query_compiler.py\", line 96, in set_axis\nE       self._modin_frame.columns = cols\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\data.py\", line 270, in _set_columns\nE       self.synchronize_labels(axis=1)\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\data.py\", line 399, in synchronize_labels\nE       [\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\data.py\", line 400, in <listcomp>\nE       [\nE     File \"C:\\prog\\modin\\modin\\engines\\base\\frame\\data.py\", line 403, in <listcomp>\nE       cols=self.columns[\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 275, in method\nE       return syncreq(_self, consts.HANDLE_CALLATTR, name, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 76, in syncreq\nE       return conn.sync_request(handler, proxy, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 469, in sync_request\nE       return self.async_request(handler, *args, timeout=timeout).value\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py\", line 102, in value\nE       raise self._obj\nE   _get_exception_class.<locals>.Derived: 'slice' object has no attribute '__array__'\nE   \nE   ========= Remote Traceback (2) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 619, in _handle_callattr\nE       return self._handle_call(obj, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 2045, in __getitem__\nE       new_codes = [level_codes[key] for level_codes in self.codes]\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 2045, in <listcomp>\nE       new_codes = [level_codes[key] for level_codes in self.codes]\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 213, in __array__\nE       return pickle.loads(self._remote_pickled_array(this))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 253, in __call__\nE       return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 76, in syncreq\nE       return conn.sync_request(handler, proxy, *args)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 160, in sync_request\nE       return super().sync_request(handler, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 469, in sync_request\nE       return self.async_request(handler, *args, timeout=timeout).value\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py\", line 102, in value\nE       raise self._obj\nE   _get_exception_class.<locals>.Derived: 'slice' object has no attribute '__array__'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 38, in _pickled_array\nE       return pickle.dumps(obj.__array__())\nE   AttributeError: 'slice' object has no attribute '__array__'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004370999999991909,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_sort_order[0-inner-False]",
+                "duration": 0.4430441000000016,
+                "run_index": 19,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007392999999993322,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.44099850000000274,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:233: in test_sort_order\n    modin_concat = pd.concat([modin_df, modin_df2], join=join, sort=sort)\nmodin\\pandas\\general.py:474: in concat\n    new_query_compiler = list_of_objs[0].concat(\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:100: in value\n    self.wait()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:47: in wait\n    self._conn.serve(self._ttl)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:392: in serve\n    self._dispatch(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:358: in _dispatch\n    self._dispatch_request(seq, args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:334: in _dispatch_request\n    self._send(consts.MSG_REPLY, seq, self._box(res))\nmodin\\experimental\\cloud\\rpyc_proxy.py:268: in _box\n    return super()._box(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:273: in _box\n    id_pack = get_id_pack(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\lib\\__init__.py:162: in get_id_pack\n    if hasattr(obj, '____id_pack__'):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:5463: in __getattr__\n    if self._info_axis._can_hold_identifiers_and_holds_name(name):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:547: in _info_axis\n    return getattr(self, self._info_axis_name)\npandas\\_libs\\properties.pyx:62: in pandas._libs.properties.AxisProperty.__get__\n    ???\nE   TypeError: Expected list, got type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005670000000002062,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_sort_order[0-inner-True]",
+                "duration": 0.4413489999999989,
+                "run_index": 20,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007361000000010165,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.4393609999999981,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:233: in test_sort_order\n    modin_concat = pd.concat([modin_df, modin_df2], join=join, sort=sort)\nmodin\\pandas\\general.py:474: in concat\n    new_query_compiler = list_of_objs[0].concat(\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:100: in value\n    self.wait()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:47: in wait\n    self._conn.serve(self._ttl)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:392: in serve\n    self._dispatch(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:358: in _dispatch\n    self._dispatch_request(seq, args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:334: in _dispatch_request\n    self._send(consts.MSG_REPLY, seq, self._box(res))\nmodin\\experimental\\cloud\\rpyc_proxy.py:268: in _box\n    return super()._box(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:273: in _box\n    id_pack = get_id_pack(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\lib\\__init__.py:162: in get_id_pack\n    if hasattr(obj, '____id_pack__'):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:5463: in __getattr__\n    if self._info_axis._can_hold_identifiers_and_holds_name(name):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:547: in _info_axis\n    return getattr(self, self._info_axis_name)\npandas\\_libs\\properties.pyx:62: in pandas._libs.properties.AxisProperty.__get__\n    ???\nE   TypeError: Expected list, got type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005157999999987339,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_sort_order[0-outer-False]",
+                "duration": 0.4661904999999962,
+                "run_index": 21,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007704999999980089,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.4641297999999985,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:233: in test_sort_order\n    modin_concat = pd.concat([modin_df, modin_df2], join=join, sort=sort)\nmodin\\pandas\\general.py:474: in concat\n    new_query_compiler = list_of_objs[0].concat(\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:100: in value\n    self.wait()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:47: in wait\n    self._conn.serve(self._ttl)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:392: in serve\n    self._dispatch(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:358: in _dispatch\n    self._dispatch_request(seq, args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:334: in _dispatch_request\n    self._send(consts.MSG_REPLY, seq, self._box(res))\nmodin\\experimental\\cloud\\rpyc_proxy.py:268: in _box\n    return super()._box(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:273: in _box\n    id_pack = get_id_pack(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\lib\\__init__.py:162: in get_id_pack\n    if hasattr(obj, '____id_pack__'):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:5463: in __getattr__\n    if self._info_axis._can_hold_identifiers_and_holds_name(name):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:547: in _info_axis\n    return getattr(self, self._info_axis_name)\npandas\\_libs\\properties.pyx:62: in pandas._libs.properties.AxisProperty.__get__\n    ???\nE   TypeError: Expected list, got type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005197000000016772,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_sort_order[0-outer-True]",
+                "duration": 0.5500816999999962,
+                "run_index": 22,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007956000000000074,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.5479389999999995,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:233: in test_sort_order\n    modin_concat = pd.concat([modin_df, modin_df2], join=join, sort=sort)\nmodin\\pandas\\general.py:474: in concat\n    new_query_compiler = list_of_objs[0].concat(\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:100: in value\n    self.wait()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:47: in wait\n    self._conn.serve(self._ttl)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:392: in serve\n    self._dispatch(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:358: in _dispatch\n    self._dispatch_request(seq, args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:334: in _dispatch_request\n    self._send(consts.MSG_REPLY, seq, self._box(res))\nmodin\\experimental\\cloud\\rpyc_proxy.py:268: in _box\n    return super()._box(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:273: in _box\n    id_pack = get_id_pack(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\lib\\__init__.py:162: in get_id_pack\n    if hasattr(obj, '____id_pack__'):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:5463: in __getattr__\n    if self._info_axis._can_hold_identifiers_and_holds_name(name):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:547: in _info_axis\n    return getattr(self, self._info_axis_name)\npandas\\_libs\\properties.pyx:62: in pandas._libs.properties.AxisProperty.__get__\n    ???\nE   TypeError: Expected list, got type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005514999999967074,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_sort_order[1-inner-False]",
+                "duration": 0.4506060000000005,
+                "run_index": 23,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000757899999999978,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.4483132999999988,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:233: in test_sort_order\n    modin_concat = pd.concat([modin_df, modin_df2], join=join, sort=sort)\nmodin\\pandas\\general.py:474: in concat\n    new_query_compiler = list_of_objs[0].concat(\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:100: in value\n    self.wait()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:47: in wait\n    self._conn.serve(self._ttl)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:392: in serve\n    self._dispatch(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:358: in _dispatch\n    self._dispatch_request(seq, args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:334: in _dispatch_request\n    self._send(consts.MSG_REPLY, seq, self._box(res))\nmodin\\experimental\\cloud\\rpyc_proxy.py:268: in _box\n    return super()._box(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:273: in _box\n    id_pack = get_id_pack(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\lib\\__init__.py:162: in get_id_pack\n    if hasattr(obj, '____id_pack__'):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:5463: in __getattr__\n    if self._info_axis._can_hold_identifiers_and_holds_name(name):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:547: in _info_axis\n    return getattr(self, self._info_axis_name)\npandas\\_libs\\properties.pyx:62: in pandas._libs.properties.AxisProperty.__get__\n    ???\nE   TypeError: Expected list, got type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007769000000017456,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_sort_order[1-inner-True]",
+                "duration": 0.47490450000000095,
+                "run_index": 24,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0017169999999993024,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.47086690000000075,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:233: in test_sort_order\n    modin_concat = pd.concat([modin_df, modin_df2], join=join, sort=sort)\nmodin\\pandas\\general.py:474: in concat\n    new_query_compiler = list_of_objs[0].concat(\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:100: in value\n    self.wait()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:47: in wait\n    self._conn.serve(self._ttl)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:392: in serve\n    self._dispatch(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:358: in _dispatch\n    self._dispatch_request(seq, args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:334: in _dispatch_request\n    self._send(consts.MSG_REPLY, seq, self._box(res))\nmodin\\experimental\\cloud\\rpyc_proxy.py:268: in _box\n    return super()._box(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:273: in _box\n    id_pack = get_id_pack(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\lib\\__init__.py:162: in get_id_pack\n    if hasattr(obj, '____id_pack__'):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:5463: in __getattr__\n    if self._info_axis._can_hold_identifiers_and_holds_name(name):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:547: in _info_axis\n    return getattr(self, self._info_axis_name)\npandas\\_libs\\properties.pyx:62: in pandas._libs.properties.AxisProperty.__get__\n    ???\nE   TypeError: Expected list, got type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006036000000015918,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_sort_order[1-outer-False]",
+                "duration": 0.4447474000000007,
+                "run_index": 25,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007365000000021382,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.44274409999999875,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:233: in test_sort_order\n    modin_concat = pd.concat([modin_df, modin_df2], join=join, sort=sort)\nmodin\\pandas\\general.py:474: in concat\n    new_query_compiler = list_of_objs[0].concat(\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:100: in value\n    self.wait()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:47: in wait\n    self._conn.serve(self._ttl)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:392: in serve\n    self._dispatch(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:358: in _dispatch\n    self._dispatch_request(seq, args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:334: in _dispatch_request\n    self._send(consts.MSG_REPLY, seq, self._box(res))\nmodin\\experimental\\cloud\\rpyc_proxy.py:268: in _box\n    return super()._box(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:273: in _box\n    id_pack = get_id_pack(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\lib\\__init__.py:162: in get_id_pack\n    if hasattr(obj, '____id_pack__'):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:5463: in __getattr__\n    if self._info_axis._can_hold_identifiers_and_holds_name(name):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:547: in _info_axis\n    return getattr(self, self._info_axis_name)\npandas\\_libs\\properties.pyx:62: in pandas._libs.properties.AxisProperty.__get__\n    ???\nE   TypeError: Expected list, got type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005302999999976521,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_concat.py::test_sort_order[1-outer-True]",
+                "duration": 0.4438196999999988,
+                "run_index": 26,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007610999999982937,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.43959470000000067,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_concat.py:233: in test_sort_order\n    modin_concat = pd.concat([modin_df, modin_df2], join=join, sort=sort)\nmodin\\pandas\\general.py:474: in concat\n    new_query_compiler = list_of_objs[0].concat(\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:160: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:100: in value\n    self.wait()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:47: in wait\n    self._conn.serve(self._ttl)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:392: in serve\n    self._dispatch(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:358: in _dispatch\n    self._dispatch_request(seq, args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:334: in _dispatch_request\n    self._send(consts.MSG_REPLY, seq, self._box(res))\nmodin\\experimental\\cloud\\rpyc_proxy.py:268: in _box\n    return super()._box(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:273: in _box\n    id_pack = get_id_pack(obj)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\lib\\__init__.py:162: in get_id_pack\n    if hasattr(obj, '____id_pack__'):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:5463: in __getattr__\n    if self._info_axis._can_hold_identifiers_and_holds_name(name):\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\generic.py:547: in _info_axis\n    return getattr(self, self._info_axis_name)\npandas\\_libs\\properties.pyx:62: in pandas._libs.properties.AxisProperty.__get__\n    ???\nE   TypeError: Expected list, got type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0027028000000015595,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            }
+        ],
+        "summary": {
+            "failed": 26,
+            "passed": 1,
+            "num_tests": 27,
+            "duration": 31.683352947235107
+        },
+        "created_at": "2021-07-28 22:41:06.913089"
+    }
+}

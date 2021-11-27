@@ -1,0 +1,600 @@
+{
+    "report": {
+        "environment": {
+            "Python": "3.8.10",
+            "Platform": "Windows-10-10.0.19042-SP0"
+        },
+        "tests": [
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_items_iteritems_iterrows[items]",
+                "duration": 87.5959759,
+                "run_index": 0,
+                "setup": {
+                    "name": "setup",
+                    "duration": 4.9077474,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 77.77944670000001,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0010343999999946618,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_items_iteritems_iterrows[iteritems]",
+                "duration": 36.36804960000002,
+                "run_index": 1,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006933000000088896,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 36.36613270000001,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005302999999940994,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_items_iteritems_iterrows[iterrows]",
+                "duration": 39.72540299999997,
+                "run_index": 2,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007248999999944772,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 39.723442199999994,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000510999999988826,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_itertuples_name[None]",
+                "duration": 30.478015900000003,
+                "run_index": 3,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006874000000038905,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 30.47601320000001,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:62: in test_itertuples_name\n    np.testing.assert_equal(modin_row, pandas_row)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\numpy\\__init__.py:307: in __getattr__\n    import numpy.testing as testing\nmodin\\experimental\\pandas\\numpy_wrap.py:164: in __getattr__\n    obj = getattr(self.__get_numpy(), name)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\numpy\\__init__.py:307: in __getattr__\n    import numpy.testing as testing\nE   RecursionError: maximum recursion depth exceeded\n!!! Recursion detected (same locals & position)"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006278999999835833,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_itertuples_name[NotPandas]",
+                "duration": 30.047306600000013,
+                "run_index": 4,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006893000000047778,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 30.045312600000017,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:62: in test_itertuples_name\n    np.testing.assert_equal(modin_row, pandas_row)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\numpy\\__init__.py:307: in __getattr__\n    import numpy.testing as testing\nmodin\\experimental\\pandas\\numpy_wrap.py:164: in __getattr__\n    obj = getattr(self.__get_numpy(), name)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\numpy\\__init__.py:307: in __getattr__\n    import numpy.testing as testing\nE   RecursionError: maximum recursion depth exceeded\n!!! Recursion detected (same locals & position)"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000615399999986721,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_itertuples_multiindex",
+                "duration": 3.383585100000005,
+                "run_index": 5,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005376999999953114,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 3.381881800000002,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:67: in test_itertuples_multiindex\n    modin_df, pandas_df = pd.DataFrame(data), pandas.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\programming\\modin\\modin\\pandas\\dataframe.py\", line 171, in __init__\nE       pandas_df = pandas.DataFrame(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 614, in __init__\nE       mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 464, in dict_to_mgr\nE       return arrays_to_mgr(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 135, in arrays_to_mgr\nE       return create_block_manager_from_arrays(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1769, in create_block_manager_from_arrays\nE       blocks = _form_blocks(arrays, names, axes, consolidate)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1834, in _form_blocks\nE       numeric_blocks = _multi_blockify(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1924, in _multi_blockify\nE       values, placement = _stack_arrays(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1953, in _stack_arrays\nE       stacked = np.empty(shape, dtype=dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000627900000012005,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___iter__",
+                "duration": 4.23252590000007,
+                "run_index": 6,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007067000000233747,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 4.230537300000009,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:81: in test___iter__\n    modin_df = pd.DataFrame(test_data_values[0])\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\programming\\modin\\modin\\pandas\\dataframe.py\", line 171, in __init__\nE       pandas_df = pandas.DataFrame(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 614, in __init__\nE       mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 464, in dict_to_mgr\nE       return arrays_to_mgr(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 135, in arrays_to_mgr\nE       return create_block_manager_from_arrays(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1769, in create_block_manager_from_arrays\nE       blocks = _form_blocks(arrays, names, axes, consolidate)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1834, in _form_blocks\nE       numeric_blocks = _multi_blockify(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1924, in _multi_blockify\nE       values, placement = _stack_arrays(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1953, in _stack_arrays\nE       stacked = np.empty(shape, dtype=dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005752000000143198,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___contains__[int_data]",
+                "duration": 2.914696300000031,
+                "run_index": 7,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006571000000121785,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 2.9128062999999997,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:96: in test___contains__\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\programming\\modin\\modin\\pandas\\dataframe.py\", line 171, in __init__\nE       pandas_df = pandas.DataFrame(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 614, in __init__\nE       mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 464, in dict_to_mgr\nE       return arrays_to_mgr(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 135, in arrays_to_mgr\nE       return create_block_manager_from_arrays(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1769, in create_block_manager_from_arrays\nE       blocks = _form_blocks(arrays, names, axes, consolidate)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1834, in _form_blocks\nE       numeric_blocks = _multi_blockify(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1924, in _multi_blockify\nE       values, placement = _stack_arrays(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1953, in _stack_arrays\nE       stacked = np.empty(shape, dtype=dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005758000000071206,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___contains__[float_nan_data]",
+                "duration": 72.50106609999989,
+                "run_index": 8,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006523999999785701,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 72.49922579999998,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005354999999553911,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test__options_display",
+                "duration": 7.031376099999989,
+                "run_index": 9,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000589400000023943,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 7.0296771999999805,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:114: in test__options_display\n    modin_df = pd.DataFrame(frame_data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\programming\\modin\\modin\\pandas\\dataframe.py\", line 158, in __init__\nE       data = np.array(values, dtype=old_dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005200999999601663,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___finalize__",
+                "duration": 2.7239982000000964,
+                "run_index": 10,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005655000000501786,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 2.7223551999999813,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:141: in test___finalize__\n    pd.DataFrame(data).__finalize__(None)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\programming\\modin\\modin\\pandas\\dataframe.py\", line 171, in __init__\nE       pandas_df = pandas.DataFrame(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 614, in __init__\nE       mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 464, in dict_to_mgr\nE       return arrays_to_mgr(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 135, in arrays_to_mgr\nE       return create_block_manager_from_arrays(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1769, in create_block_manager_from_arrays\nE       blocks = _form_blocks(arrays, names, axes, consolidate)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1834, in _form_blocks\nE       numeric_blocks = _multi_blockify(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1924, in _multi_blockify\nE       values, placement = _stack_arrays(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1953, in _stack_arrays\nE       stacked = np.empty(shape, dtype=dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005120000000147229,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___copy__[int_data]",
+                "duration": 2.755268699999988,
+                "run_index": 11,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006625999999982923,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 2.7531741999999895,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:146: in test___copy__\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\programming\\modin\\modin\\pandas\\dataframe.py\", line 171, in __init__\nE       pandas_df = pandas.DataFrame(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 614, in __init__\nE       mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 464, in dict_to_mgr\nE       return arrays_to_mgr(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 135, in arrays_to_mgr\nE       return create_block_manager_from_arrays(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1769, in create_block_manager_from_arrays\nE       blocks = _form_blocks(arrays, names, axes, consolidate)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1834, in _form_blocks\nE       numeric_blocks = _multi_blockify(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1924, in _multi_blockify\nE       values, placement = _stack_arrays(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1953, in _stack_arrays\nE       stacked = np.empty(shape, dtype=dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007693000000017491,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___copy__[float_nan_data]",
+                "duration": 78.7412496,
+                "run_index": 12,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008219000000053711,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 78.7390868,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005189999999970496,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___deepcopy__[int_data]",
+                "duration": 2.747891100000004,
+                "run_index": 13,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006604000000152155,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 2.7459968000000003,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:155: in test___deepcopy__\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\programming\\modin\\modin\\pandas\\dataframe.py\", line 171, in __init__\nE       pandas_df = pandas.DataFrame(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 614, in __init__\nE       mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 464, in dict_to_mgr\nE       return arrays_to_mgr(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 135, in arrays_to_mgr\nE       return create_block_manager_from_arrays(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1769, in create_block_manager_from_arrays\nE       blocks = _form_blocks(arrays, names, axes, consolidate)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1834, in _form_blocks\nE       numeric_blocks = _multi_blockify(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1924, in _multi_blockify\nE       values, placement = _stack_arrays(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1953, in _stack_arrays\nE       stacked = np.empty(shape, dtype=dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005734999999731372,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___deepcopy__[float_nan_data]",
+                "duration": 35.265504700000065,
+                "run_index": 14,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006713000000218017,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 35.26364960000001,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005125000000134605,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___repr__",
+                "duration": 7.080421299999955,
+                "run_index": 15,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005420999999614651,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 7.0787114000000315,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:168: in test___repr__\n    modin_df = pd.DataFrame(frame_data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\programming\\modin\\modin\\pandas\\dataframe.py\", line 158, in __init__\nE       data = np.array(values, dtype=old_dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006257000000005064,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_inplace_series_ops[int_data]",
+                "duration": 4.3845327000000225,
+                "run_index": 16,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000865400000009231,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 4.3822594000000095,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:235: in test_inplace_series_ops\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\programming\\modin\\modin\\pandas\\dataframe.py\", line 171, in __init__\nE       pandas_df = pandas.DataFrame(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 614, in __init__\nE       mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 464, in dict_to_mgr\nE       return arrays_to_mgr(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 135, in arrays_to_mgr\nE       return create_block_manager_from_arrays(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1769, in create_block_manager_from_arrays\nE       blocks = _form_blocks(arrays, names, axes, consolidate)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1834, in _form_blocks\nE       numeric_blocks = _multi_blockify(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1924, in _multi_blockify\nE       values, placement = _stack_arrays(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1953, in _stack_arrays\nE       stacked = np.empty(shape, dtype=dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005424999999945612,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_inplace_series_ops[float_nan_data]",
+                "duration": 73.28870410000002,
+                "run_index": 17,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006505000000061045,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 73.28686770000002,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005353999999897496,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___setattr__",
+                "duration": 0.05083669999999074,
+                "run_index": 18,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005836999999928594,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0490737000000081,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005955999999969208,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_isin[int_data]",
+                "duration": 2.8614394000001084,
+                "run_index": 19,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009138000000348256,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 2.85887189999994,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:262: in test_isin\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\programming\\modin\\modin\\pandas\\dataframe.py\", line 171, in __init__\nE       pandas_df = pandas.DataFrame(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 614, in __init__\nE       mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 464, in dict_to_mgr\nE       return arrays_to_mgr(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 135, in arrays_to_mgr\nE       return create_block_manager_from_arrays(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1769, in create_block_manager_from_arrays\nE       blocks = _form_blocks(arrays, names, axes, consolidate)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1834, in _form_blocks\nE       numeric_blocks = _multi_blockify(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1924, in _multi_blockify\nE       values, placement = _stack_arrays(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1953, in _stack_arrays\nE       stacked = np.empty(shape, dtype=dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007399000000987144,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_isin[float_nan_data]",
+                "duration": 119.7530718999999,
+                "run_index": 20,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000968599999964681,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 119.75060299999996,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005317000000104599,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_constructor[int_data]",
+                "duration": 2.6970879000000423,
+                "run_index": 21,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007094000000051892,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 2.695120299999985,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:274: in test_constructor\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\programming\\modin\\modin\\pandas\\dataframe.py\", line 171, in __init__\nE       pandas_df = pandas.DataFrame(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 614, in __init__\nE       mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 464, in dict_to_mgr\nE       return arrays_to_mgr(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 135, in arrays_to_mgr\nE       return create_block_manager_from_arrays(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1769, in create_block_manager_from_arrays\nE       blocks = _form_blocks(arrays, names, axes, consolidate)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1834, in _form_blocks\nE       numeric_blocks = _multi_blockify(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1924, in _multi_blockify\nE       values, placement = _stack_arrays(\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1953, in _stack_arrays\nE       stacked = np.empty(shape, dtype=dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005488000000468674,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_constructor[float_nan_data]",
+                "duration": 72.13140459999988,
+                "run_index": 22,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007769999999709398,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 72.12934129999996,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000509299999976065,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_constructor_dtypes[data0]",
+                "duration": 42.97409229999994,
+                "run_index": 23,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006495000000086293,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 42.972206700000015,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:295: in test_constructor_dtypes\n    md_df, pd_df = create_test_dfs(data)\nmodin\\pandas\\test\\utils.py:807: in create_test_dfs\n    post_fn, [pd.DataFrame(*args, **kwargs), pandas.DataFrame(*args, **kwargs)]\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('float32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\programming\\modin\\modin\\pandas\\dataframe.py\", line 158, in __init__\nE       data = np.array(values, dtype=old_dtype)\nE   TypeError: Cannot interpret 'dtype('float32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005865999999059568,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_constructor_dtypes[data1]",
+                "duration": 4.162082099999907,
+                "run_index": 24,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006693000000268512,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 4.160185799999908,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:296: in test_constructor_dtypes\n    df_equals(md_df, pd_df)\nmodin\\pandas\\test\\utils.py:527: in df_equals\n    assert_frame_equal(\nmodin\\conftest.py:93: in wrapper\n    return func(\npandas\\_libs\\testing.pyx:53: in pandas._libs.testing.assert_almost_equal\n    ???\npandas\\_libs\\testing.pyx:168: in pandas._libs.testing.assert_almost_equal\n    ???\nE   AssertionError: DataFrame.iloc[:, 0] (column name=\"0\") are different\nE   \nE   DataFrame.iloc[:, 0] (column name=\"0\") values are different (33.33333 %)\nE   [index]: [0, 1, 2]\nE   [left]:  [1.0, 4.0, nan]\nE   [right]: [1.0, 4.0, 7.0]"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005576999999448162,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_constructor_dtypes[data2]",
+                "duration": 0.06219989999988229,
+                "run_index": 25,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011314999999285646,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.059343799999965086,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005931000000600761,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_constructor_columns_and_index",
+                "duration": 0.13783030000001872,
+                "run_index": 26,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006922000000031403,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.13289659999998094,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:313: in test_constructor_columns_and_index\n    pd.DataFrame(modin_df, columns=[\"max_speed\", \"health\"]),\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:253: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:469: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: 'list' object is not callable\nE   \nE   ========= Remote Traceback (2) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\programming\\modin\\modin\\pandas\\dataframe.py\", line 140, in __init__\nE       self._query_compiler = data.loc[index, columns]._query_compiler\nE     File \"C:\\programming\\modin\\modin\\pandas\\indexing.py\", line 539, in __getitem__\nE       return self.df.__getitem__(col_loc)\nE     File \"C:\\programming\\modin\\modin\\pandas\\base.py\", line 2924, in __getitem__\nE       return self._getitem(key)\nE     File \"C:\\programming\\modin\\modin\\pandas\\dataframe.py\", line 2950, in _getitem\nE       key = apply_if_callable(key, self)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\common.py\", line 358, in apply_if_callable\nE       return maybe_callable(obj, **kwargs)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 253, in __call__\nE       return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 76, in syncreq\nE       return conn.sync_request(handler, proxy, *args)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 469, in sync_request\nE       return self.async_request(handler, *args, timeout=timeout).value\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py\", line 102, in value\nE       raise self._obj\nE   _get_exception_class.<locals>.Derived: 'list' object is not callable\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 320, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\mi\\anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 593, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE   TypeError: 'list' object is not callable"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.003549300000031508,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            }
+        ],
+        "summary": {
+            "passed": 11,
+            "failed": 16,
+            "num_tests": 27,
+            "duration": 766.6568019390106
+        },
+        "created_at": "2021-08-18 18:43:36.423008"
+    }
+}

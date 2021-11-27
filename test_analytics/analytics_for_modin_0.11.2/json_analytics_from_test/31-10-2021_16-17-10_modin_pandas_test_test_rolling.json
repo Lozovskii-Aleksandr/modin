@@ -1,0 +1,1153 @@
+{
+    "report": {
+        "environment": {
+            "Python": "3.8.11",
+            "Platform": "Windows-10-10.0.19042-SP0"
+        },
+        "tests": [
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[None-None-5-int_data]",
+                "duration": 13.4426288,
+                "run_index": 0,
+                "setup": {
+                    "name": "setup",
+                    "duration": 5.3504805,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 2.7407223,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:40: in test_dataframe\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 326, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 614, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 172, in __init__\nE       pandas_df = pandas.DataFrame(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 614, in __init__\nE       mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 464, in dict_to_mgr\nE       return arrays_to_mgr(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 135, in arrays_to_mgr\nE       return create_block_manager_from_arrays(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1773, in create_block_manager_from_arrays\nE       blocks = _form_blocks(arrays, names, axes, consolidate)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1838, in _form_blocks\nE       numeric_blocks = _multi_blockify(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1928, in _multi_blockify\nE       values, placement = _stack_arrays(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1957, in _stack_arrays\nE       stacked = np.empty(shape, dtype=dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009455000000002656,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[None-None-5-float_nan_data]",
+                "duration": 159.2735927,
+                "run_index": 1,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010721999999994125,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 159.2707044,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007439000000033502,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[None-None-100-int_data]",
+                "duration": 2.167279700000023,
+                "run_index": 2,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000860500000015918,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 2.164990199999977,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:40: in test_dataframe\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 326, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 614, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 172, in __init__\nE       pandas_df = pandas.DataFrame(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 614, in __init__\nE       mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 464, in dict_to_mgr\nE       return arrays_to_mgr(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 135, in arrays_to_mgr\nE       return create_block_manager_from_arrays(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1773, in create_block_manager_from_arrays\nE       blocks = _form_blocks(arrays, names, axes, consolidate)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1838, in _form_blocks\nE       numeric_blocks = _multi_blockify(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1928, in _multi_blockify\nE       values, placement = _stack_arrays(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1957, in _stack_arrays\nE       stacked = np.empty(shape, dtype=dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005685000000141827,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[None-None-100-float_nan_data]",
+                "duration": 83.25327170000006,
+                "run_index": 3,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008514000000161559,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 83.25045989999998,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.001109000000042215,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[None-5-5-int_data]",
+                "duration": 2.153645900000015,
+                "run_index": 4,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009380000000192013,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 2.1511158999999793,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:40: in test_dataframe\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 326, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 614, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 172, in __init__\nE       pandas_df = pandas.DataFrame(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 614, in __init__\nE       mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 464, in dict_to_mgr\nE       return arrays_to_mgr(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 135, in arrays_to_mgr\nE       return create_block_manager_from_arrays(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1773, in create_block_manager_from_arrays\nE       blocks = _form_blocks(arrays, names, axes, consolidate)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1838, in _form_blocks\nE       numeric_blocks = _multi_blockify(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1928, in _multi_blockify\nE       values, placement = _stack_arrays(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1957, in _stack_arrays\nE       stacked = np.empty(shape, dtype=dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006539999999972679,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[None-5-5-float_nan_data]",
+                "duration": 163.05918790000004,
+                "run_index": 5,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0014024000000176784,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 163.05562980000002,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007532999999853018,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[None-5-100-int_data]",
+                "duration": 2.0817894999999567,
+                "run_index": 6,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0012332000000014887,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 2.078706299999965,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:40: in test_dataframe\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 326, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 614, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 172, in __init__\nE       pandas_df = pandas.DataFrame(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 614, in __init__\nE       mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 464, in dict_to_mgr\nE       return arrays_to_mgr(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 135, in arrays_to_mgr\nE       return create_block_manager_from_arrays(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1773, in create_block_manager_from_arrays\nE       blocks = _form_blocks(arrays, names, axes, consolidate)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1838, in _form_blocks\nE       numeric_blocks = _multi_blockify(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1928, in _multi_blockify\nE       values, placement = _stack_arrays(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1957, in _stack_arrays\nE       stacked = np.empty(shape, dtype=dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006167999999888707,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[None-5-100-float_nan_data]",
+                "duration": 196.49379820000001,
+                "run_index": 7,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0017310000000065884,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 196.48962139999992,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000714800000082505,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[triang-None-5-int_data]",
+                "duration": 2.1632090000000517,
+                "run_index": 8,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009148999999979424,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 2.1607936999999993,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:40: in test_dataframe\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 326, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 614, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 172, in __init__\nE       pandas_df = pandas.DataFrame(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 614, in __init__\nE       mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 464, in dict_to_mgr\nE       return arrays_to_mgr(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 135, in arrays_to_mgr\nE       return create_block_manager_from_arrays(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1773, in create_block_manager_from_arrays\nE       blocks = _form_blocks(arrays, names, axes, consolidate)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1838, in _form_blocks\nE       numeric_blocks = _multi_blockify(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1928, in _multi_blockify\nE       values, placement = _stack_arrays(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1957, in _stack_arrays\nE       stacked = np.empty(shape, dtype=dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005855000000565269,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[triang-None-5-float_nan_data]",
+                "duration": 75.0487311999999,
+                "run_index": 9,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009612000000061016,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 75.0460718999999,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007368999999926018,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[triang-None-100-int_data]",
+                "duration": 2.0697437000000036,
+                "run_index": 10,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010207999999920503,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 2.0666568000000325,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:40: in test_dataframe\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 326, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 614, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 172, in __init__\nE       pandas_df = pandas.DataFrame(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 614, in __init__\nE       mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 464, in dict_to_mgr\nE       return arrays_to_mgr(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 135, in arrays_to_mgr\nE       return create_block_manager_from_arrays(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1773, in create_block_manager_from_arrays\nE       blocks = _form_blocks(arrays, names, axes, consolidate)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1838, in _form_blocks\nE       numeric_blocks = _multi_blockify(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1928, in _multi_blockify\nE       values, placement = _stack_arrays(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1957, in _stack_arrays\nE       stacked = np.empty(shape, dtype=dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0010452999999870372,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[triang-None-100-float_nan_data]",
+                "duration": 36.285214500000166,
+                "run_index": 11,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010207000000264088,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 36.28252800000007,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006451000000424756,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[triang-5-5-int_data]",
+                "duration": 2.157788499999924,
+                "run_index": 12,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009050999999544729,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 2.15539560000002,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:40: in test_dataframe\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 326, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 614, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 172, in __init__\nE       pandas_df = pandas.DataFrame(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 614, in __init__\nE       mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 464, in dict_to_mgr\nE       return arrays_to_mgr(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 135, in arrays_to_mgr\nE       return create_block_manager_from_arrays(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1773, in create_block_manager_from_arrays\nE       blocks = _form_blocks(arrays, names, axes, consolidate)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1838, in _form_blocks\nE       numeric_blocks = _multi_blockify(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1928, in _multi_blockify\nE       values, placement = _stack_arrays(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1957, in _stack_arrays\nE       stacked = np.empty(shape, dtype=dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005826999999953841,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[triang-5-5-float_nan_data]",
+                "duration": 36.14272779999999,
+                "run_index": 13,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009469999999964784,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 36.1401793,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006544999999960055,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[triang-5-100-int_data]",
+                "duration": 2.0933983999999555,
+                "run_index": 14,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009215000000040163,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 2.090975599999979,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:40: in test_dataframe\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: Cannot interpret 'dtype('int32')' as a data type\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 326, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 614, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 172, in __init__\nE       pandas_df = pandas.DataFrame(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 614, in __init__\nE       mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 464, in dict_to_mgr\nE       return arrays_to_mgr(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\construction.py\", line 135, in arrays_to_mgr\nE       return create_block_manager_from_arrays(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1773, in create_block_manager_from_arrays\nE       blocks = _form_blocks(arrays, names, axes, consolidate)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1838, in _form_blocks\nE       numeric_blocks = _multi_blockify(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1928, in _multi_blockify\nE       values, placement = _stack_arrays(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\internals\\managers.py\", line 1957, in _stack_arrays\nE       stacked = np.empty(shape, dtype=dtype)\nE   TypeError: Cannot interpret 'dtype('int32')' as a data type"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005797999999685999,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe[triang-5-100-float_nan_data]",
+                "duration": 73.65858759999992,
+                "run_index": 15,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009262999999464228,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 73.65597489999993,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000760100000093189,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3-both-None-0]",
+                "duration": 0.47364970000012363,
+                "run_index": 16,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0013823000000456886,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.4701763000000483,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:105: in test_dataframe_dt_index\n    modin_rolled.corr(modin_df, True), pandas_rolled.corr(pandas_df, True)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: cannot dump <member '____id_pack__' of 'BaseNetref' objects>\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 326, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 614, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\base.py\", line 3617, in corr\nE       query_compiler=self._query_compiler.rolling_corr(\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 1102, in rolling_corr\nE       return self.default_to_pandas(\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 241, in default_to_pandas\nE       result = pandas_op(self.to_pandas(), *args, **kwargs)\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 1103, in <lambda>\nE       lambda df: pandas.DataFrame.rolling(df, *rolling_args).corr(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 2309, in corr\nE       return super().corr(other=other, pairwise=pairwise, ddof=ddof, **kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 1482, in corr\nE       return self._apply_pairwise(self._selected_obj, other, pairwise, corr_func)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 480, in _apply_pairwise\nE       return flex_binary_moment(target, other, func, pairwise=bool(pairwise))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\common.py\", line 98, in flex_binary_moment\nE       result.index = MultiIndex.from_product(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 621, in from_product\nE       return cls(levels, codes, sortorder=sortorder, names=names)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 339, in __new__\nE       new_codes = result._verify_integrity()\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 423, in _verify_integrity\nE       codes = [\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 423, in <listcomp>\nE       codes = [\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 363, in _validate_codes\nE       if np.any(null_mask):\nE     File \"<__array_function__ internals>\", line 5, in any\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 277, in method\nE       return syncreq(_self, consts.HANDLE_CALLATTR, name, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 76, in syncreq\nE       return conn.sync_request(handler, proxy, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 484, in sync_request\nE       return self.async_request(handler, *args, timeout=timeout).value\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 508, in async_request\nE       self._async_request(handler, args, res)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 490, in _async_request\nE       self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 233, in _send\nE       data = brine.dump((msg, seq, args))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 375, in dump\nE       _dump(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 190, in _undumpable\nE       raise TypeError(\"cannot dump %r\" % (obj,))\nE   TypeError: cannot dump <member '____id_pack__' of 'BaseNetref' objects>"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007087999999839667,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3-both-None-columns]",
+                "duration": 3.3717066000001523,
+                "run_index": 17,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010576000000810382,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 3.3690010999999913,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:105: in test_dataframe_dt_index\n    modin_rolled.corr(modin_df, True), pandas_rolled.corr(pandas_df, True)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: cannot dump <member '____id_pack__' of 'BaseNetref' objects>\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 326, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 614, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\base.py\", line 3617, in corr\nE       query_compiler=self._query_compiler.rolling_corr(\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 1102, in rolling_corr\nE       return self.default_to_pandas(\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 241, in default_to_pandas\nE       result = pandas_op(self.to_pandas(), *args, **kwargs)\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 1103, in <lambda>\nE       lambda df: pandas.DataFrame.rolling(df, *rolling_args).corr(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 2309, in corr\nE       return super().corr(other=other, pairwise=pairwise, ddof=ddof, **kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 1482, in corr\nE       return self._apply_pairwise(self._selected_obj, other, pairwise, corr_func)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 480, in _apply_pairwise\nE       return flex_binary_moment(target, other, func, pairwise=bool(pairwise))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\common.py\", line 98, in flex_binary_moment\nE       result.index = MultiIndex.from_product(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 621, in from_product\nE       return cls(levels, codes, sortorder=sortorder, names=names)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 339, in __new__\nE       new_codes = result._verify_integrity()\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 423, in _verify_integrity\nE       codes = [\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 423, in <listcomp>\nE       codes = [\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 363, in _validate_codes\nE       if np.any(null_mask):\nE     File \"<__array_function__ internals>\", line 5, in any\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 277, in method\nE       return syncreq(_self, consts.HANDLE_CALLATTR, name, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 76, in syncreq\nE       return conn.sync_request(handler, proxy, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 484, in sync_request\nE       return self.async_request(handler, *args, timeout=timeout).value\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 508, in async_request\nE       self._async_request(handler, args, res)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 490, in _async_request\nE       self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 233, in _send\nE       data = brine.dump((msg, seq, args))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 375, in dump\nE       _dump(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 190, in _undumpable\nE       raise TypeError(\"cannot dump %r\" % (obj,))\nE   TypeError: cannot dump <member '____id_pack__' of 'BaseNetref' objects>"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005902999999989333,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3-both-DateCol-0]",
+                "duration": 1.9889586999998983,
+                "run_index": 18,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009761000000025888,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 1.9864199999999528,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:105: in test_dataframe_dt_index\n    modin_rolled.corr(modin_df, True), pandas_rolled.corr(pandas_df, True)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: cannot dump <member '____id_pack__' of 'BaseNetref' objects>\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 326, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 614, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\base.py\", line 3617, in corr\nE       query_compiler=self._query_compiler.rolling_corr(\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 1102, in rolling_corr\nE       return self.default_to_pandas(\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 241, in default_to_pandas\nE       result = pandas_op(self.to_pandas(), *args, **kwargs)\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 1103, in <lambda>\nE       lambda df: pandas.DataFrame.rolling(df, *rolling_args).corr(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 2309, in corr\nE       return super().corr(other=other, pairwise=pairwise, ddof=ddof, **kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 1482, in corr\nE       return self._apply_pairwise(self._selected_obj, other, pairwise, corr_func)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 480, in _apply_pairwise\nE       return flex_binary_moment(target, other, func, pairwise=bool(pairwise))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\common.py\", line 98, in flex_binary_moment\nE       result.index = MultiIndex.from_product(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 621, in from_product\nE       return cls(levels, codes, sortorder=sortorder, names=names)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 339, in __new__\nE       new_codes = result._verify_integrity()\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 423, in _verify_integrity\nE       codes = [\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 423, in <listcomp>\nE       codes = [\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 363, in _validate_codes\nE       if np.any(null_mask):\nE     File \"<__array_function__ internals>\", line 5, in any\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 277, in method\nE       return syncreq(_self, consts.HANDLE_CALLATTR, name, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 76, in syncreq\nE       return conn.sync_request(handler, proxy, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 484, in sync_request\nE       return self.async_request(handler, *args, timeout=timeout).value\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 508, in async_request\nE       self._async_request(handler, args, res)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 490, in _async_request\nE       self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 233, in _send\nE       data = brine.dump((msg, seq, args))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 375, in dump\nE       _dump(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 190, in _undumpable\nE       raise TypeError(\"cannot dump %r\" % (obj,))\nE   TypeError: cannot dump <member '____id_pack__' of 'BaseNetref' objects>"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005864999999403153,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3-both-DateCol-columns]",
+                "duration": 3.3648402999998552,
+                "run_index": 19,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009109999999736829,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 3.362061400000016,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:105: in test_dataframe_dt_index\n    modin_rolled.corr(modin_df, True), pandas_rolled.corr(pandas_df, True)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: cannot dump <member '____id_pack__' of 'BaseNetref' objects>\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 326, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 614, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\base.py\", line 3617, in corr\nE       query_compiler=self._query_compiler.rolling_corr(\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 1102, in rolling_corr\nE       return self.default_to_pandas(\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 241, in default_to_pandas\nE       result = pandas_op(self.to_pandas(), *args, **kwargs)\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 1103, in <lambda>\nE       lambda df: pandas.DataFrame.rolling(df, *rolling_args).corr(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 2309, in corr\nE       return super().corr(other=other, pairwise=pairwise, ddof=ddof, **kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 1482, in corr\nE       return self._apply_pairwise(self._selected_obj, other, pairwise, corr_func)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 480, in _apply_pairwise\nE       return flex_binary_moment(target, other, func, pairwise=bool(pairwise))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\common.py\", line 98, in flex_binary_moment\nE       result.index = MultiIndex.from_product(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 621, in from_product\nE       return cls(levels, codes, sortorder=sortorder, names=names)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 339, in __new__\nE       new_codes = result._verify_integrity()\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 423, in _verify_integrity\nE       codes = [\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 423, in <listcomp>\nE       codes = [\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 363, in _validate_codes\nE       if np.any(null_mask):\nE     File \"<__array_function__ internals>\", line 5, in any\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 277, in method\nE       return syncreq(_self, consts.HANDLE_CALLATTR, name, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 76, in syncreq\nE       return conn.sync_request(handler, proxy, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 484, in sync_request\nE       return self.async_request(handler, *args, timeout=timeout).value\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 508, in async_request\nE       self._async_request(handler, args, res)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 490, in _async_request\nE       self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 233, in _send\nE       data = brine.dump((msg, seq, args))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 375, in dump\nE       _dump(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 190, in _undumpable\nE       raise TypeError(\"cannot dump %r\" % (obj,))\nE   TypeError: cannot dump <member '____id_pack__' of 'BaseNetref' objects>"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009568999998919026,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3-right-None-0]",
+                "duration": 0.46000390000006064,
+                "run_index": 20,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011110000000371656,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.4570995999999923,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:105: in test_dataframe_dt_index\n    modin_rolled.corr(modin_df, True), pandas_rolled.corr(pandas_df, True)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: cannot dump <member '____id_pack__' of 'BaseNetref' objects>\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 326, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 614, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\base.py\", line 3617, in corr\nE       query_compiler=self._query_compiler.rolling_corr(\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 1102, in rolling_corr\nE       return self.default_to_pandas(\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 241, in default_to_pandas\nE       result = pandas_op(self.to_pandas(), *args, **kwargs)\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 1103, in <lambda>\nE       lambda df: pandas.DataFrame.rolling(df, *rolling_args).corr(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 2309, in corr\nE       return super().corr(other=other, pairwise=pairwise, ddof=ddof, **kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 1482, in corr\nE       return self._apply_pairwise(self._selected_obj, other, pairwise, corr_func)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 480, in _apply_pairwise\nE       return flex_binary_moment(target, other, func, pairwise=bool(pairwise))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\common.py\", line 98, in flex_binary_moment\nE       result.index = MultiIndex.from_product(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 621, in from_product\nE       return cls(levels, codes, sortorder=sortorder, names=names)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 339, in __new__\nE       new_codes = result._verify_integrity()\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 423, in _verify_integrity\nE       codes = [\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 423, in <listcomp>\nE       codes = [\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 363, in _validate_codes\nE       if np.any(null_mask):\nE     File \"<__array_function__ internals>\", line 5, in any\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 277, in method\nE       return syncreq(_self, consts.HANDLE_CALLATTR, name, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 76, in syncreq\nE       return conn.sync_request(handler, proxy, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 484, in sync_request\nE       return self.async_request(handler, *args, timeout=timeout).value\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 508, in async_request\nE       self._async_request(handler, args, res)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 490, in _async_request\nE       self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 233, in _send\nE       data = brine.dump((msg, seq, args))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 375, in dump\nE       _dump(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 190, in _undumpable\nE       raise TypeError(\"cannot dump %r\" % (obj,))\nE   TypeError: cannot dump <member '____id_pack__' of 'BaseNetref' objects>"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006822999999940293,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3-right-None-columns]",
+                "duration": 3.3166742999999315,
+                "run_index": 21,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0014989999999670545,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 3.313084300000014,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:105: in test_dataframe_dt_index\n    modin_rolled.corr(modin_df, True), pandas_rolled.corr(pandas_df, True)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: cannot dump <member '____id_pack__' of 'BaseNetref' objects>\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 326, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 614, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\base.py\", line 3617, in corr\nE       query_compiler=self._query_compiler.rolling_corr(\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 1102, in rolling_corr\nE       return self.default_to_pandas(\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 241, in default_to_pandas\nE       result = pandas_op(self.to_pandas(), *args, **kwargs)\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 1103, in <lambda>\nE       lambda df: pandas.DataFrame.rolling(df, *rolling_args).corr(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 2309, in corr\nE       return super().corr(other=other, pairwise=pairwise, ddof=ddof, **kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 1482, in corr\nE       return self._apply_pairwise(self._selected_obj, other, pairwise, corr_func)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 480, in _apply_pairwise\nE       return flex_binary_moment(target, other, func, pairwise=bool(pairwise))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\common.py\", line 98, in flex_binary_moment\nE       result.index = MultiIndex.from_product(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 621, in from_product\nE       return cls(levels, codes, sortorder=sortorder, names=names)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 339, in __new__\nE       new_codes = result._verify_integrity()\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 423, in _verify_integrity\nE       codes = [\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 423, in <listcomp>\nE       codes = [\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 363, in _validate_codes\nE       if np.any(null_mask):\nE     File \"<__array_function__ internals>\", line 5, in any\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 277, in method\nE       return syncreq(_self, consts.HANDLE_CALLATTR, name, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 76, in syncreq\nE       return conn.sync_request(handler, proxy, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 484, in sync_request\nE       return self.async_request(handler, *args, timeout=timeout).value\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 508, in async_request\nE       self._async_request(handler, args, res)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 490, in _async_request\nE       self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 233, in _send\nE       data = brine.dump((msg, seq, args))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 375, in dump\nE       _dump(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 190, in _undumpable\nE       raise TypeError(\"cannot dump %r\" % (obj,))\nE   TypeError: cannot dump <member '____id_pack__' of 'BaseNetref' objects>"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005919999999832726,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3-right-DateCol-0]",
+                "duration": 0.45595079999986865,
+                "run_index": 22,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010115999999698033,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.45320349999997234,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:105: in test_dataframe_dt_index\n    modin_rolled.corr(modin_df, True), pandas_rolled.corr(pandas_df, True)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: cannot dump <member '____id_pack__' of 'BaseNetref' objects>\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 326, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 614, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\base.py\", line 3617, in corr\nE       query_compiler=self._query_compiler.rolling_corr(\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 1102, in rolling_corr\nE       return self.default_to_pandas(\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 241, in default_to_pandas\nE       result = pandas_op(self.to_pandas(), *args, **kwargs)\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 1103, in <lambda>\nE       lambda df: pandas.DataFrame.rolling(df, *rolling_args).corr(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 2309, in corr\nE       return super().corr(other=other, pairwise=pairwise, ddof=ddof, **kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 1482, in corr\nE       return self._apply_pairwise(self._selected_obj, other, pairwise, corr_func)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 480, in _apply_pairwise\nE       return flex_binary_moment(target, other, func, pairwise=bool(pairwise))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\common.py\", line 98, in flex_binary_moment\nE       result.index = MultiIndex.from_product(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 621, in from_product\nE       return cls(levels, codes, sortorder=sortorder, names=names)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 339, in __new__\nE       new_codes = result._verify_integrity()\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 423, in _verify_integrity\nE       codes = [\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 423, in <listcomp>\nE       codes = [\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 363, in _validate_codes\nE       if np.any(null_mask):\nE     File \"<__array_function__ internals>\", line 5, in any\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 277, in method\nE       return syncreq(_self, consts.HANDLE_CALLATTR, name, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 76, in syncreq\nE       return conn.sync_request(handler, proxy, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 484, in sync_request\nE       return self.async_request(handler, *args, timeout=timeout).value\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 508, in async_request\nE       self._async_request(handler, args, res)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 490, in _async_request\nE       self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 233, in _send\nE       data = brine.dump((msg, seq, args))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 375, in dump\nE       _dump(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 190, in _undumpable\nE       raise TypeError(\"cannot dump %r\" % (obj,))\nE   TypeError: cannot dump <member '____id_pack__' of 'BaseNetref' objects>"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007240999999567066,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3-right-DateCol-columns]",
+                "duration": 3.402631600000177,
+                "run_index": 23,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009163000000853572,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 3.4000178000000005,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:105: in test_dataframe_dt_index\n    modin_rolled.corr(modin_df, True), pandas_rolled.corr(pandas_df, True)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: cannot dump <member '____id_pack__' of 'BaseNetref' objects>\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 326, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 614, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\base.py\", line 3617, in corr\nE       query_compiler=self._query_compiler.rolling_corr(\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 1102, in rolling_corr\nE       return self.default_to_pandas(\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 241, in default_to_pandas\nE       result = pandas_op(self.to_pandas(), *args, **kwargs)\nE     File \"C:\\prog\\modin\\modin\\core\\storage_formats\\pandas\\query_compiler.py\", line 1103, in <lambda>\nE       lambda df: pandas.DataFrame.rolling(df, *rolling_args).corr(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 2309, in corr\nE       return super().corr(other=other, pairwise=pairwise, ddof=ddof, **kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 1482, in corr\nE       return self._apply_pairwise(self._selected_obj, other, pairwise, corr_func)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\rolling.py\", line 480, in _apply_pairwise\nE       return flex_binary_moment(target, other, func, pairwise=bool(pairwise))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\window\\common.py\", line 98, in flex_binary_moment\nE       result.index = MultiIndex.from_product(\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 621, in from_product\nE       return cls(levels, codes, sortorder=sortorder, names=names)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 339, in __new__\nE       new_codes = result._verify_integrity()\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 423, in _verify_integrity\nE       codes = [\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 423, in <listcomp>\nE       codes = [\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\indexes\\multi.py\", line 363, in _validate_codes\nE       if np.any(null_mask):\nE     File \"<__array_function__ internals>\", line 5, in any\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 277, in method\nE       return syncreq(_self, consts.HANDLE_CALLATTR, name, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 76, in syncreq\nE       return conn.sync_request(handler, proxy, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 484, in sync_request\nE       return self.async_request(handler, *args, timeout=timeout).value\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 508, in async_request\nE       self._async_request(handler, args, res)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 490, in _async_request\nE       self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 233, in _send\nE       data = brine.dump((msg, seq, args))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 375, in dump\nE       _dump(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 186, in _dump_tuple\nE       _dump(item, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 194, in _dump\nE       _dump_registry.get(type(obj), _undumpable)(obj, stream)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py\", line 190, in _undumpable\nE       raise TypeError(\"cannot dump %r\" % (obj,))\nE   TypeError: cannot dump <member '____id_pack__' of 'BaseNetref' objects>"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007812000000058106,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3s-both-None-0]",
+                "duration": 0.23686129999998684,
+                "run_index": 24,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009062999999969179,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.23436800000001767,
+                    "outcome": "failed",
+                    "longrepr": "C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:247: in read\n    buf = self.sock.recv(min(self.MAX_IO_CHUNK, count))\nE   ConnectionResetError: [WinError 10054] \u0423\u0434\u0430\u043b\u0435\u043d\u043d\u044b\u0439 \u0445\u043e\u0441\u0442 \u043f\u0440\u0438\u043d\u0443\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0440\u0430\u0437\u043e\u0440\u0432\u0430\u043b \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0449\u0435\u0435 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435\n\nDuring handling of the above exception, another exception occurred:\nmodin\\pandas\\test\\test_rolling.py:124: in test_dataframe_dt_index\n    df_equals(modin_rolled.count(), pandas_rolled.count())\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:100: in value\n    self.wait()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:47: in wait\n    self._conn.serve(self._ttl)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:388: in serve\n    data = self._channel.poll(timeout) and self._channel.recv()\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:55: in recv\n    header = self.stream.read(self.FRAME_HEADER.size)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:256: in read\n    raise EOFError(ex)\nE   EOFError: [WinError 10054] \u0423\u0434\u0430\u043b\u0435\u043d\u043d\u044b\u0439 \u0445\u043e\u0441\u0442 \u043f\u0440\u0438\u043d\u0443\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0440\u0430\u0437\u043e\u0440\u0432\u0430\u043b \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0449\u0435\u0435 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006806999999753316,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3s-both-None-columns]",
+                "duration": 0.003853899999967325,
+                "run_index": 25,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008977999999615349,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0014379000000417363,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:91: in test_dataframe_dt_index\n    modin_df = pd.DataFrame(data, index=index)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006204000000025189,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3s-both-DateCol-0]",
+                "duration": 0.00422219999995832,
+                "run_index": 26,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010492999999769381,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.001426000000037675,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:91: in test_dataframe_dt_index\n    modin_df = pd.DataFrame(data, index=index)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006975999999667692,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3s-both-DateCol-columns]",
+                "duration": 0.004090299999916169,
+                "run_index": 27,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009689999999409338,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0015153000000509564,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:91: in test_dataframe_dt_index\n    modin_df = pd.DataFrame(data, index=index)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006369999999833453,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3s-right-None-0]",
+                "duration": 0.004345100000136881,
+                "run_index": 28,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011989000000767192,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0013461999999435648,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:91: in test_dataframe_dt_index\n    modin_df = pd.DataFrame(data, index=index)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006011000000398781,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3s-right-None-columns]",
+                "duration": 0.004063400000177353,
+                "run_index": 29,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009946000000127242,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0013465000000678629,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:91: in test_dataframe_dt_index\n    modin_df = pd.DataFrame(data, index=index)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007277000000840417,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3s-right-DateCol-0]",
+                "duration": 0.00487390000000687,
+                "run_index": 30,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011280999999598862,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.001932000000010703,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:91: in test_dataframe_dt_index\n    modin_df = pd.DataFrame(data, index=index)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006857000000763946,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_dataframe_dt_index[3s-right-DateCol-columns]",
+                "duration": 0.005284999999958018,
+                "run_index": 31,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0015195999999377818,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0016583000000309767,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:91: in test_dataframe_dt_index\n    modin_df = pd.DataFrame(data, index=index)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005875000000514774,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[None-None-5-int_data]",
+                "duration": 0.003241300000013325,
+                "run_index": 32,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000888400000008005,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0006263999999873704,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:139: in test_series\n    modin_series, pandas_series = create_test_series(data)\nmodin\\pandas\\test\\test_rolling.py:27: in create_test_series\n    modin_series = pd.Series(vals[next(iter(vals.keys()))])\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008381000000099448,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[None-None-5-float_nan_data]",
+                "duration": 0.004165800000009767,
+                "run_index": 33,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0014228000000002794,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0007216000000198619,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:139: in test_series\n    modin_series, pandas_series = create_test_series(data)\nmodin\\pandas\\test\\test_rolling.py:27: in create_test_series\n    modin_series = pd.Series(vals[next(iter(vals.keys()))])\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005985999999893465,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[None-None-100-int_data]",
+                "duration": 0.005030700000020261,
+                "run_index": 34,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0011015000000043074,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0021200999999564374,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:139: in test_series\n    modin_series, pandas_series = create_test_series(data)\nmodin\\pandas\\test\\test_rolling.py:27: in create_test_series\n    modin_series = pd.Series(vals[next(iter(vals.keys()))])\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007076000000552085,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[None-None-100-float_nan_data]",
+                "duration": 0.0036144999997986815,
+                "run_index": 35,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010019999999713036,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.000983899999937421,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:139: in test_series\n    modin_series, pandas_series = create_test_series(data)\nmodin\\pandas\\test\\test_rolling.py:27: in create_test_series\n    modin_series = pd.Series(vals[next(iter(vals.keys()))])\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006265999999186533,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[None-5-5-int_data]",
+                "duration": 0.0033979999998337007,
+                "run_index": 36,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010709999999107822,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0006801000000677959,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:139: in test_series\n    modin_series, pandas_series = create_test_series(data)\nmodin\\pandas\\test\\test_rolling.py:27: in create_test_series\n    modin_series = pd.Series(vals[next(iter(vals.keys()))])\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005758999999443404,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[None-5-5-float_nan_data]",
+                "duration": 0.00300680000009379,
+                "run_index": 37,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009071000000631102,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0006095999999615742,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:139: in test_series\n    modin_series, pandas_series = create_test_series(data)\nmodin\\pandas\\test\\test_rolling.py:27: in create_test_series\n    modin_series = pd.Series(vals[next(iter(vals.keys()))])\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005830000000059954,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[None-5-100-int_data]",
+                "duration": 0.0030464999999821885,
+                "run_index": 38,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008652000000211046,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0006350999999540363,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:139: in test_series\n    modin_series, pandas_series = create_test_series(data)\nmodin\\pandas\\test\\test_rolling.py:27: in create_test_series\n    modin_series = pd.Series(vals[next(iter(vals.keys()))])\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006809999999859428,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[None-5-100-float_nan_data]",
+                "duration": 0.0032856999998784886,
+                "run_index": 39,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010201999999708278,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0006453999999394,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:139: in test_series\n    modin_series, pandas_series = create_test_series(data)\nmodin\\pandas\\test\\test_rolling.py:27: in create_test_series\n    modin_series = pd.Series(vals[next(iter(vals.keys()))])\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000599899999997433,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[triang-None-5-int_data]",
+                "duration": 0.0030596999998806496,
+                "run_index": 40,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008976999999958934,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0006050999999160922,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:139: in test_series\n    modin_series, pandas_series = create_test_series(data)\nmodin\\pandas\\test\\test_rolling.py:27: in create_test_series\n    modin_series = pd.Series(vals[next(iter(vals.keys()))])\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006591999999727705,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[triang-None-5-float_nan_data]",
+                "duration": 0.0034335999997665567,
+                "run_index": 41,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010795999999118067,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0006022999999686363,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:139: in test_series\n    modin_series, pandas_series = create_test_series(data)\nmodin\\pandas\\test\\test_rolling.py:27: in create_test_series\n    modin_series = pd.Series(vals[next(iter(vals.keys()))])\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006720999999743071,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[triang-None-100-int_data]",
+                "duration": 0.003785199999811084,
+                "run_index": 42,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008674999999129795,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0009253000000626344,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:139: in test_series\n    modin_series, pandas_series = create_test_series(data)\nmodin\\pandas\\test\\test_rolling.py:27: in create_test_series\n    modin_series = pd.Series(vals[next(iter(vals.keys()))])\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0011248999999224907,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[triang-None-100-float_nan_data]",
+                "duration": 0.004273199999943245,
+                "run_index": 43,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010800999999673877,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0006151000000045315,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:139: in test_series\n    modin_series, pandas_series = create_test_series(data)\nmodin\\pandas\\test\\test_rolling.py:27: in create_test_series\n    modin_series = pd.Series(vals[next(iter(vals.keys()))])\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0014979000000039377,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[triang-5-5-int_data]",
+                "duration": 0.0049357999998846935,
+                "run_index": 44,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001509499999997388,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.001107299999944189,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:139: in test_series\n    modin_series, pandas_series = create_test_series(data)\nmodin\\pandas\\test\\test_rolling.py:27: in create_test_series\n    modin_series = pd.Series(vals[next(iter(vals.keys()))])\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008094999999457286,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[triang-5-5-float_nan_data]",
+                "duration": 0.004989700000123776,
+                "run_index": 45,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0016486000000668355,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0006224999999631109,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:139: in test_series\n    modin_series, pandas_series = create_test_series(data)\nmodin\\pandas\\test\\test_rolling.py:27: in create_test_series\n    modin_series = pd.Series(vals[next(iter(vals.keys()))])\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0010700000000269938,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[triang-5-100-int_data]",
+                "duration": 0.0029630000000224754,
+                "run_index": 46,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008672999999816966,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0005903999999645748,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:139: in test_series\n    modin_series, pandas_series = create_test_series(data)\nmodin\\pandas\\test\\test_rolling.py:27: in create_test_series\n    modin_series = pd.Series(vals[next(iter(vals.keys()))])\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006380000000945074,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series[triang-5-100-float_nan_data]",
+                "duration": 0.002968600000144761,
+                "run_index": 47,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009114000000636224,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0005824999999504143,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:139: in test_series\n    modin_series, pandas_series = create_test_series(data)\nmodin\\pandas\\test\\test_rolling.py:27: in create_test_series\n    modin_series = pd.Series(vals[next(iter(vals.keys()))])\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005633000000671018,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series_dt_index[both]",
+                "duration": 0.011141400000155954,
+                "run_index": 48,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0009095999999999549,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.008600500000056854,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:196: in test_series_dt_index\n    modin_series = pd.Series(range(12), index=index)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007217000000991902,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_series_dt_index[right]",
+                "duration": 0.004718000000139,
+                "run_index": 49,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007052000000840053,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.001864800000021205,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:196: in test_series_dt_index\n    modin_series = pd.Series(range(12), index=index)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0014427999999497843,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_api_indexer",
+                "duration": 0.0024913999999398584,
+                "run_index": 50,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006535999999641717,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0007100999999920532,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:210: in test_api_indexer\n    modin_df, pandas_df = create_test_dfs(test_data_values[0])\nmodin\\pandas\\test\\utils.py:824: in create_test_dfs\n    post_fn, [pd.DataFrame(*args, **kwargs), pandas.DataFrame(*args, **kwargs)]\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00047410000001946173,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_rolling.py::test_issue_3512",
+                "duration": 0.009339299999965078,
+                "run_index": 51,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0004946999999901891,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.003931999999963409,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_rolling.py:219: in test_issue_3512\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:431: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:484: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:508: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:490: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:264: in _send\n    self._channel.send(data)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\channel.py:78: in send\n    self.stream.write(header + data + self.FLUSHER)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:267: in write\n    count = self.sock.send(data[:self.MAX_IO_CHUNK])\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\stream.py:94: in __getattr__\n    raise EOFError(\"stream has been closed\")\nE   EOFError: stream has been closed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.004417900000021291,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            }
+        ],
+        "summary": {
+            "failed": 44,
+            "passed": 8,
+            "num_tests": 52,
+            "duration": 873.072413444519
+        },
+        "created_at": "2021-10-31 16:31:47.655374"
+    }
+}

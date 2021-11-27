@@ -1,0 +1,121 @@
+{
+    "report": {
+        "environment": {
+            "Python": "3.8.11",
+            "Platform": "Windows-10-10.0.19042-SP0"
+        },
+        "tests": [
+            {
+                "name": "modin/pandas/test/test_reshape.py::test_get_dummies",
+                "duration": 0.11377969999999937,
+                "run_index": 0,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.028803999999999608,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05525160000000007,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009201000000000903,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_reshape.py::test_melt",
+                "duration": 0.03616130000000073,
+                "run_index": 1,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0004924000000001705,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03443250000000031,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007440000000000779,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_reshape.py::test_crosstab",
+                "duration": 0.04034100000000018,
+                "run_index": 2,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005372000000001265,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03868579999999966,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00058080000000027,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_reshape.py::test_lreshape",
+                "duration": 0.008960300000000032,
+                "run_index": 3,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005144999999999733,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.007549099999999864,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00038220000000022125,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_reshape.py::test_wide_to_long",
+                "duration": 0.02598939999999983,
+                "run_index": 4,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00046919999999994744,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.0241321000000001,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009188999999998337,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            }
+        ],
+        "summary": {
+            "passed": 5,
+            "num_tests": 5,
+            "duration": 3.009448528289795
+        },
+        "created_at": "2021-08-27 13:15:03.538848"
+    }
+}

@@ -1,0 +1,583 @@
+{
+    "report": {
+        "environment": {
+            "Python": "3.8.11",
+            "Platform": "Windows-10-10.0.19042-SP0"
+        },
+        "tests": [
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_items_iteritems_iterrows[items]",
+                "duration": 0.7053477000000008,
+                "run_index": 0,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0270204000000005,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.6496985999999998,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.001608300000000007,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_items_iteritems_iterrows[iteritems]",
+                "duration": 0.628117200000001,
+                "run_index": 1,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008623999999999299,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.6257037000000008,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006887000000004306,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_items_iteritems_iterrows[iterrows]",
+                "duration": 1.7788395999999986,
+                "run_index": 2,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0013122999999994889,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 1.7752910999999996,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009239000000000885,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_itertuples_name[None]",
+                "duration": 3.9271829,
+                "run_index": 3,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006627999999997414,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 3.9251836000000004,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006737000000001103,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_itertuples_name[NotPandas]",
+                "duration": 3.9815733999999967,
+                "run_index": 4,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006387999999990512,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 3.9795184999999993,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007772999999993147,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_itertuples_multiindex",
+                "duration": 5.464746399999999,
+                "run_index": 5,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005857999999996366,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 5.462925599999998,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006492000000015707,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___iter__",
+                "duration": 0.00699600000000089,
+                "run_index": 6,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005152999999999963,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.005600499999999897,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00036490000000100054,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___contains__[int_data]",
+                "duration": 0.008758300000007324,
+                "run_index": 7,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.001261800000001756,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.005821000000000964,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004137000000028479,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___contains__[float_nan_data]",
+                "duration": 0.014603500000003322,
+                "run_index": 8,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005706000000031963,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.013055099999998987,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00040719999999794254,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test__options_display",
+                "duration": 0.10491640000000046,
+                "run_index": 9,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00047370000000057644,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.10334669999999946,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006222999999998535,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___finalize__",
+                "duration": 0.01610040000000268,
+                "run_index": 10,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006735000000013258,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.014374700000001184,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00037869999999884385,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___copy__[int_data]",
+                "duration": 0.037134200000004114,
+                "run_index": 11,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006012000000019668,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03528999999999982,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006418000000003588,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___copy__[float_nan_data]",
+                "duration": 0.041413699999999665,
+                "run_index": 12,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006310999999996625,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03950550000000064,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006459999999997024,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___deepcopy__[int_data]",
+                "duration": 0.03628800000000254,
+                "run_index": 13,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006330000000005498,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.03435430000000039,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000667700000001048,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___deepcopy__[float_nan_data]",
+                "duration": 0.04341980000000234,
+                "run_index": 14,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0012852000000016517,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04012510000000091,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007242999999981237,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___repr__",
+                "duration": 0.41002680000000424,
+                "run_index": 15,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005073000000024308,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.40836709999999954,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000645099999999843,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_inplace_series_ops[int_data]",
+                "duration": 0.007581500000004127,
+                "run_index": 16,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006203000000013503,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.005868299999999493,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004726000000019326,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_inplace_series_ops[float_nan_data]",
+                "duration": 0.015668999999995492,
+                "run_index": 17,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006071999999974764,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.013894799999999208,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005598000000013315,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___setattr__",
+                "duration": 0.007352999999998389,
+                "run_index": 18,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000613399999998876,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.005674800000001312,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00045139999999932456,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_isin[int_data]",
+                "duration": 0.04333899999999957,
+                "run_index": 19,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000723799999999386,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04112080000000162,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007705999999991775,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_isin[float_nan_data]",
+                "duration": 0.048008899999999244,
+                "run_index": 20,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000812299999999766,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04532299999999978,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0010612999999999317,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_constructor[int_data]",
+                "duration": 0.6009558000000048,
+                "run_index": 21,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007508000000022719,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.5987180000000016,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007361999999986324,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_constructor[float_nan_data]",
+                "duration": 0.6999909000000031,
+                "run_index": 22,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005813000000003399,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.698126000000002,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007023000000003776,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_constructor_dtypes[data0]",
+                "duration": 0.015729799999999017,
+                "run_index": 23,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000640099999998256,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.013947100000002877,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005024999999996282,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_constructor_dtypes[data1]",
+                "duration": 0.011848100000005246,
+                "run_index": 24,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005995000000034167,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.010188999999996895,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00046010000000151763,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_constructor_dtypes[data2]",
+                "duration": 0.008028200000001817,
+                "run_index": 25,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006328999999993812,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.006239400000001893,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005230000000011614,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_constructor_columns_and_index",
+                "duration": 0.05955150000000131,
+                "run_index": 26,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00046980000000118594,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.05543619999999905,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0031756999999998925,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            }
+        ],
+        "summary": {
+            "passed": 27,
+            "num_tests": 27,
+            "duration": 22.383565425872803
+        },
+        "created_at": "2021-08-27 12:42:39.010575"
+    }
+}

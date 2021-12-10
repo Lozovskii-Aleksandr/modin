@@ -1,0 +1,610 @@
+{
+    "report": {
+        "environment": {
+            "Python": "3.8.11",
+            "Platform": "Windows-10-10.0.19042-SP0"
+        },
+        "tests": [
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_items_iteritems_iterrows[items]",
+                "duration": 11.1487053,
+                "run_index": 0,
+                "setup": {
+                    "name": "setup",
+                    "duration": 5.5329033999999995,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.08196500000000029,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:43: in test_items_iteritems_iterrows\n    modin_df, pandas_df = pd.DataFrame(data), pandas.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009335000000003646,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_items_iteritems_iterrows[iteritems]",
+                "duration": 0.11335029999999868,
+                "run_index": 1,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006743000000000166,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.11145289999999974,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:43: in test_items_iteritems_iterrows\n    modin_df, pandas_df = pd.DataFrame(data), pandas.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005487999999989057,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_items_iteritems_iterrows[iterrows]",
+                "duration": 0.07526749999999716,
+                "run_index": 2,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006911999999985596,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07334119999999977,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:43: in test_items_iteritems_iterrows\n    modin_df, pandas_df = pd.DataFrame(data), pandas.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005439000000002636,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_itertuples_name[None]",
+                "duration": 0.09073269999999845,
+                "run_index": 3,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006485999999998882,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.08888129999999883,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:57: in test_itertuples_name\n    modin_df, pandas_df = pd.DataFrame(data), pandas.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005541999999998382,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_itertuples_name[NotPandas]",
+                "duration": 0.07679399999999958,
+                "run_index": 4,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006777000000006694,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07486759999999926,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:57: in test_itertuples_name\n    modin_df, pandas_df = pd.DataFrame(data), pandas.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000570999999998989,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_itertuples_multiindex",
+                "duration": 0.010008699999998427,
+                "run_index": 5,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005085999999998592,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.008466099999999699,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:67: in test_itertuples_multiindex\n    modin_df, pandas_df = pd.DataFrame(data), pandas.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00052539999999901,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___iter__",
+                "duration": 0.011709799999996662,
+                "run_index": 6,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.00045999999999857266,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.010283400000000498,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:81: in test___iter__\n    modin_df = pd.DataFrame(test_data_values[0])\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005063999999990187,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___contains__[int_data]",
+                "duration": 0.01187509999999925,
+                "run_index": 7,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006333000000005029,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.00998449999999984,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:96: in test___contains__\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006239999999984036,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___contains__[float_nan_data]",
+                "duration": 0.07281220000000133,
+                "run_index": 8,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005582000000003973,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07077549999999988,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:96: in test___contains__\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009203000000006512,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test__options_display",
+                "duration": 0.025642500000000013,
+                "run_index": 9,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000788800000000478,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.023411999999998656,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:114: in test__options_display\n    modin_df = pd.DataFrame(frame_data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006529000000004004,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___finalize__",
+                "duration": 0.015940800000002753,
+                "run_index": 10,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006116000000009336,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01412190000000102,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:141: in test___finalize__\n    pd.DataFrame(data).__finalize__(None)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005956999999998658,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___copy__[int_data]",
+                "duration": 0.01203950000000198,
+                "run_index": 11,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000698100000001034,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.010124799999999823,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:146: in test___copy__\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005185000000000883,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___copy__[float_nan_data]",
+                "duration": 0.073687099999999,
+                "run_index": 12,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006494999999997475,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07155909999999999,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:146: in test___copy__\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008289999999995246,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___deepcopy__[int_data]",
+                "duration": 0.012223399999998108,
+                "run_index": 13,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0008178999999994829,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.009949999999999903,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:155: in test___deepcopy__\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006375999999992388,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___deepcopy__[float_nan_data]",
+                "duration": 0.10753450000000164,
+                "run_index": 14,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007149000000001848,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.10562130000000103,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:155: in test___deepcopy__\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00048340000000024475,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___repr__",
+                "duration": 0.02046410000000165,
+                "run_index": 15,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0004993000000013126,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.01865950000000005,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:168: in test___repr__\n    modin_df = pd.DataFrame(frame_data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0008059999999989742,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_inplace_series_ops[int_data]",
+                "duration": 0.01565629999999807,
+                "run_index": 16,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006913999999991205,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.013687700000000191,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:235: in test_inplace_series_ops\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005857999999996366,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_inplace_series_ops[float_nan_data]",
+                "duration": 0.09277320000000344,
+                "run_index": 17,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007116000000007006,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.09084400000000059,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:235: in test_inplace_series_ops\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005060000000014497,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test___setattr__",
+                "duration": 0.07362579999999674,
+                "run_index": 18,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010918999999987022,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07103409999999855,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00040790000000079374,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_isin[int_data]",
+                "duration": 0.12544979999999661,
+                "run_index": 19,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007262999999984032,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.12290069999999886,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:262: in test_isin\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object 'ndarray' has no attribute '__iter__'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object 'ndarray' has no attribute '__iter__'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.001096500000000944,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_isin[float_nan_data]",
+                "duration": 0.07816910000000021,
+                "run_index": 20,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0007757000000001568,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07609030000000061,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:262: in test_isin\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005273999999992895,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_constructor[int_data]",
+                "duration": 0.12975650000000272,
+                "run_index": 21,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.000932500000001113,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.1273920000000004,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:274: in test_constructor\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object 'ndarray' has no attribute '__iter__'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object 'ndarray' has no attribute '__iter__'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004995000000000971,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_constructor[float_nan_data]",
+                "duration": 0.07752589999999593,
+                "run_index": 22,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006426999999984417,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07560459999999836,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:274: in test_constructor\n    modin_df = pd.DataFrame(data)\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object '_DTypeMeta' has no attribute '_abstract'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object '_DTypeMeta' has no attribute '_abstract'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0006359000000006887,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_constructor_dtypes[data0]",
+                "duration": 0.014296500000000378,
+                "run_index": 23,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006667000000000201,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.012485599999999764,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:295: in test_constructor_dtypes\n    md_df, pd_df = create_test_dfs(data)\nmodin\\pandas\\test\\utils.py:824: in create_test_dfs\n    post_fn, [pd.DataFrame(*args, **kwargs), pandas.DataFrame(*args, **kwargs)]\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object 'ndarray' has no attribute '__iter__'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object 'ndarray' has no attribute '__iter__'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0004775000000005747,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_constructor_dtypes[data1]",
+                "duration": 0.026401200000000458,
+                "run_index": 24,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006179999999993413,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.024705100000000257,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:295: in test_constructor_dtypes\n    md_df, pd_df = create_test_dfs(data)\nmodin\\pandas\\test\\utils.py:824: in create_test_dfs\n    post_fn, [pd.DataFrame(*args, **kwargs), pandas.DataFrame(*args, **kwargs)]\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object 'ndarray' has no attribute '__iter__'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object 'ndarray' has no attribute '__iter__'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00046010000000151763,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_constructor_dtypes[data2]",
+                "duration": 0.015400700000000711,
+                "run_index": 25,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0006591999999994158,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.013614100000001628,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:295: in test_constructor_dtypes\n    md_df, pd_df = create_test_dfs(data)\nmodin\\pandas\\test\\utils.py:824: in create_test_dfs\n    post_fn, [pd.DataFrame(*args, **kwargs), pandas.DataFrame(*args, **kwargs)]\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:436: in __init__\n    a, kw = preprocess(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:644: in _preprocess_init_args\n    (data,) = conn.deliver((data,), {})[0]\nmodin\\experimental\\cloud\\rpyc_proxy.py:81: in deliver\n    remote = iter(self._remote_batch_loads(tuple(pickled)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: type object 'ndarray' has no attribute '__iter__'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in _batch_loads\nE       return tuple(pickle.loads(item) for item in items)\nE     File \"C:\\prog\\modin\\modin\\experimental\\cloud\\rpyc_proxy.py\", line 34, in <genexpr>\nE       return tuple(pickle.loads(item) for item in items)\nE   AttributeError: type object 'ndarray' has no attribute '__iter__'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.00046820000000025175,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_iter.py::test_constructor_columns_and_index",
+                "duration": 0.07651280000000149,
+                "run_index": 26,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005925000000015501,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.07120139999999964,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\dataframe\\test_iter.py:313: in test_constructor_columns_and_index\n    pd.DataFrame(modin_df, columns=[\"max_speed\", \"health\"]),\nmodin\\experimental\\cloud\\meta_magic.py:155: in __new__\n    return cls.__real_cls__(*a, **kw)\nmodin\\experimental\\cloud\\rpyc_proxy.py:439: in __init__\n    __remote_end__ = remote_cls(*a, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:254: in __call__\n    return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: 'list' object is not callable\nE   \nE   ========= Remote Traceback (2) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\prog\\modin\\modin\\pandas\\dataframe.py\", line 141, in __init__\nE       self._query_compiler = data.loc[index, columns]._query_compiler\nE     File \"C:\\prog\\modin\\modin\\pandas\\indexing.py\", line 539, in __getitem__\nE       row_loc, col_loc, ndim = self._parse_row_and_column_locators(key)\nE     File \"C:\\prog\\modin\\modin\\pandas\\indexing.py\", line 505, in _parse_row_and_column_locators\nE       col_loc = col_loc(self.df) if callable(col_loc) else col_loc\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 254, in __call__\nE       return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 76, in syncreq\nE       return conn.sync_request(handler, proxy, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 500, in sync_request\nE       return self.async_request(handler, *args, timeout=timeout).value\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py\", line 102, in value\nE       raise self._obj\nE   _get_exception_class.<locals>.Derived: 'list' object is not callable\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE   TypeError: 'list' object is not callable"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.004126399999998753,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            }
+        ],
+        "summary": {
+            "failed": 26,
+            "passed": 1,
+            "num_tests": 27,
+            "duration": 14.2839834690094
+        },
+        "created_at": "2021-12-10 15:55:46.920843"
+    }
+}

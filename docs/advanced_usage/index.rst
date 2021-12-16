@@ -1,9 +1,34 @@
-Overview
-========
-Modin aims to not only optimize Pandas, but also provide a comprehensive, 
+Advanced Usage
+==============
+
+.. toctree::
+   :titlesonly:
+   :hidden:
+
+   spreadsheets_api
+   progress_bar
+   modin_sql
+   modin_xgboost
+   modin_in_the_cloud
+   
+.. meta::
+    :description lang=en:
+        Description of Modin's advanced features.
+
+Modin aims to not only optimize pandas, but also provide a comprehensive, 
 integrated toolkit for data scientists. We are actively developing data science tools 
 such as DataFrame - spreadsheet integration, DataFrame algebra, progress bars, SQL queries
 on DataFrames, and more. Join the `Discourse`_ for the latest updates!
+
+Experimental APIs
+-----------------
+
+Modin also supports these experimental APIs on top of pandas that are under active development.
+
+- :py:func:`~modin.experimental.pandas.read_csv_glob` -- read multiple files in a directory
+- :py:func:`~modin.experimental.pandas.read_sql` -- add optional parameters for the database connection
+- :py:func:`~modin.experimental.pandas.read_pickle_distributed`  -- read multiple files in a directory
+- :py:meth:`~modin.experimental.pandas.DataFrame.to_pickle_distributed` -- write to multiple files in a directory
 
 Modin Spreadsheet API: Render Dataframes as Spreadsheets
 --------------------------------------------------------
@@ -42,7 +67,7 @@ Read about Modin Dataframe support for SQL queries in this recent `blog post`_. 
 Distributed XGBoost on Modin
 ----------------------------
 Modin provides an implementation of distributed XGBoost machine learning algorithm on Modin DataFrames. See our
-:doc:`Distributed XGBoost on Modin documentation </experimental_features/modin_xgboost>` for details about installation and usage, as well as
+:doc:`Distributed XGBoost on Modin documentation <modin_xgboost>` for details about installation and usage, as well as
 :doc:`Modin XGBoost architecture documentation </flow/modin/experimental/xgboost>` for information about implementation and
 internal execution flow.
 

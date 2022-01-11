@@ -1,0 +1,100 @@
+{
+    "report": {
+        "environment": {
+            "Python": "3.8.11",
+            "Platform": "Windows-10-10.0.19042-SP0"
+        },
+        "tests": [
+            {
+                "name": "modin/pandas/test/dataframe/test_pickle.py::test_dataframe_pickle[True]",
+                "duration": 10.829472999999998,
+                "run_index": 0,
+                "setup": {
+                    "name": "setup",
+                    "duration": 5.3469373,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.13454199999999972,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0010563999999995133,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_pickle.py::test_dataframe_pickle[False]",
+                "duration": 0.12089760000000105,
+                "run_index": 1,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.009883900000000168,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.10034869999999962,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0007811000000010893,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_pickle.py::test_column_pickle[True]",
+                "duration": 0.2551061999999984,
+                "run_index": 2,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.027546499999999696,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.1993267000000003,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.000686499999998702,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/dataframe/test_pickle.py::test_column_pickle[False]",
+                "duration": 0.19783870000000014,
+                "run_index": 3,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.010953199999999441,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.17473130000000126,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0012010000000000076,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            }
+        ],
+        "summary": {
+            "passed": 4,
+            "num_tests": 4,
+            "duration": 9.14989686012268
+        },
+        "created_at": "2021-12-16 21:38:07.738852"
+    }
+}

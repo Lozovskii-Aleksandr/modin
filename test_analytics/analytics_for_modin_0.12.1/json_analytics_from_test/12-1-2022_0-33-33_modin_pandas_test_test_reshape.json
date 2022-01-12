@@ -1,0 +1,126 @@
+{
+    "report": {
+        "environment": {
+            "Python": "3.8.11",
+            "Platform": "Windows-10-10.0.19042-SP0"
+        },
+        "tests": [
+            {
+                "name": "modin/pandas/test/test_reshape.py::test_get_dummies",
+                "duration": 10.741331999999998,
+                "run_index": 0,
+                "setup": {
+                    "name": "setup",
+                    "duration": 5.2828123,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.17464739999999956,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_reshape.py:25: in test_get_dummies\n    pd.get_dummies(s)\nmodin\\pandas\\general.py:562: in get_dummies\n    pandas.get_dummies(\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\reshape\\reshape.py:948: in get_dummies\n    result = _get_dummies_1d(\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\reshape\\reshape.py:972: in _get_dummies_1d\n    codes, levels = factorize_from_iterable(Series(data))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\arrays\\categorical.py:2755: in factorize_from_iterable\n    cat = Categorical(values, ordered=False)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\arrays\\categorical.py:432: in __init__\n    codes, categories = factorize(values, sort=True)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\algorithms.py:748: in factorize\n    codes, uniques = values.factorize(na_sentinel=na_sentinel)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:167: in __getattr__\n    return syncreq(self, consts.HANDLE_GETATTR, name)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: 'numpy.ndarray' object has no attribute 'factorize'\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 646, in _handle_getattr\nE       return self._access_attr(obj, name, (), \"_rpyc_getattr\", \"allow_getattr\", getattr)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 568, in _access_attr\nE       return accessor(obj, name, *args)\nE   AttributeError: 'numpy.ndarray' object has no attribute 'factorize'"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0010599999999989507,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_reshape.py::test_melt",
+                "duration": 0.06030810000000031,
+                "run_index": 1,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005499000000011023,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.058634199999998415,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_reshape.py:71: in test_melt\n    pd.melt(pd.DataFrame(data))\nE   Failed: DID NOT WARN. No warnings of type (<class 'UserWarning'>,) was emitted. The list of emitted warnings is: []."
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005740999999996887,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_reshape.py::test_crosstab",
+                "duration": 0.10032430000000048,
+                "run_index": 2,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0010849000000003883,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.09755749999999885,
+                    "outcome": "passed"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0005970000000008469,
+                    "outcome": "passed"
+                },
+                "outcome": "passed"
+            },
+            {
+                "name": "modin/pandas/test/test_reshape.py::test_lreshape",
+                "duration": 0.04635769999999795,
+                "run_index": 3,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005596999999983865,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.04414060000000042,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_reshape.py:128: in test_lreshape\n    df = pd.lreshape(data, {\"year\": [\"year1\", \"year2\"], \"hr\": [\"hr1\", \"hr2\"]})\nmodin\\pandas\\general.py:640: in lreshape\n    pandas.lreshape(to_pandas(data), groups, dropna=dropna, label=label)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\util\\_decorators.py:207: in wrapper\n    return func(*args, **kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\reshape\\melt.py:245: in lreshape\n    mdata[target] = concat_compat(to_concat)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\dtypes\\concat.py:151: in concat_compat\n    return np.concatenate(to_concat, axis=axis)\n<__array_function__ internals>:5: in concatenate\n    ???\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:277: in method\n    return syncreq(_self, consts.HANDLE_CALLATTR, name, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nmodin\\experimental\\cloud\\rpyc_proxy.py:183: in async_request\n    return super().async_request(handler, *args, **kw)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:524: in async_request\n    self._async_request(handler, args, res)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:506: in _async_request\n    self._send(consts.MSG_REQUEST, seq, (handler, self._box(args)))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:233: in _send\n    data = brine.dump((msg, seq, args))\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:375: in dump\n    _dump(obj, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:194: in _dump\n    _dump_registry.get(type(obj), _undumpable)(obj, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:186: in _dump_tuple\n    _dump(item, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:194: in _dump\n    _dump_registry.get(type(obj), _undumpable)(obj, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:186: in _dump_tuple\n    _dump(item, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:194: in _dump\n    _dump_registry.get(type(obj), _undumpable)(obj, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:186: in _dump_tuple\n    _dump(item, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:194: in _dump\n    _dump_registry.get(type(obj), _undumpable)(obj, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:186: in _dump_tuple\n    _dump(item, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:194: in _dump\n    _dump_registry.get(type(obj), _undumpable)(obj, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:186: in _dump_tuple\n    _dump(item, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:194: in _dump\n    _dump_registry.get(type(obj), _undumpable)(obj, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:186: in _dump_tuple\n    _dump(item, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:194: in _dump\n    _dump_registry.get(type(obj), _undumpable)(obj, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:186: in _dump_tuple\n    _dump(item, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:194: in _dump\n    _dump_registry.get(type(obj), _undumpable)(obj, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:186: in _dump_tuple\n    _dump(item, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:194: in _dump\n    _dump_registry.get(type(obj), _undumpable)(obj, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:186: in _dump_tuple\n    _dump(item, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:194: in _dump\n    _dump_registry.get(type(obj), _undumpable)(obj, stream)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\brine.py:190: in _undumpable\n    raise TypeError(\"cannot dump %r\" % (obj,))\nE   TypeError: cannot dump <member '____id_pack__' of 'BaseNetref' objects>"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0010977000000007564,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            },
+            {
+                "name": "modin/pandas/test/test_reshape.py::test_wide_to_long",
+                "duration": 0.028989799999999732,
+                "run_index": 4,
+                "setup": {
+                    "name": "setup",
+                    "duration": 0.0005971000000002391,
+                    "outcome": "passed"
+                },
+                "call": {
+                    "name": "call",
+                    "duration": 0.026826699999999093,
+                    "outcome": "failed",
+                    "longrepr": "modin\\pandas\\test\\test_reshape.py:147: in test_wide_to_long\n    df = pd.wide_to_long(data, [\"hr\", \"year\"], \"team\", \"index\")\nmodin\\pandas\\general.py:654: in wide_to_long\n    pandas.wide_to_long(to_pandas(df), stubnames, i, j, sep=sep, suffix=suffix)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\reshape\\melt.py:531: in wide_to_long\n    if df[i].duplicated().any():\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:277: in method\n    return syncreq(_self, consts.HANDLE_CALLATTR, name, args, kwargs)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py:76: in syncreq\n    return conn.sync_request(handler, proxy, *args)\nmodin\\experimental\\cloud\\rpyc_proxy.py:165: in sync_request\n    return super().sync_request(handler, *args)\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py:500: in sync_request\n    return self.async_request(handler, *args, timeout=timeout).value\nC:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py:102: in value\n    raise self._obj\nE   _get_exception_class.<locals>.Derived: 'list' object is not callable\nE   \nE   ========= Remote Traceback (2) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 656, in _handle_callattr\nE       return self._handle_call(obj, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\frame.py\", line 3420, in __getitem__\nE       key = com.apply_if_callable(key, self)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\pandas\\core\\common.py\", line 358, in apply_if_callable\nE       return maybe_callable(obj, **kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 254, in __call__\nE       return syncreq(_self, consts.HANDLE_CALL, args, kwargs)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\netref.py\", line 76, in syncreq\nE       return conn.sync_request(handler, proxy, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 500, in sync_request\nE       return self.async_request(handler, *args, timeout=timeout).value\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\async_.py\", line 102, in value\nE       raise self._obj\nE   _get_exception_class.<locals>.Derived: 'list' object is not callable\nE   \nE   ========= Remote Traceback (1) =========\nE   Traceback (most recent call last):\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 338, in _dispatch_request\nE       res = self._HANDLERS[handler](self, *args)\nE     File \"C:\\Users\\alozovsk\\Anaconda3\\envs\\modin\\lib\\site-packages\\rpyc\\core\\protocol.py\", line 630, in _handle_call\nE       return obj(*args, **dict(kwargs))\nE   TypeError: 'list' object is not callable"
+                },
+                "teardown": {
+                    "name": "teardown",
+                    "duration": 0.0009689000000001613,
+                    "outcome": "passed"
+                },
+                "outcome": "failed"
+            }
+        ],
+        "summary": {
+            "failed": 4,
+            "passed": 1,
+            "num_tests": 5,
+            "duration": 9.658350467681885
+        },
+        "created_at": "2022-01-12 00:33:46.484444"
+    }
+}
